@@ -715,7 +715,7 @@ var MyGeneInfoSearchService = (function () {
                 return __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__["Observable"].of(variant);
             }
             // Query for gene stuff.
-            return _this.http.get("http://mygene.info/v3/gene/" + variant.origin.entrezID)
+            return _this.http.get("https://mygene.info/v3/gene/" + variant.origin.entrezID)
                 .map(function (response) {
                 var responseJSON = response.json();
                 console.log("Got for gene annotation ", responseJSON);
@@ -889,7 +889,7 @@ var MyVariantInfoSearchService = (function () {
         this.allFieldsIncludeString = "";
         this.referenceFieldsIncludeString = "";
         this.scrubbedLocations = {};
-        this.queryEndpoint = "http://myvariant.info/v1/query?q=";
+        this.queryEndpoint = "https://myvariant.info/v1/query?q=";
         this.currentKeywords = [];
         this.lastSuggestionSet = __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__["Observable"].of([]);
         /**
@@ -1711,7 +1711,7 @@ var SMARTLaunchComponent = (function () {
                     // client_id: "1e7af332-b27a-4de2-8c51-728ae3ed25c2",
                     client_id: "90453bbe-ba81-492b-b1bb-bcac626d5eef",
                     scope: "launch patient/*.* openid profile",
-                    redirect_uri: "http://127.0.0.1:4200/token-reception"
+                    redirect_uri: "https://smart-co.github.io/token-reception"
                 });
             }
             else {
