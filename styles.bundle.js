@@ -62,7 +62,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "body {\n  margin: 0;\n}\n\n* {\n  /* Ideally both of these would be included for aesthetic purposes, but Safari doesn't support text boxes with these properties. */\n  /*user-select: none;*/\n  /*outline: none;*/\n}\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n}\n\n.thinFont1 {\n  font-family: \"Avenir Next\";\n  font-weight: 100;\n}\n\n.thinFont2 {\n  font-family: \"Helvetica Neue\";\n  font-weight: 100;\n}\n", ""]);
 
 // exports
 

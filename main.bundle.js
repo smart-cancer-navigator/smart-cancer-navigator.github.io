@@ -20,10 +20,10 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_entry_data_entry_component__ = __webpack_require__("../../../../../src/app/data-entry/data-entry.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__smart_initialization_smart_launch_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-launch.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__smart_initialization_smart_token_reception_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-token-reception.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__visualize_results_visualize_results_component__ = __webpack_require__("../../../../../src/app/visualize-results/visualize-results.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__smart_initialization_smart_launch_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-launch.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__smart_initialization_smart_token_reception_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-token-reception.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__entry_and_visualization_variant_entry_and_visualization_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-entry-and-visualization.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ehr_instructions_ehr_instructions_component__ = __webpack_require__("../../../../../src/app/ehr-instructions/ehr-instructions.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -37,11 +37,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var routes = [
-    { path: "", redirectTo: "/data-entry", pathMatch: "full" },
-    { path: "data-entry", component: __WEBPACK_IMPORTED_MODULE_2__data_entry_data_entry_component__["a" /* DataEntryFormComponent */] },
-    { path: "smart-launch", component: __WEBPACK_IMPORTED_MODULE_3__smart_initialization_smart_launch_component__["a" /* SMARTLaunchComponent */] },
-    { path: "token-reception", component: __WEBPACK_IMPORTED_MODULE_4__smart_initialization_smart_token_reception_component__["a" /* SMARTTokenReceptionComponent */] },
-    { path: "visualize-results", component: __WEBPACK_IMPORTED_MODULE_5__visualize_results_visualize_results_component__["a" /* VisualizeResultsComponent */] }
+    { path: "", redirectTo: "/variant-entry-and-visualization", pathMatch: "full" },
+    { path: "smart-launch", component: __WEBPACK_IMPORTED_MODULE_2__smart_initialization_smart_launch_component__["a" /* SMARTLaunchComponent */] },
+    { path: "token-reception", component: __WEBPACK_IMPORTED_MODULE_3__smart_initialization_smart_token_reception_component__["a" /* SMARTTokenReceptionComponent */] },
+    { path: "variant-entry-and-visualization", component: __WEBPACK_IMPORTED_MODULE_4__entry_and_visualization_variant_entry_and_visualization_component__["a" /* VariantEntryAndVisualizationComponent */] },
+    { path: "ehr-instructions", component: __WEBPACK_IMPORTED_MODULE_5__ehr_instructions_ehr_instructions_component__["a" /* EHRInstructionsComponent */] }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -74,15 +74,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = "SMART EHR Module (Angular)";
+        this.title = "SMART-CO Application";
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: "app-root",
-        template: "\n    <info-header></info-header>\n    <div id=\"content\">\n      <router-outlet></router-outlet>\n    </div>\n  ",
-        styles: ["    \n    #content {\n      display: block;\n      margin: 0 20px;\n      width: calc(100% - 40px);\n    }\n  "]
+        template: "\n    <header></header>\n    <router-outlet></router-outlet>\n  ",
     })
 ], AppComponent);
 
@@ -98,28 +97,31 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__global_info_header_component__ = __webpack_require__("../../../../../src/app/global/info-header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__data_entry_data_entry_component__ = __webpack_require__("../../../../../src/app/data-entry/data-entry.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__smart_initialization_smart_launch_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-launch.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__smart_initialization_smart_token_reception_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-token-reception.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__data_entry_filterable_search_filterable_search_component__ = __webpack_require__("../../../../../src/app/data-entry/filterable-search/filterable-search.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__visualize_results_visualize_results_component__ = __webpack_require__("../../../../../src/app/visualize-results/visualize-results.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__visualize_results_clinical_trials_clinical_trials_component__ = __webpack_require__("../../../../../src/app/visualize-results/clinical-trials/clinical-trials.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__visualize_results_drugs_drug_details_modal_component__ = __webpack_require__("../../../../../src/app/visualize-results/drugs/drug-details-modal.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__visualize_results_gene_gene_visualization_component__ = __webpack_require__("../../../../../src/app/visualize-results/gene/gene-visualization.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__visualize_results_variant_variant_visualization_component__ = __webpack_require__("../../../../../src/app/visualize-results/variant/variant-visualization.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__smart_initialization_smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__data_entry_providers_myvariantinfo_search_service__ = __webpack_require__("../../../../../src/app/data-entry/providers/myvariantinfo-search.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__visualize_results_clinical_trials_clinical_trials_service__ = __webpack_require__("../../../../../src/app/visualize-results/clinical-trials/clinical-trials.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__data_entry_data_entry_service__ = __webpack_require__("../../../../../src/app/data-entry/data-entry.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__visualize_results_drugs_drugs_search_service__ = __webpack_require__("../../../../../src/app/visualize-results/drugs/drugs-search.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__data_entry_providers_mygeneinfo_search_service__ = __webpack_require__("../../../../../src/app/data-entry/providers/mygeneinfo-search.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__data_entry_providers_utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/data-entry/providers/utilities/json-navigator.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__visualize_results_variant_classifications_modal_component__ = __webpack_require__("../../../../../src/app/visualize-results/variant/classifications-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__header_component__ = __webpack_require__("../../../../../src/app/header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__entry_and_visualization_variant_selector_variant_selector_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__smart_initialization_smart_launch_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-launch.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__smart_initialization_smart_token_reception_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-token-reception.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__entry_and_visualization_filterable_search_filterable_search_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/filterable-search/filterable-search.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug-details-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__entry_and_visualization_variant_visualization_gene_gene_information_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/gene/gene-information.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__entry_and_visualization_variant_visualization_variant_variant_information_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant/variant-information.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__entry_and_visualization_variant_visualization_variant_visualization_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant-visualization.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ehr_instructions_ehr_instructions_component__ = __webpack_require__("../../../../../src/app/ehr-instructions/ehr-instructions.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__smart_initialization_smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__entry_and_visualization_genomic_data_providers_myvariantinfo_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/myvariantinfo-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__entry_and_visualization_variant_selector_variant_selector_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__entry_and_visualization_variant_visualization_drugs_drugs_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drugs-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__entry_and_visualization_genomic_data_providers_mygeneinfo_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/mygeneinfo-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__entry_and_visualization_genomic_data_providers_utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__entry_and_visualization_variant_visualization_variant_classifications_modal_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant/classifications-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__entry_and_visualization_variant_entry_and_visualization_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-entry-and-visualization.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -133,7 +135,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 // Components
+
 
 
 
@@ -154,6 +158,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -163,41 +168,44 @@ AppModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["d" /* ReactiveFormsModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["d" /* ReactiveFormsModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_3__app_routing_module__["a" /* AppRoutingModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_5__ng_bootstrap_ng_bootstrap__["c" /* NgbModule */].forRoot()
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_5__app_routing_module__["a" /* AppRoutingModule */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+            __WEBPACK_IMPORTED_MODULE_4__ng_bootstrap_ng_bootstrap__["c" /* NgbModule */].forRoot()
         ],
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__global_info_header_component__["a" /* InfoHeaderComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__data_entry_data_entry_component__["a" /* DataEntryFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__smart_initialization_smart_launch_component__["a" /* SMARTLaunchComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__smart_initialization_smart_token_reception_component__["a" /* SMARTTokenReceptionComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__data_entry_filterable_search_filterable_search_component__["a" /* FilterableSearchComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__visualize_results_visualize_results_component__["a" /* VisualizeResultsComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__visualize_results_clinical_trials_clinical_trials_component__["a" /* ClinicalTrialsComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__visualize_results_gene_gene_visualization_component__["a" /* GeneVisualizationComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__visualize_results_variant_variant_visualization_component__["a" /* VariantVisualizationComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__visualize_results_drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */],
-            __WEBPACK_IMPORTED_MODULE_24__visualize_results_variant_classifications_modal_component__["a" /* ClassificationsModalComponent */]
+            __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__header_component__["a" /* HeaderComponent */],
+            __WEBPACK_IMPORTED_MODULE_27__entry_and_visualization_variant_entry_and_visualization_component__["a" /* VariantEntryAndVisualizationComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__entry_and_visualization_variant_visualization_variant_visualization_component__["a" /* VariantVisualizationComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__entry_and_visualization_variant_selector_variant_selector_component__["a" /* VariantSelectorComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__smart_initialization_smart_launch_component__["a" /* SMARTLaunchComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__smart_initialization_smart_token_reception_component__["a" /* SMARTTokenReceptionComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__entry_and_visualization_filterable_search_filterable_search_component__["a" /* FilterableSearchComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__entry_and_visualization_variant_visualization_variant_variant_information_component__["a" /* VariantInformationComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_component__["a" /* ClinicalTrialsComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__entry_and_visualization_variant_visualization_gene_gene_information_component__["a" /* GeneInformationComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__entry_and_visualization_variant_visualization_variant_classifications_modal_component__["a" /* ClassificationsModalComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__ehr_instructions_ehr_instructions_component__["a" /* EHRInstructionsComponent */]
         ],
         entryComponents: [
-            __WEBPACK_IMPORTED_MODULE_14__visualize_results_drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */],
-            __WEBPACK_IMPORTED_MODULE_24__visualize_results_variant_classifications_modal_component__["a" /* ClassificationsModalComponent */]
+            __WEBPACK_IMPORTED_MODULE_14__entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__entry_and_visualization_variant_visualization_variant_classifications_modal_component__["a" /* ClassificationsModalComponent */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_17__smart_initialization_smart_reference_service__["c" /* SMARTReferenceService */],
-            __WEBPACK_IMPORTED_MODULE_18__data_entry_providers_myvariantinfo_search_service__["a" /* MyVariantInfoSearchService */],
-            __WEBPACK_IMPORTED_MODULE_22__data_entry_providers_mygeneinfo_search_service__["a" /* MyGeneInfoSearchService */],
-            __WEBPACK_IMPORTED_MODULE_19__visualize_results_clinical_trials_clinical_trials_service__["a" /* ClinicalTrialsService */],
-            __WEBPACK_IMPORTED_MODULE_20__data_entry_data_entry_service__["a" /* DataEntryService */],
-            __WEBPACK_IMPORTED_MODULE_21__visualize_results_drugs_drugs_search_service__["a" /* DrugsSearchService */],
-            __WEBPACK_IMPORTED_MODULE_23__data_entry_providers_utilities_json_navigator_service__["a" /* JSONNavigatorService */]
+            __WEBPACK_IMPORTED_MODULE_19__smart_initialization_smart_reference_service__["c" /* SMARTReferenceService */],
+            __WEBPACK_IMPORTED_MODULE_22__entry_and_visualization_variant_selector_variant_selector_service__["a" /* VariantSelectorService */],
+            __WEBPACK_IMPORTED_MODULE_20__entry_and_visualization_genomic_data_providers_myvariantinfo_search_service__["a" /* MyVariantInfoSearchService */],
+            __WEBPACK_IMPORTED_MODULE_24__entry_and_visualization_genomic_data_providers_mygeneinfo_search_service__["a" /* MyGeneInfoSearchService */],
+            __WEBPACK_IMPORTED_MODULE_21__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_service__["a" /* ClinicalTrialsService */],
+            __WEBPACK_IMPORTED_MODULE_23__entry_and_visualization_variant_visualization_drugs_drugs_search_service__["a" /* DrugsSearchService */],
+            __WEBPACK_IMPORTED_MODULE_25__entry_and_visualization_genomic_data_providers_utilities_json_navigator_service__["a" /* JSONNavigatorService */]
         ],
         bootstrap: [
-            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]
+            __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]
         ]
     })
 ], AppModule);
@@ -206,255 +214,83 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/data-entry/data-entry.component.ts":
+/***/ "../../../../../src/app/ehr-instructions/ehr-instructions.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return USER_SELECTED_VARIANTS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataEntryFormComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EHRInstructionsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_entry_service__ = __webpack_require__("../../../../../src/app/data-entry/data-entry.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__smart_initialization_smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-/**
- * Data entry is an essential part of the final application that will be built, and it must be built in
- * a way which permits dynamic addition and removal of form elements.  Since Angular makes modularity
- * insanely easy and you can build custom input selectors, this shouldn"t require too much code.
- */
 
-
-
-
-
-
-var USER_SELECTED_VARIANTS;
-var VariantWrapper = (function () {
-    function VariantWrapper(_index, _variant) {
-        this.index = _index;
-        this.variant = _variant;
+var EHRInstructionsComponent = (function () {
+    function EHRInstructionsComponent() {
     }
-    return VariantWrapper;
+    return EHRInstructionsComponent;
 }());
-var DataEntryFormComponent = (function () {
-    function DataEntryFormComponent(router, dataEntryService) {
-        this.router = router;
-        this.dataEntryService = dataEntryService;
-        this.variants = [];
+EHRInstructionsComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: "ehr-instructions",
+        template: "\n    <div id=\"wrapper\">\n      <h3 class=\"display-3\">EHR Example: Launching SMART-CO via the HSPC Sandbox</h3>\n      <br>\n      <div class=\"instructionBlock\">\n        <h4 class=\"display-4 instructionHeading\">Linking the app to the sandbox</h4>\n        <p class=\"thinFont1\">Navigate to <a href=\"https://sandbox.hspconsortium.org\">the HSPC Sandbox</a>, and create a new account.</p>\n        <img style=\"width: 100%\" src=\"/assets/create-account.png\">\n        <br>\n        <p class=\"thinFont1\">Then, you will have to create a new sandbox.  Do so with the FHIR STU3 specification.</p>\n        <p class=\"thinFont1\">Following the sandbox creation, navigate to the \"Registered Apps\" section and click \"Register new app manually\".  Enter the following parameters: </p>\n        <img style=\"width: 70%\" src=\"/assets/registering-app.png\">\n      </div>\n      <br>\n      \n      <div class=\"instructionBlock\">\n        <h4 class=\"display-4 instructionHeading\">Building a launch scenario</h4>\n        <p class=\"thinFont1\">With your new registered app, create a new Practitioner Persona.  Then, create a new launch scenario for the app with any patient and practitioner persona you desire.</p>\n        <p style=\"color: red\">(NOTE: Ensure that you link the launch scenario to the SMART-CO app registration you created in the previous step).  </p>\n        <img style=\"width: 40%\" src=\"/assets/launching-scenario.png\">\n      </div>\n      <br>\n      \n      <div class=\"instructionBlock\">\n        <h4 class=\"display-4 instructionHeading\">Launching the application</h4>\n        <p class=\"thinFont1\">First, take note of the Client ID for the application.  This long string is required for the application to access the sandbox data.</p>\n        <img style=\"width: 40%\" src=\"/assets/getting-client-id.png\">\n        <br>\n        <p class=\"thinFont1\">Now, click \"Launch\" on your launch scenario.  Upon beginning the app, you should be prompted for your client ID.  Paste in the one you obtained prior.</p>\n        <img style=\"width: 80%\" src=\"/assets/entering-info.png\">\n        <br>\n        <p>Congrats, you're done!</p>\n      </div>\n    </div>\n  ",
+        styles: ["\n    #wrapper {\n      padding: 5px;\n    }\n    \n    .instructionBlock {\n      border: 1px solid grey;\n      border-radius: 15px;\n      padding: 10px;\n      text-align: center;\n    }\n    \n    .instructionHeading {\n      text-align: center;\n    }\n    \n    .instructionBlock p {\n      font-size: 20px;\n    }\n  "]
+    })
+], EHRInstructionsComponent);
+
+//# sourceMappingURL=ehr-instructions.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/entry-and-visualization/data-merging.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MergeProperties; });
+var MergeProperties = function (property1, property2) {
+    if (typeof property1 !== typeof property2) {
+        console.log(property1 + " and " + property2 + " have a type mismatch, since " + typeof property1 + " is not " + typeof property2);
+        return property1;
     }
-    /**
-     * So typically the DOM would be updated upon changing the variants array (as we do in the form).  However, by
-     * specifying this function, we prevent that from happening.
-     */
-    DataEntryFormComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.addRow();
-        // Query for existent genomic variants in the patient context.
-        __WEBPACK_IMPORTED_MODULE_4__smart_initialization_smart_reference_service__["a" /* SMARTClient */].subscribe(function (smartClient) {
-            if (smartClient === null) {
-                return;
-            }
-            console.log("Should now update");
-            smartClient.patient.api.search({ type: "Observation", query: { "category": "genomic-variant" }, count: 10 })
-                .then(function (results) {
-                console.log("Successfully got variants!", results);
-                if (!results.data.entry) {
+    // Merge arrays.
+    if (property1 instanceof Array) {
+        var addToArray = function (toAdd) {
+            for (var _i = 0, mergedArray_1 = mergedArray_2; _i < mergedArray_1.length; _i++) {
+                var value = mergedArray_1[_i];
+                if (value === toAdd) {
                     return;
                 }
-                if (results.data.entry.length > 0) {
-                    _this.removeRow(0); // Start at the first index if we find other variants.
-                }
-                var _loop_1 = function (result) {
-                    console.log("Would now add " + result.resource.code.text);
-                    _this.dataEntryService.search(result.resource.code.text).subscribe(function (variants) {
-                        if (variants.length === 0) {
-                            console.log("NOT GOOD: Couldn't find any search results for " + result.resource.code.text);
-                            return;
-                        }
-                        // Add the search result to the list.
-                        console.log("Adding", variants[0]);
-                        _this.variants.push(new VariantWrapper(_this.variants.length, variants[0]));
-                    });
-                };
-                for (var _i = 0, _a = results.data.entry; _i < _a.length; _i++) {
-                    var result = _a[_i];
-                    _loop_1(result);
-                }
-            })
-                .fail(function (err) {
-                console.log("Couldn't query genomic variants error!" + err);
-            });
-        });
-    };
-    DataEntryFormComponent.prototype.addRow = function () {
-        this.variants.push(new VariantWrapper(this.variants.length, null)); // Add an empty variant to the variation list.
-    };
-    DataEntryFormComponent.prototype.removeRow = function (arrayIndex) {
-        if (arrayIndex > -1 && arrayIndex < this.variants.length) {
-            this.variants.splice(arrayIndex, 1);
-        }
-        for (var i = 0; i < this.variants.length; i++) {
-            this.variants[i].index = i;
-        }
-    };
-    /**
-     * Compiles a list of variant objects created from the bookmarks made by the suggestions earlier.
-     */
-    DataEntryFormComponent.prototype.complete = function () {
-        console.log("Got completed, constructing variants from variant references");
-        var variantObservables = [];
-        for (var _i = 0, _a = this.variants; _i < _a.length; _i++) {
-            var variantWrapper = _a[_i];
-            if (variantWrapper.variant !== null) {
-                variantObservables.push(this.dataEntryService.getByReference(variantWrapper.variant));
             }
+            mergedArray_2.push(toAdd);
+        };
+        var mergedArray_2 = Array.from(property1);
+        for (var _i = 0, property2_1 = property2; _i < property2_1.length; _i++) {
+            var value = property2_1[_i];
+            addToArray(value);
         }
-        USER_SELECTED_VARIANTS = __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__["Observable"].forkJoin(variantObservables).map(function (variants) { return variants; });
-        this.router.navigate(["/visualize-results"]);
-    };
-    return DataEntryFormComponent;
-}());
-DataEntryFormComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: "data-entry",
-        template: "\n    <!-- Gene Variation List -->\n    <div *ngFor=\"let variant of variants\" class=\"entryPanel\">\n      <div class=\"panel-heading\">\n        <p>Variation {{variant.index + 1}}</p>\n        <button type=\"button\" class=\"btn btn-danger\" (click)=\"removeRow(variant.index)\">X</button>\n      </div>\n      <div class=\"panel-body\">\n        <filterable-search #VariantFilter [searchService]=\"dataEntryService\" [placeholderString]=\"'Search Variants'\" [(ngModel)]=\"variant.variant\"></filterable-search>\n      </div>\n    </div>\n\n    <!-- Finalize buttons -->\n    <button (click)=\"addRow()\" style=\"float: left;\" type=\"button\" class=\"btn btn-primary formButton\">New Variant</button>\n    <button (click)=\"complete()\" style=\"float: right\" type=\"button\" class=\"btn btn-success formButton\">I'm Done!\n    </button>\n  ",
-        styles: ["    \n    .entryPanel {\n      border: 0.5px solid black;\n      border-radius: 5px;\n      margin-top: 5px;\n      margin-left: 0;\n      margin-bottom: 5px;\n    }\n\n    .panel-heading {\n      height: 30px;\n      padding: 0;\n      background-color: black;\n    }\n\n    .panel-heading p {\n      float: left;\n      margin: 5px;\n      font-size: 15px;\n      text-align: left;\n      width: 80px;\n      color: white;\n    }\n\n    .panel-heading select {\n      width: 200px;\n      margin: 1.5px;\n      height: 25px;\n      font-size: 17px;\n      text-align-last: center;\n    }\n\n    .panel-heading button {\n      margin: 0;\n      height: 30px;\n      width: 30px;\n      float: right;\n      padding: 0;\n    }\n\n    .panel-body {\n      width: 100%;\n      height: 50px;\n      padding: 4px;\n    }\n\n    .formButton {\n      width: calc(50% - 10px);\n    }\n  "],
-        providers: [__WEBPACK_IMPORTED_MODULE_2__ng_bootstrap_ng_bootstrap__["d" /* NgbTabsetConfig */]] // add NgbTabsetConfig to the component providers
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__data_entry_service__["a" /* DataEntryService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__data_entry_service__["a" /* DataEntryService */]) === "function" && _b || Object])
-], DataEntryFormComponent);
-
-var _a, _b;
-//# sourceMappingURL=data-entry.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/data-entry/data-entry.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataEntryService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_forkJoin__ = __webpack_require__("../../../../rxjs/add/observable/forkJoin.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_forkJoin__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_myvariantinfo_search_service__ = __webpack_require__("../../../../../src/app/data-entry/providers/myvariantinfo-search.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_mygeneinfo_search_service__ = __webpack_require__("../../../../../src/app/data-entry/providers/mygeneinfo-search.service.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-// RxJS stuff.
-
-
-
-// Databases.
-
-
-var DataEntryService = (function () {
-    function DataEntryService(myvariantinfoSearchService, mygeneinfoSearchService) {
-        var _this = this;
-        this.myvariantinfoSearchService = myvariantinfoSearchService;
-        this.mygeneinfoSearchService = mygeneinfoSearchService;
-        // The databases initialized in the constructor.
-        this.variantDatabases = [this.myvariantinfoSearchService];
-        this.geneDatabases = [this.mygeneinfoSearchService];
-        // Merge all variant streams into a single one.
-        this.search = function (term) {
-            // map them into a array of observables and forkJoin
-            return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].forkJoin(_this.variantDatabases
-                .map(function (searchService) { return searchService.searchByString(term); })).map(function (variantArrays) {
-                var mergedVariants = [];
-                var addVariant = function (variant) {
-                    for (var arrayIndex = 0; arrayIndex < mergedVariants.length; arrayIndex++) {
-                        // Make sure that we are sorting alphabetically.
-                        if (mergedVariants[arrayIndex].mergeable(variant)) {
-                            mergedVariants[arrayIndex].merge(variant);
-                            console.log("Merged " + variant.optionName());
-                            return;
-                        }
-                        else if (mergedVariants[arrayIndex].optionName() > variant.optionName()) {
-                            mergedVariants.splice(arrayIndex, 0, variant);
-                            return;
-                        }
-                    }
-                    // It must"ve not been pushed if we reach here.
-                    mergedVariants.push(variant);
-                };
-                // Variant merging/placing loop.
-                for (var _i = 0, variantArrays_1 = variantArrays; _i < variantArrays_1.length; _i++) {
-                    var variantArray = variantArrays_1[_i];
-                    for (var _a = 0, variantArray_1 = variantArray; _a < variantArray_1.length; _a++) {
-                        var variant = variantArray_1[_a];
-                        addVariant(variant);
-                    }
-                }
-                console.log("Got in response to " + term, mergedVariants);
-                return mergedVariants;
-            });
-        };
-        // Merge all variant streams into a single one.
-        this.getByReference = function (reference) {
-            // map them into a array of observables and forkJoin
-            console.log("Asked to get variant from ", reference);
-            return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].forkJoin(_this.variantDatabases
-                .map(function (searchService) { return searchService.getByReference(reference); })).map(function (variantArray) {
-                var mergedVariant = variantArray[0];
-                for (var i = 1; i < variantArray.length; i++) {
-                    if (mergedVariant.mergeable(variantArray[i])) {
-                        mergedVariant.merge(variantArray[i]);
-                    }
-                }
-                console.log("Got ", mergedVariant);
-                return mergedVariant;
-            }).mergeMap(function (variant) {
-                return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].forkJoin(_this.geneDatabases
-                    .map(function (geneService) { return geneService.updateVariantOrigin(variant); })).map(function (updatedVariants) {
-                    var mergedVariant = updatedVariants[0];
-                    for (var i = 1; i < updatedVariants.length; i++) {
-                        if (mergedVariant.mergeable(updatedVariants[i])) {
-                            mergedVariant.merge(updatedVariants[i]);
-                        }
-                    }
-                    console.log("Updated origin to ", mergedVariant);
-                    return mergedVariant;
-                });
-            });
-        };
     }
-    return DataEntryService;
-}());
-DataEntryService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__providers_myvariantinfo_search_service__["a" /* MyVariantInfoSearchService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__providers_myvariantinfo_search_service__["a" /* MyVariantInfoSearchService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__providers_mygeneinfo_search_service__["a" /* MyGeneInfoSearchService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__providers_mygeneinfo_search_service__["a" /* MyGeneInfoSearchService */]) === "function" && _b || Object])
-], DataEntryService);
-
-var _a, _b;
-//# sourceMappingURL=data-entry.service.js.map
+    if (property1) {
+        if (property2) {
+            if (property1 !== property1) {
+                console.log("Conflicting values between " + property1 + " and " + property2);
+            }
+            return property1;
+        }
+        else {
+            return property1;
+        }
+    }
+    else {
+        return property2;
+    }
+};
+//# sourceMappingURL=data-merging.js.map
 
 /***/ }),
 
-/***/ "../../../../../src/app/data-entry/filterable-search/filterable-search.component.ts":
+/***/ "../../../../../src/app/entry-and-visualization/filterable-search/filterable-search.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -530,7 +366,6 @@ var FilterableSearchComponent = (function () {
             return this._currentlySelected;
         },
         set: function (v) {
-            console.log("Change value requested to filterable search");
             if (v !== this.currentlySelected) {
                 this._currentlySelected = v;
                 this.onChangeCallback(v);
@@ -658,8 +493,8 @@ __decorate([
 FilterableSearchComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: "filterable-search",
-        template: "\n    <div #PopupToggle class=\"filterToggle\" (click)=\"toggleMenu(true)\" [style.border-bottom]=\"menuCurrentlyOpen ? '0' : '1px solid #dadada'\">\n      <img src=\"/assets/dropdown.svg\"/>\n      \n      <!-- Display selected option before click -->\n      <p *ngIf=\"currentlySelected !== null\" [hidden]=\"menuCurrentlyOpen\" style=\"font-style: normal; font-weight: bold;\">{{currentlySelected.optionName()}}</p>\n      <p *ngIf=\"currentlySelected === null\" [hidden]=\"menuCurrentlyOpen\" style=\"font-style: italic; font-weight: normal;\">{{placeholderString}}</p>\n      \n      <!-- Switch from p to input on click -->\n      <input autocomplete=\"off\" #SearchBox [hidden]=\"!menuCurrentlyOpen\" (keyup)=\"search(SearchBox.value)\" placeholder=\"Search\" class=\"filterInput form-control\"/>\n    </div>\n\n    <!-- Suggestions for potential selections -->\n    <div #PopupPanel class=\"filterPanel\" [hidden]=\"!menuCurrentlyOpen\" [style.width.px]=\"desiredPopupWidth\"> <!--  [style.height.px]=\"(options | async)?.length * 40 < 95 ? (options | async)?.length * 40 : 95\" -->\n      <table class=\"table table-hover\">\n        <tr *ngFor=\"let option of options | async\">\n          <td (click)=\"onSelection(option)\">{{option.optionName()}}</td>\n        </tr>\n      </table>\n    </div>\n  ",
-        styles: ["\n    .filterToggle {\n      width: 100%;\n      height: 38px;\n\n      margin: 0;\n\n      font-size: 18px;\n      cursor: pointer;\n\n      border: 1px solid #dadada;\n    }\n\n    .filterToggle:hover {\n      background-color: #efefef;\n    }\n\n    .filterToggle p {\n      float: left;\n      width: calc(100% - 43px);\n      margin: 5px 5px 5px 10px;\n    }\n\n    .filterToggle img {\n      float: right;\n      width: 20px;\n      height: 20px;\n      margin: 4px;\n    }\n\n    .filterToggle input {\n      width: calc(100% - 28px);\n      height: 36px;\n      margin: 0;\n    }\n\n    .filterPanel {\n      display: block;\n      position: absolute;\n      z-index: 1000;\n\n      padding: 5px;\n      background-color: white;\n\n      border: 1px solid #dadada;\n      border-top: 0;\n      \n      height: 95px;\n\n      overflow: scroll;\n    }\n\n    .filterInput {\n      width: 100%;\n    }\n  "],
+        template: "\n    <div #PopupToggle class=\"filterToggle\" (click)=\"toggleMenu(true)\" [style.border-bottom]=\"menuCurrentlyOpen ? '0' : '1px solid #dadada'\">\n      <img src=\"/assets/dropdown.svg\"/>\n      \n      <!-- Display selected option before click -->\n      <p *ngIf=\"currentlySelected !== undefined && currentlySelected !== null\" [hidden]=\"menuCurrentlyOpen\" style=\"font-style: normal; font-weight: bold;\">{{currentlySelected.optionName()}}</p>\n      <p *ngIf=\"currentlySelected === undefined || currentlySelected === null\" [hidden]=\"menuCurrentlyOpen\" style=\"font-style: italic; font-weight: normal;\">{{placeholderString}}</p>\n      \n      <!-- Switch from p to input on click -->\n      <input autocomplete=\"off\" #SearchBox [hidden]=\"!menuCurrentlyOpen\" (keyup)=\"search(SearchBox.value)\" placeholder=\"Search\" class=\"filterInput form-control\"/>\n    </div>\n\n    <!-- Suggestions for potential selections -->\n    <div #PopupPanel class=\"filterPanel\" [hidden]=\"!menuCurrentlyOpen\" [style.width.px]=\"desiredPopupWidth\"> <!--  [style.height.px]=\"(options | async)?.length * 40 < 95 ? (options | async)?.length * 40 : 95\" -->\n      <table class=\"table table-hover\">\n        <tr *ngFor=\"let option of options | async\">\n          <td (click)=\"onSelection(option)\">{{option.optionName()}}</td>\n        </tr>\n      </table>\n    </div>\n  ",
+        styles: ["\n    .filterToggle {\n      width: 100%;\n      height: 38px;\n\n      margin: 0;\n\n      font-size: 18px;\n      cursor: pointer;\n\n      border: 1px solid #dadada;\n      overflow: hidden;\n    }\n\n    .filterToggle:hover {\n      background-color: #efefef;\n    }\n\n    .filterToggle p {\n      float: left;\n      width: calc(100% - 43px);\n      margin: 5px 5px 5px 10px;\n    }\n\n    .filterToggle img {\n      float: right;\n      width: 20px;\n      height: 20px;\n      margin-top: 9px;\n      margin-right: 5px;\n    }\n\n    .filterToggle input {\n      width: calc(100% - 28px);\n      height: 36px;\n      margin: 0;\n    }\n\n    .filterPanel {\n      display: block;\n      position: absolute;\n      z-index: 1000;\n\n      padding: 5px;\n      background-color: white;\n\n      border: 1px solid #dadada;\n      border-top: 0;\n      \n      height: 95px;\n\n      overflow: scroll;\n    }\n\n    .filterInput {\n      width: 100%;\n    }\n  "],
         providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */]) === "function" && _a || Object])
@@ -670,17 +505,17 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/data-entry/providers/mygeneinfo-search.service.ts":
+/***/ "../../../../../src/app/entry-and-visualization/genomic-data-providers/mygeneinfo-search.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyGeneInfoSearchService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__global_genomic_data__ = __webpack_require__("../../../../../src/app/global/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/data-entry/providers/utilities/json-navigator.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -690,6 +525,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/**
+ * MyVariant.info compiles variant database information from across the web and provides in an easy-to-query
+ * online API.
+ */
 
 
 
@@ -740,7 +579,7 @@ var MyGeneInfoSearchService = (function () {
                 if (responseJSON.pathway && responseJSON.pathway.wikipathways) {
                     for (var _i = 0, _a = responseJSON.pathway.wikipathways; _i < _a.length; _i++) {
                         var wikipathway = _a[_i];
-                        variant.origin.pathways.push(new __WEBPACK_IMPORTED_MODULE_1__global_genomic_data__["d" /* Pathway */](wikipathway.id, wikipathway.name));
+                        variant.origin.pathways.push(new __WEBPACK_IMPORTED_MODULE_1__genomic_data__["d" /* Pathway */](wikipathway.id, wikipathway.name));
                     }
                 }
                 return variant;
@@ -759,22 +598,22 @@ var _a, _b;
 
 /***/ }),
 
-/***/ "../../../../../src/app/data-entry/providers/myvariantinfo-search.service.ts":
+/***/ "../../../../../src/app/entry-and-visualization/genomic-data-providers/myvariantinfo-search.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyVariantInfoSearchService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__global_genomic_data__ = __webpack_require__("../../../../../src/app/global/genomic-data.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__visualize_results_drugs_drug__ = __webpack_require__("../../../../../src/app/visualize-results/drugs/drug.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__variant_visualization_drugs_drug__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_empty__ = __webpack_require__("../../../../rxjs/add/observable/empty.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_empty___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_empty__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/data-entry/providers/utilities/json-navigator.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -784,6 +623,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/**
+ * MyVariant.info compiles variant database information from across the web and provides in an easy-to-query
+ * online API.
+ */
 
 
 
@@ -1054,10 +897,9 @@ var MyVariantInfoSearchService = (function () {
                             return someString.indexOf(" ") >= 0 ? someString.substring(0, someString.indexOf(" ")) : someString;
                         };
                         // Gene construction.
-                        var variantGene = new __WEBPACK_IMPORTED_MODULE_1__global_genomic_data__["c" /* GeneReference */](ensureValidString(_this.jsonNavigator.mergePathsData(hit, MY_VARIANT_LOCATIONS.GeneHUGO, false)[0]));
-                        variantGene.entrezID = Number(_this.jsonNavigator.mergePathsData(hit, MY_VARIANT_LOCATIONS.EntrezID, false)[0]);
+                        var variantGene = new __WEBPACK_IMPORTED_MODULE_1__genomic_data__["c" /* GeneReference */](ensureValidString(_this.jsonNavigator.mergePathsData(hit, MY_VARIANT_LOCATIONS.GeneHUGO, false)[0]), Number(_this.jsonNavigator.mergePathsData(hit, MY_VARIANT_LOCATIONS.EntrezID, false)[0]));
                         // Variant construction
-                        variantResults.push(new __WEBPACK_IMPORTED_MODULE_1__global_genomic_data__["f" /* VariantReference */](variantGene, ensureValidString(_this.jsonNavigator.mergePathsData(hit, MY_VARIANT_LOCATIONS.VariantName, false)[0]), hit._id));
+                        variantResults.push(new __WEBPACK_IMPORTED_MODULE_1__genomic_data__["f" /* VariantReference */](variantGene, ensureValidString(_this.jsonNavigator.mergePathsData(hit, MY_VARIANT_LOCATIONS.VariantName, false)[0]), hit._id));
                     }
                     return variantResults;
                 });
@@ -1123,7 +965,7 @@ var MyVariantInfoSearchService = (function () {
                     return someString.indexOf(" ") >= 0 ? someString.substring(0, someString.indexOf(" ")) : someString;
                 };
                 // Gene construction.
-                var newVariant = __WEBPACK_IMPORTED_MODULE_1__global_genomic_data__["e" /* Variant */].fromReference(reference);
+                var newVariant = __WEBPACK_IMPORTED_MODULE_1__genomic_data__["e" /* Variant */].fromReference(reference);
                 newVariant.description = _this.jsonNavigator.mergePathsData(hit, MY_VARIANT_LOCATIONS.Description, false)[0];
                 newVariant.score = hit._score;
                 newVariant.somatic = _this.jsonNavigator.mergePathsData(hit, MY_VARIANT_LOCATIONS.Somatic, false)[0].toLowerCase().indexOf("somatic") >= 0;
@@ -1133,7 +975,7 @@ var MyVariantInfoSearchService = (function () {
                 newVariant.drugs = [];
                 for (var _i = 0, _a = _this.jsonNavigator.mergePathsData(hit, MY_VARIANT_LOCATIONS.Drug, true); _i < _a.length; _i++) {
                     var drugName = _a[_i];
-                    newVariant.drugs.push(new __WEBPACK_IMPORTED_MODULE_2__visualize_results_drugs_drug__["b" /* DrugReference */](drugName));
+                    newVariant.drugs.push(new __WEBPACK_IMPORTED_MODULE_2__variant_visualization_drugs_drug__["b" /* DrugReference */](drugName));
                 }
                 newVariant.types = _this.jsonNavigator.mergePathsData(hit, MY_VARIANT_LOCATIONS.VariantTypes, true);
                 newVariant.diseases = _this.jsonNavigator.mergePathsData(hit, MY_VARIANT_LOCATIONS.Disease, true);
@@ -1150,7 +992,7 @@ var MyVariantInfoSearchService = (function () {
                 };
                 for (var _b = 0, _c = _this.jsonNavigator.mergePathsData(hit, MY_VARIANT_LOCATIONS.ClinicalSignificance, true); _b < _c.length; _b++) {
                     var classification = _c[_b];
-                    addClassification(new __WEBPACK_IMPORTED_MODULE_1__global_genomic_data__["a" /* Classification */](classification.clinical_significance, "ClinVar RCV Accession " + classification.accession));
+                    addClassification(new __WEBPACK_IMPORTED_MODULE_1__genomic_data__["a" /* Classification */](classification.clinical_significance, "ClinVar RCV Accession " + classification.accession));
                 }
                 return newVariant;
             });
@@ -1221,7 +1063,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ "../../../../../src/app/data-entry/providers/utilities/json-navigator.service.ts":
+/***/ "../../../../../src/app/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1372,53 +1214,7 @@ JSONNavigatorService = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/global/data-merging.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MergeProperties; });
-var MergeProperties = function (property1, property2) {
-    if (typeof property1 !== typeof property2) {
-        console.log(property1 + " and " + property2 + " have a type mismatch, since " + typeof property1 + " is not " + typeof property2);
-        return property1;
-    }
-    // Merge arrays.
-    if (property1 instanceof Array) {
-        var addToArray = function (toAdd) {
-            for (var _i = 0, mergedArray_1 = mergedArray_2; _i < mergedArray_1.length; _i++) {
-                var value = mergedArray_1[_i];
-                if (value === toAdd) {
-                    return;
-                }
-            }
-            mergedArray_2.push(toAdd);
-        };
-        var mergedArray_2 = Array.from(property1);
-        for (var _i = 0, property2_1 = property2; _i < property2_1.length; _i++) {
-            var value = property2_1[_i];
-            addToArray(value);
-        }
-    }
-    if (property1) {
-        if (property2) {
-            if (property1 !== property1) {
-                console.log("Conflicting values between " + property1 + " and " + property2);
-            }
-            return property1;
-        }
-        else {
-            return property1;
-        }
-    }
-    else {
-        return property2;
-    }
-};
-//# sourceMappingURL=data-merging.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/global/genomic-data.ts":
+/***/ "../../../../../src/app/entry-and-visualization/genomic-data.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1428,14 +1224,14 @@ var MergeProperties = function (property1, property2) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return VariantReference; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Classification; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Variant; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_merging__ = __webpack_require__("../../../../../src/app/global/data-merging.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_merging__ = __webpack_require__("../../../../../src/app/entry-and-visualization/data-merging.ts");
 
 /**
  * The gene reference class includes only the base properties for a given gene; those which are required for merging
  * and such.
  */
 var GeneReference = (function () {
-    function GeneReference(_hugoSymbol) {
+    function GeneReference(_hugoSymbol, _entrezID) {
         var _this = this;
         // Merges another gene into this gene (overwriting properties if the property of one is undefined).
         this.mergeable = function (other) {
@@ -1448,6 +1244,7 @@ var GeneReference = (function () {
             _this.entrezID = Object(__WEBPACK_IMPORTED_MODULE_0__data_merging__["a" /* MergeProperties */])(_this.entrezID, other.entrezID);
         };
         this.hugoSymbol = _hugoSymbol;
+        this.entrezID = _entrezID;
     }
     return GeneReference;
 }());
@@ -1601,14 +1398,15 @@ var Variant = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/global/info-header.component.ts":
+/***/ "../../../../../src/app/entry-and-visualization/variant-entry-and-visualization.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InfoHeaderComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VariantEntryAndVisualizationComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__smart_initialization_smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__variant_selector_variant_selector_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_animations__ = __webpack_require__("../../../animations/@angular/animations.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1618,221 +1416,488 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/**
- * This component contains the HTML involved in the construction of the header for the application,
- * and is available in every route of the app (since it contains important data for the user to view).
- * The three components of this header, from left to right, should be the SMART logo, the patient
- * data, and the user name.
- */
 
 
 
-var InfoHeaderComponent = (function () {
-    function InfoHeaderComponent(http) {
+
+var VariantWrapper = (function () {
+    function VariantWrapper(_index, _variant) {
         var _this = this;
-        this.http = http;
-        this.patientData = "";
-        this.practitionerData = "";
-        this.setHeaderData = function (smartClient) {
+        this.toggleDrawer = function () {
+            _this.drawerState = _this.drawerState === "closed" ? "open" : "closed";
+        };
+        this.index = _index;
+        this.variant = _variant;
+        this.drawerState = "closed";
+    }
+    return VariantWrapper;
+}());
+var VariantEntryAndVisualizationComponent = (function () {
+    function VariantEntryAndVisualizationComponent(selectorService) {
+        this.selectorService = selectorService;
+        this.variants = [];
+    }
+    VariantEntryAndVisualizationComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.addRow();
+        __WEBPACK_IMPORTED_MODULE_1__smart_initialization_smart_reference_service__["a" /* SMARTClient */].subscribe(function (smartClient) {
             if (smartClient === null) {
                 return;
             }
-            console.log("SMART Client", smartClient);
-            smartClient.patient.read().then(function (p) {
-                console.log("SMART Patient", p);
-                _this.patientData = p.name[0].given[0] + " " + p.name[0].family;
+            console.log("Should now update");
+            smartClient.patient.api.search({ type: "Observation", query: { "category": "genomic-variant" }, count: 10 })
+                .then(function (results) {
+                console.log("Successfully got variants!", results);
+                if (!results.data.entry) {
+                    return;
+                }
+                if (results.data.entry.length > 0) {
+                    _this.removeRow(0); // Start at the first index if we find other variants.
+                }
+                // For every variant.
+                var resultIndex = 0;
+                var _loop_1 = function (result) {
+                    console.log("Will now add " + result.resource.code.text);
+                    _this.selectorService.search(result.resource.code.text).subscribe(function (variants) {
+                        if (variants.length === 0) {
+                            console.log("NOT GOOD: Couldn't find any search results for " + result.resource.code.text);
+                            return;
+                        }
+                        // Add the first search result to the list (the one with the correct HGVS ID).
+                        console.log("Adding", variants[0]);
+                        _this.selectorService.getByReference(variants[0])
+                            .subscribe(function (variant) {
+                            var newWrapper = new VariantWrapper(resultIndex, variant);
+                            if (_this.variants.length === resultIndex) {
+                                _this.variants.push(newWrapper);
+                            }
+                            else {
+                                _this.variants[resultIndex] = newWrapper;
+                            }
+                            resultIndex++;
+                        });
+                    });
+                };
+                for (var _i = 0, _a = results.data.entry; _i < _a.length; _i++) {
+                    var result = _a[_i];
+                    _loop_1(result);
+                }
+            })
+                .fail(function (err) {
+                console.log("Couldn't query genomic variants error!" + err);
             });
-            smartClient.user.read().then(function (u) {
-                console.log("SMART User", u);
-                _this.practitionerData = u.name[0].given[0] + " " + u.name[0].family;
+        });
+    };
+    // Row management.
+    VariantEntryAndVisualizationComponent.prototype.addRow = function () {
+        this.variants.push(new VariantWrapper(this.variants.length, null));
+    };
+    VariantEntryAndVisualizationComponent.prototype.addRowMaybe = function (indexInQuestion) {
+        if (this.variants.length === indexInQuestion + 1) {
+            this.addRow();
+        }
+    };
+    VariantEntryAndVisualizationComponent.prototype.removeRow = function (index) {
+        var variantToRemove = this.variants[index].variant;
+        this.variants.splice(index, 1);
+        for (var i = 0; i < this.variants.length; i++) {
+            this.variants[i].index = i;
+        }
+        this.removeEHRVariant(variantToRemove);
+    };
+    // Remove and save EHR variants.
+    VariantEntryAndVisualizationComponent.prototype.saveEHRVariant = function (variant) {
+        __WEBPACK_IMPORTED_MODULE_1__smart_initialization_smart_reference_service__["a" /* SMARTClient */].subscribe(function (smartClient) {
+            if (smartClient === null) {
+                return;
+            }
+            smartClient.patient.read().then(function (p) {
+                var dataToTransmit = {
+                    "resource": {
+                        "resourceType": "Observation",
+                        "id": "SMART-Observation-" + p.identifier[0].value + "-variation-" + variant.hgvsID.replace(/[.,\/#!$%\^&\*;:{}<>=\-_`~()]/g, ""),
+                        "meta": {
+                            "versionId": "1" // ,
+                            // "lastUpdated": Date.now().toString()
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Variation at " + variant.getLocation() + "</div>"
+                        },
+                        "status": "final",
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsGene",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://www.genenames.org",
+                                            "code": "12014",
+                                            "display": "TPMT"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "category": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/observation-category",
+                                        "code": "genomic-variant",
+                                        "display": "Genomic Variant"
+                                    }
+                                ],
+                                "text": "Genomic Variant"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://www.hgvs.org",
+                                    "code": variant.hgvsID,
+                                    "display": variant.hgvsID
+                                }
+                            ],
+                            "text": variant.hgvsID
+                        },
+                        "subject": {
+                            "reference": "Patient/" + p.id
+                        },
+                    }
+                };
+                console.log("Adding variant with", dataToTransmit);
+                smartClient.api.update(dataToTransmit)
+                    .then(function (result) {
+                    console.log("Added EHR variant successfully!", result);
+                })
+                    .fail(function (err) {
+                    console.log("Failed to add EHR variant", err);
+                });
+            });
+        });
+    };
+    VariantEntryAndVisualizationComponent.prototype.removeEHRVariant = function (variant) {
+        __WEBPACK_IMPORTED_MODULE_1__smart_initialization_smart_reference_service__["a" /* SMARTClient */].subscribe(function (smartClient) {
+            if (smartClient === null) {
+                return;
+            }
+            smartClient.patient.read().then(function (p) {
+                var dataToTransmit = {
+                    "resource": {
+                        "resourceType": "Observation",
+                        "id": "SMART-Observation-" + p.identifier[0].value + "-variation-" + variant.hgvsID.replace(/[.,\/#!$%\^&\*;:{}<>=\-_`~()]/g, ""),
+                        "meta": {
+                            "versionId": "1" // ,
+                            // "lastUpdated": Date.now().toString()
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Variation at " + variant.getLocation() + "</div>"
+                        },
+                        "status": "final",
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsGene",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://www.genenames.org",
+                                            "code": "12014",
+                                            "display": "TPMT"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "category": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/observation-category",
+                                        "code": "genomic-variant",
+                                        "display": "Genomic Variant"
+                                    }
+                                ],
+                                "text": "Genomic Variant"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://www.hgvs.org",
+                                    "code": variant.hgvsID,
+                                    "display": variant.hgvsID
+                                }
+                            ],
+                            "text": variant.hgvsID
+                        },
+                        "subject": {
+                            "reference": "Patient/" + p.id
+                        },
+                    }
+                };
+                console.log("Removing variant with", dataToTransmit);
+                smartClient.api.delete(dataToTransmit)
+                    .then(function (result) {
+                    console.log("Removed EHR variant successfully!", result);
+                })
+                    .fail(function (err) {
+                    console.log("Failed to remove EHR variant", err);
+                });
+            });
+        });
+    };
+    return VariantEntryAndVisualizationComponent;
+}());
+VariantEntryAndVisualizationComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: "variant-entry-and-visualization",
+        template: "\n    <div id=\"variantVisualizations\">\n      <div class=\"variantWrapper\" *ngFor=\"let variant of variants; let i = index\">\n        <div class=\"variantSelector\">\n          <div class=\"variantSelectorSpan\">\n            <variant-selector [ngModel]=\"variant.variant\" (ngModelChange)=\"variant.variant = $event; addRowMaybe(i); saveEHRVariant(variant.variant);\"></variant-selector>\n          </div>\n          <button class=\"removeRowButton btn btn-danger\" (click)=\"removeRow(i)\">X</button>\n        </div>\n        <div>\n          <div class=\"visualizationContent\" [@drawerAnimation]=\"variant.drawerState\">\n            <variant-visualization [(ngModel)]=\"variant.variant\"></variant-visualization>\n          </div>\n          <div *ngIf=\"variant.variant !== undefined && variant.variant !== null\" class=\"informationToggle\" (click)=\"variant.toggleDrawer()\">\n            <img src=\"/assets/dropdown.svg\">\n          </div>\n        </div>\n      </div>\n    </div>\n  ",
+        styles: ["\n    #variantVisualizations {\n      padding: 15px;\n    }\n\n    .variantWrapper {\n      margin-bottom: 5px;\n    }\n\n    .variantSelector {\n      height: 38px;\n    }\n\n    .variantSelector > * {\n      float: left;\n      height: 100%;\n    }\n\n    .variantSelectorSpan {\n      width: calc(100% - 38px);\n    }\n\n    .removeRowButton {\n      width: 38px;\n      font-size: 20px;\n      color: white;\n      padding: 0;\n    }\n\n    .informationToggle {\n      width: 100%;\n      background-color: #e2e2e2;\n      border-bottom-left-radius: 10px;\n      border-bottom-right-radius: 10px;\n      text-align: center;\n      height: 30px;\n    }\n\n    .visualizationContent {\n      overflow: scroll;\n    }\n\n    .informationToggle:hover {\n      background-color: #b2b2b2;\n    }\n\n    .informationToggle img {\n      height: 10px;\n      width: 10px;\n      margin: 10px;\n    }\n  "],
+        animations: [
+            Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["j" /* trigger */])("drawerAnimation", [
+                Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["g" /* state */])("closed", Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["h" /* style */])({
+                    height: "0"
+                })),
+                Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["g" /* state */])("open", Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["h" /* style */])({
+                    height: "700px"
+                })),
+                Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["i" /* transition */])("closed => open", Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["e" /* animate */])("400ms ease-in-out")),
+                Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["i" /* transition */])("open => closed", Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["e" /* animate */])("400ms ease-in-out"))
+            ])
+        ]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__variant_selector_variant_selector_service__["a" /* VariantSelectorService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__variant_selector_variant_selector_service__["a" /* VariantSelectorService */]) === "function" && _a || Object])
+], VariantEntryAndVisualizationComponent);
+
+var _a;
+//# sourceMappingURL=variant-entry-and-visualization.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export SELECTOR_CONTROL_VALUE_ACCESSOR */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VariantSelectorComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__variant_selector_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/**
+ * Data entry is an essential part of the final application that will be built, and it must be built in
+ * a way which permits dynamic addition and removal of form elements.  Since Angular makes modularity
+ * insanely easy and you can build custom input selectors, this shouldn"t require too much code.
+ */
+
+
+
+
+var SELECTOR_CONTROL_VALUE_ACCESSOR = {
+    provide: __WEBPACK_IMPORTED_MODULE_3__angular_forms__["c" /* NG_VALUE_ACCESSOR */],
+    useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_24" /* forwardRef */])(function () { return VariantSelectorComponent; }),
+    multi: true
+};
+var VariantSelectorComponent = (function () {
+    function VariantSelectorComponent(selectorService) {
+        this.selectorService = selectorService;
+        // Placeholders for the callbacks which are later providesd by the Control Value Accessor
+        this.onTouchedCallback = function () { };
+        this.onChangeCallback = function () { };
+    }
+    Object.defineProperty(VariantSelectorComponent.prototype, "currentlySelected", {
+        get: function () {
+            return this._currentlySelected;
+        },
+        set: function (v) {
+            if (v !== this.currentlySelected) {
+                this._currentlySelected = v;
+                this.onChangeCallback(v);
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    // From ControlValueAccessor interface
+    VariantSelectorComponent.prototype.writeValue = function (value) {
+        if (value !== this.currentlySelected) {
+            this.currentlySelected = value;
+            if (value && value !== null) {
+                this.currentReference = new __WEBPACK_IMPORTED_MODULE_1__genomic_data__["f" /* VariantReference */](new __WEBPACK_IMPORTED_MODULE_1__genomic_data__["c" /* GeneReference */](this.currentlySelected.origin.hugoSymbol, this.currentlySelected.origin.entrezID), this.currentlySelected.variantName, this.currentlySelected.hgvsID);
+            }
+        }
+    };
+    VariantSelectorComponent.prototype.registerOnTouched = function (fn) {
+        this.onTouchedCallback = fn;
+    };
+    VariantSelectorComponent.prototype.registerOnChange = function (fn) {
+        this.onChangeCallback = fn;
+    };
+    // Update the EHR item (if possible) and change the variant.
+    VariantSelectorComponent.prototype.onNewReferenceSelection = function (reference) {
+        var _this = this;
+        if (!reference) {
+            return;
+        }
+        console.log("Would get by reference ", reference);
+        this.currentReference = reference;
+        this.selectorService.getByReference(reference)
+            .subscribe(function (resultingVariant) { return _this.currentlySelected = resultingVariant; });
+    };
+    return VariantSelectorComponent;
+}());
+VariantSelectorComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: "variant-selector",
+        template: "\n    <!-- Gene Variation List -->\n    <div>\n      <filterable-search [searchService]=\"selectorService\" [placeholderString]=\"'Search Variants'\" [ngModel]=\"currentReference\" (ngModelChange)=\"onNewReferenceSelection($event)\"></filterable-search>\n    </div>\n  ",
+        styles: ["\n    div {\n      height: 100%;\n    }\n  "],
+        providers: [SELECTOR_CONTROL_VALUE_ACCESSOR]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__variant_selector_service__["a" /* VariantSelectorService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__variant_selector_service__["a" /* VariantSelectorService */]) === "function" && _a || Object])
+], VariantSelectorComponent);
+
+var _a;
+//# sourceMappingURL=variant-selector.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VariantSelectorService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data_providers_myvariantinfo_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/myvariantinfo-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__genomic_data_providers_mygeneinfo_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/mygeneinfo-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_forkJoin__ = __webpack_require__("../../../../rxjs/add/observable/forkJoin.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_forkJoin__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+// Databases.
+
+
+// RxJS stuff.
+
+
+
+var VariantSelectorService = (function () {
+    function VariantSelectorService(myvariantinfoSearchService, mygeneinfoSearchService) {
+        var _this = this;
+        this.myvariantinfoSearchService = myvariantinfoSearchService;
+        this.mygeneinfoSearchService = mygeneinfoSearchService;
+        // The databases initialized in the constructor.
+        this.variantDatabases = [this.myvariantinfoSearchService];
+        this.geneDatabases = [this.mygeneinfoSearchService];
+        // Merge all variant streams into a single one.
+        this.search = function (term) {
+            console.log("Search " + term);
+            if (term === "") {
+                return null;
+            }
+            // map them into a array of observables and forkJoin
+            return __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"].forkJoin(_this.variantDatabases
+                .map(function (searchService) { return searchService.searchByString(term); })).map(function (variantArrays) {
+                var mergedVariants = [];
+                var addVariant = function (variant) {
+                    for (var arrayIndex = 0; arrayIndex < mergedVariants.length; arrayIndex++) {
+                        // Make sure that we are sorting alphabetically.
+                        if (mergedVariants[arrayIndex].mergeable(variant)) {
+                            mergedVariants[arrayIndex].merge(variant);
+                            console.log("Merged " + variant.optionName());
+                            return;
+                        }
+                        else if (mergedVariants[arrayIndex].optionName() > variant.optionName()) {
+                            mergedVariants.splice(arrayIndex, 0, variant);
+                            return;
+                        }
+                    }
+                    // It must"ve not been pushed if we reach here.
+                    mergedVariants.push(variant);
+                };
+                // Variant merging/placing loop.
+                for (var _i = 0, variantArrays_1 = variantArrays; _i < variantArrays_1.length; _i++) {
+                    var variantArray = variantArrays_1[_i];
+                    for (var _a = 0, variantArray_1 = variantArray; _a < variantArray_1.length; _a++) {
+                        var variant = variantArray_1[_a];
+                        addVariant(variant);
+                    }
+                }
+                console.log("Got in response to " + term, mergedVariants);
+                return mergedVariants;
+            });
+        };
+        // Merge all variant streams into a single one.
+        this.getByReference = function (reference) {
+            // map them into a array of observables and forkJoin
+            console.log("Asked to get variant from ", reference);
+            return __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"].forkJoin(_this.variantDatabases
+                .map(function (searchService) { return searchService.getByReference(reference); })).map(function (variantArray) {
+                var mergedVariant = variantArray[0];
+                for (var i = 1; i < variantArray.length; i++) {
+                    if (mergedVariant.mergeable(variantArray[i])) {
+                        mergedVariant.merge(variantArray[i]);
+                    }
+                }
+                console.log("Got ", mergedVariant);
+                return mergedVariant;
+            }).mergeMap(function (variant) {
+                return __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"].forkJoin(_this.geneDatabases
+                    .map(function (geneService) { return geneService.updateVariantOrigin(variant); })).map(function (updatedVariants) {
+                    var mergedVariant = updatedVariants[0];
+                    for (var i = 1; i < updatedVariants.length; i++) {
+                        if (mergedVariant.mergeable(updatedVariants[i])) {
+                            mergedVariant.merge(updatedVariants[i]);
+                        }
+                    }
+                    console.log("Updated origin to ", mergedVariant);
+                    return mergedVariant;
+                });
             });
         };
     }
-    InfoHeaderComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.patientData = "Undefined";
-        this.practitionerData = "Undefined";
-        // Once set, the function will be called.
-        __WEBPACK_IMPORTED_MODULE_1__smart_initialization_smart_reference_service__["a" /* SMARTClient */].subscribe(function (smart) { return _this.setHeaderData(smart); });
-    };
-    return InfoHeaderComponent;
+    return VariantSelectorService;
 }());
-InfoHeaderComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: "info-header",
-        template: "\n    <div class=\"root\">\n      <div style=\"float: left\">\n        <label for=\"patientHeader\">Patient Context:</label>\n        <p id=\"patientHeader\">{{patientData}}</p>\n      </div>\n      <div style=\"float: right\">\n        <label for=\"userHeader\">User Context:</label>\n        <p id=\"userHeader\">{{practitionerData}}</p>\n      </div>\n    </div>\n  ",
-        styles: ["\n    .root {\n      background-color: black;\n      height: 40px;\n    }\n\n    .root label, p {\n      color: white;\n      margin: 5px 7.5px;\n      font-size: 20px;\n      float: left;\n    }\n  "]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]) === "function" && _a || Object])
-], InfoHeaderComponent);
-
-var _a;
-//# sourceMappingURL=info-header.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/smart-initialization/smart-launch.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SMARTLaunchComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
-/**
- * Since the SMART on FHIR framework is not built to work with Angular2, this component controls the
- * redirects involved in authentication for fhir-client.js.
- */
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-// Modules required to access URL parameters.
-
-
-
-var SMARTLaunchComponent = (function () {
-    function SMARTLaunchComponent(router, activatedRoute) {
-        this.router = router;
-        this.activatedRoute = activatedRoute;
-        this.state = "Launching...";
-    }
-    SMARTLaunchComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        // subscribe to router event
-        this.activatedRoute.params.subscribe(function (params) {
-            if (params["iss"] !== null && params["launch"] !== null) {
-                __WEBPACK_IMPORTED_MODULE_2__smart_reference_service__["b" /* SMARTModule */].oauth2.authorize({
-                    // client_id: "1e7af332-b27a-4de2-8c51-728ae3ed25c2",
-                    client_id: "90453bbe-ba81-492b-b1bb-bcac626d5eef",
-                    scope: "launch patient/*.* openid profile",
-                    redirect_uri: "https://smart-co.github.io/token-reception"
-                });
-            }
-            else {
-                _this.state = "Required URL params were not provided! :(";
-                setTimeout(function () { _this.router.navigate(["/data-entry"]); }, 100); // Wait a second before redirecting.
-            }
-        });
-    };
-    return SMARTLaunchComponent;
-}());
-SMARTLaunchComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Component */])({
-        selector: "smart-launch",
-        template: "    \n    <p>{{state}}</p>\n  "
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object])
-], SMARTLaunchComponent);
+VariantSelectorService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__genomic_data_providers_myvariantinfo_search_service__["a" /* MyVariantInfoSearchService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__genomic_data_providers_myvariantinfo_search_service__["a" /* MyVariantInfoSearchService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__genomic_data_providers_mygeneinfo_search_service__["a" /* MyGeneInfoSearchService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__genomic_data_providers_mygeneinfo_search_service__["a" /* MyGeneInfoSearchService */]) === "function" && _b || Object])
+], VariantSelectorService);
 
 var _a, _b;
-//# sourceMappingURL=smart-launch.component.js.map
+//# sourceMappingURL=variant-selector.service.js.map
 
 /***/ }),
 
-/***/ "../../../../../src/app/smart-initialization/smart-reference.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SMARTModule; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SMARTClient; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return SMARTReferenceService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/BehaviorSubject.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__);
-/**
- * Since SMART is a JS library, this is a utility class used to make it easier to work with the JS library.
- * By declaring FHIR below, the library is referenced from .angular-cli.json, and functions can be used
- * directly from the library.  In order to get this to work like global variables, I found that the best way
- * would be to use an Observable, a backend framework of Angular known as RxJS.
- * https://stackoverflow.com/questions/36715918/how-to-define-global-variables-in-angular-2-in-a-way-that-i-
- * can-use-them-for-pro
- * https://stackoverflow.com/questions/34714462/updating-variable-changes-in-components-from-a-service-with-angular2
- */
-
-var SMARTModule = FHIR;
-// Make sure to use BehaviorSubject over Subject, since it provides the current value of the object on subscribe()
-var SMARTClient = new __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__["BehaviorSubject"](null);
-var SMARTReferenceService = (function () {
-    function SMARTReferenceService() {
-    }
-    SMARTReferenceService.prototype.ready = function () {
-        SMARTModule.oauth2.ready(function (smart) {
-            SMARTClient.next(smart);
-        });
-    };
-    return SMARTReferenceService;
-}());
-
-//# sourceMappingURL=smart-reference.service.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/smart-initialization/smart-token-reception.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SMARTTokenReceptionComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
-/**
- * After being directed here as per the redirect_uri in smart-launch, this route receives the token
- * data and then applies the token as necessary.
- */
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-// Modules required to access URL parameters.
-
-
-
-var SMARTTokenReceptionComponent = (function () {
-    function SMARTTokenReceptionComponent(smartReferenceService, router) {
-        this.smartReferenceService = smartReferenceService;
-        this.router = router;
-        this.state = "Receiving token...";
-    }
-    SMARTTokenReceptionComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        // Set up the client reference.
-        this.smartReferenceService.ready();
-        // Redirect to the disease selection.
-        setTimeout(function () { return _this.router.navigate(["/data-entry"]); }, 100);
-    };
-    return SMARTTokenReceptionComponent;
-}());
-SMARTTokenReceptionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Component */])({
-        selector: "smart-launch",
-        template: "\n    <p>{{state}}</p>\n  "
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__smart_reference_service__["c" /* SMARTReferenceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__smart_reference_service__["c" /* SMARTReferenceService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */]) === "function" && _b || Object])
-], SMARTTokenReceptionComponent);
-
-var _a, _b;
-//# sourceMappingURL=smart-token-reception.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/visualize-results/clinical-trials/clinical-trials.component.ts":
+/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClinicalTrialsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__clinical_trials_service__ = __webpack_require__("../../../../../src/app/visualize-results/clinical-trials/clinical-trials.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__global_genomic_data__ = __webpack_require__("../../../../../src/app/global/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__clinical_trials_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
 /**
  * The best way to learn is through the experiences of others, and accessing the databse of past clinical trials
  * often is the best way to glean such information.
@@ -1870,7 +1935,7 @@ var ClinicalTrialsComponent = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__global_genomic_data__["e" /* Variant */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__global_genomic_data__["e" /* Variant */]) === "function" && _a || Object)
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__genomic_data__["e" /* Variant */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__genomic_data__["e" /* Variant */]) === "function" && _a || Object)
 ], ClinicalTrialsComponent.prototype, "forVariant", void 0);
 ClinicalTrialsComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
@@ -1885,7 +1950,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ "../../../../../src/app/visualize-results/clinical-trials/clinical-trials.service.ts":
+/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1894,8 +1959,8 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__clinical_trials__ = __webpack_require__("../../../../../src/app/visualize-results/clinical-trials/clinical-trials.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__drugs_drug__ = __webpack_require__("../../../../../src/app/visualize-results/drugs/drug.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__clinical_trials__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__drugs_drug__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_mergeMap__ = __webpack_require__("../../../../rxjs/add/operator/mergeMap.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_mergeMap__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -2051,7 +2116,7 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/visualize-results/clinical-trials/clinical-trials.ts":
+/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2112,14 +2177,14 @@ var ClinicalTrial = (function (_super) {
 
 /***/ }),
 
-/***/ "../../../../../src/app/visualize-results/drugs/drug-details-modal.component.ts":
+/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug-details-modal.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DrugDetailsModalComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__drug__ = __webpack_require__("../../../../../src/app/visualize-results/drugs/drug.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__drugs_search_service__ = __webpack_require__("../../../../../src/app/visualize-results/drugs/drugs-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__drug__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__drugs_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drugs-search.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
 /**
  * A part of the result visualization component, which displays the drugs that will be effective against genes
@@ -2173,7 +2238,7 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ "../../../../../src/app/visualize-results/drugs/drug.ts":
+/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2181,7 +2246,7 @@ var _a, _b, _c;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return InteractionType; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return GeneInteraction; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Drug; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__global_data_merging__ = __webpack_require__("../../../../../src/app/global/data-merging.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_merging__ = __webpack_require__("../../../../../src/app/entry-and-visualization/data-merging.ts");
 /**
  * One of the primary things that clinicians will need to see are the drugs which are most likely to be effective
  * against different genes and variants.
@@ -2233,8 +2298,8 @@ var Drug = (function (_super) {
         };
         // Merges another gene into this gene (overwriting properties if the property of one is undefined).
         _this.merge = function (other) {
-            _this.description = Object(__WEBPACK_IMPORTED_MODULE_0__global_data_merging__["a" /* MergeProperties */])(_this.description, other.description);
-            _this.interactions = Object(__WEBPACK_IMPORTED_MODULE_0__global_data_merging__["a" /* MergeProperties */])(_this.interactions, other.interactions);
+            _this.description = Object(__WEBPACK_IMPORTED_MODULE_0__data_merging__["a" /* MergeProperties */])(_this.description, other.description);
+            _this.interactions = Object(__WEBPACK_IMPORTED_MODULE_0__data_merging__["a" /* MergeProperties */])(_this.interactions, other.interactions);
         };
         return _this;
     }
@@ -2245,15 +2310,15 @@ var Drug = (function (_super) {
 
 /***/ }),
 
-/***/ "../../../../../src/app/visualize-results/drugs/drugs-search.service.ts":
+/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drugs-search.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DrugsSearchService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__drug__ = __webpack_require__("../../../../../src/app/visualize-results/drugs/drug.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__drug__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global_genomic_data__ = __webpack_require__("../../../../../src/app/global/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
 /**
  * This service, like the data entry service, queries for and merges duplicate drugs for given genes.
  */
@@ -2306,7 +2371,7 @@ var DrugsSearchService = (function () {
                         return;
                     }
                 }
-                newDrug.interactions.push(new __WEBPACK_IMPORTED_MODULE_0__drug__["c" /* GeneInteraction */](new __WEBPACK_IMPORTED_MODULE_3__global_genomic_data__["b" /* Gene */](currentGeneTarget), [new __WEBPACK_IMPORTED_MODULE_0__drug__["d" /* InteractionType */](currentInteractionType, [currentSource])]));
+                newDrug.interactions.push(new __WEBPACK_IMPORTED_MODULE_0__drug__["c" /* GeneInteraction */](new __WEBPACK_IMPORTED_MODULE_3__genomic_data__["b" /* Gene */](currentGeneTarget), [new __WEBPACK_IMPORTED_MODULE_0__drug__["d" /* InteractionType */](currentInteractionType, [currentSource])]));
             };
             console.log("Interaction JSON is ", resultJSON.matchedTerms[0].interactions);
             for (var _i = 0, _a = resultJSON.matchedTerms[0].interactions; _i < _a.length; _i++) {
@@ -2328,13 +2393,13 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/visualize-results/gene/gene-visualization.component.ts":
+/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/gene/gene-information.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GeneVisualizationComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GeneInformationComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__global_genomic_data__ = __webpack_require__("../../../../../src/app/global/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
 /**
  * Visualizing the data for the gene: a tab on the result visualization.
  */
@@ -2349,36 +2414,108 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var GeneVisualizationComponent = (function () {
-    function GeneVisualizationComponent() {
+var GeneInformationComponent = (function () {
+    function GeneInformationComponent() {
     }
-    return GeneVisualizationComponent;
+    return GeneInformationComponent;
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__global_genomic_data__["b" /* Gene */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__global_genomic_data__["b" /* Gene */]) === "function" && _a || Object)
-], GeneVisualizationComponent.prototype, "gene", void 0);
-GeneVisualizationComponent = __decorate([
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__genomic_data__["b" /* Gene */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__genomic_data__["b" /* Gene */]) === "function" && _a || Object)
+], GeneInformationComponent.prototype, "gene", void 0);
+GeneInformationComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: "gene-visualization",
+        selector: "gene-information",
         template: "\n    <ng-container *ngIf=\"gene !== undefined\">\n      <br>\n      <h3 class=\"display-3\">\n        {{gene.hugoSymbol}}\n        <small class=\"text-muted\">{{gene.name}}</small>\n      </h3>\n\n      <div style=\"width: 70%; float: left;\">\n        <div class=\"card\">\n          <!--<img class=\"card-img-top\" src=\"...\" alt=\"Card image cap\">-->\n          <div class=\"card-block\">\n            <h4 class=\"card-title\">Gene Description</h4>\n            <p class=\"card-text\">{{gene.description}}</p>\n          </div>\n        </div>\n\n        <div class=\"card\">\n          <div class=\"card-block\" *ngIf=\"gene.pathways !== undefined && gene.pathways.length > 0\">\n            <h4 class=\"card-title\">Gene Pathways</h4>\n            <p class=\"card-text\">{{gene.pathwaysString()}}</p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"card\" style=\"width: 30%; float: left;\">\n        <!--<img class=\"card-img-top\" src=\"...\" alt=\"Card image cap\">-->\n        <div class=\"card-block\">\n          <h4 class=\"card-title\">Gene Details</h4>\n          <!-- A bit of info about the variant/gene -->\n          <table class=\"table table-bordered\">\n            <thead>\n            </thead>\n            <tbody>\n            <tr *ngIf=\"gene.entrezID !== undefined\">\n              <td>Entrez ID</td>\n              <td>{{gene.entrezID}}</td>\n            </tr>\n            <tr *ngIf=\"gene.type !== undefined\">\n              <td>Type</td>\n              <td>{{gene.type}}</td>\n            </tr>\n            <tr *ngIf=\"gene.aliases !== undefined && gene.aliases.length > 0\">\n              <td>Aliases</td>\n              <td>{{gene.aliases.join(\", \")}}</td>\n            </tr>\n            <tr *ngIf=\"gene.chromosome !== undefined\">\n              <td>Chromosome</td>\n              <td>{{gene.chromosome}}</td>\n            </tr>\n            <tr *ngIf=\"gene.strand !== undefined\">\n              <td>Strand</td>\n              <td>{{gene.strand}}</td>\n            </tr>\n            <tr *ngIf=\"gene.start !== undefined && gene.end !== undefined\">\n              <td>Nucleotides</td>\n              <td>{{gene.start}} to {{gene.end}}</td>\n            </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </ng-container>\n  ",
         styles: ["\n    small {\n      font-size: 25px;\n    }\n    \n    .card {\n      padding: 10px;\n    }\n  "]
     })
-], GeneVisualizationComponent);
+], GeneInformationComponent);
 
 var _a;
-//# sourceMappingURL=gene-visualization.component.js.map
+//# sourceMappingURL=gene-information.component.js.map
 
 /***/ }),
 
-/***/ "../../../../../src/app/visualize-results/variant/classifications-modal.component.ts":
+/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/variant-visualization.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export VISUALIZATION_CONTROL_VALUE_ACCESSOR */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VariantVisualizationComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/**
+ * Wrapper class of tabs for a bunch of post- data-entry components (Clinical Trials, etc.)
+ */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var VISUALIZATION_CONTROL_VALUE_ACCESSOR = {
+    provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* NG_VALUE_ACCESSOR */],
+    useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_24" /* forwardRef */])(function () { return VariantVisualizationComponent; }),
+    multi: true
+};
+var VariantVisualizationComponent = (function () {
+    function VariantVisualizationComponent() {
+        // The internal data model (for ngModel)
+        this._currentlySelected = null;
+        // Placeholders for the callbacks which are later providesd by the Control Value Accessor
+        this.onTouchedCallback = function () { };
+        this.onChangeCallback = function () { };
+    }
+    Object.defineProperty(VariantVisualizationComponent.prototype, "currentlySelected", {
+        get: function () {
+            return this._currentlySelected;
+        },
+        set: function (v) {
+            if (v !== this.currentlySelected) {
+                this._currentlySelected = v;
+                this.onChangeCallback(v);
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    // From ControlValueAccessor interface
+    VariantVisualizationComponent.prototype.writeValue = function (value) {
+        if (value !== this.currentlySelected) {
+            this.currentlySelected = value;
+        }
+    };
+    VariantVisualizationComponent.prototype.registerOnTouched = function (fn) {
+        this.onTouchedCallback = fn;
+    };
+    VariantVisualizationComponent.prototype.registerOnChange = function (fn) {
+        this.onChangeCallback = fn;
+    };
+    return VariantVisualizationComponent;
+}());
+VariantVisualizationComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: "variant-visualization",
+        template: "\n    <!-- Tabs to view the variant's info.  -->\n    <ngb-tabset [destroyOnHide]=\"false\" *ngIf=\"currentlySelected !== undefined && currentlySelected !== null\">\n      <ngb-tab title=\"Gene\">\n        <ng-template ngbTabContent>\n          <gene-information [gene]=\"currentlySelected.origin\"></gene-information>\n        </ng-template>\n      </ngb-tab>\n\n      <ngb-tab title=\"Variant\">\n        <ng-template ngbTabContent>\n          <variant-information [variant]=\"currentlySelected\"></variant-information>\n        </ng-template>\n      </ngb-tab>\n\n      <ngb-tab title=\"Clinical Trials\">\n        <ng-template ngbTabContent>\n          <clinical-trials [forVariant]=\"currentlySelected\"></clinical-trials>\n        </ng-template>\n      </ngb-tab>\n    </ngb-tabset>\n  ",
+        styles: ["    \n  "],
+        providers: [VISUALIZATION_CONTROL_VALUE_ACCESSOR]
+    })
+], VariantVisualizationComponent);
+
+//# sourceMappingURL=variant-visualization.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/variant/classifications-modal.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClassificationsModalComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__global_genomic_data__ = __webpack_require__("../../../../../src/app/global/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
 /**
  * A part of the result visualization component, which displays the drugs that will be effective against genes
  * or variants.
@@ -2403,7 +2540,7 @@ var ClassificationsModalComponent = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__global_genomic_data__["e" /* Variant */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__global_genomic_data__["e" /* Variant */]) === "function" && _a || Object)
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__genomic_data__["e" /* Variant */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__genomic_data__["e" /* Variant */]) === "function" && _a || Object)
 ], ClassificationsModalComponent.prototype, "variant", void 0);
 ClassificationsModalComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
@@ -2419,15 +2556,15 @@ var _a, _b;
 
 /***/ }),
 
-/***/ "../../../../../src/app/visualize-results/variant/variant-visualization.component.ts":
+/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/variant/variant-information.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VariantVisualizationComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VariantInformationComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__drugs_drug_details_modal_component__ = __webpack_require__("../../../../../src/app/visualize-results/drugs/drug-details-modal.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__classifications_modal_component__ = __webpack_require__("../../../../../src/app/visualize-results/variant/classifications-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__drugs_drug_details_modal_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug-details-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__classifications_modal_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant/classifications-modal.component.ts");
 /**
  * Visualizing the data for the variant: a tab on the results display.
  */
@@ -2444,48 +2581,120 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var VariantVisualizationComponent = (function () {
-    function VariantVisualizationComponent(modalService) {
+var VariantInformationComponent = (function () {
+    function VariantInformationComponent(modalService) {
         this.modalService = modalService;
     }
-    VariantVisualizationComponent.prototype.viewDrugDetails = function (reference) {
+    VariantInformationComponent.prototype.viewDrugDetails = function (reference) {
         var modalRef = this.modalService.open(__WEBPACK_IMPORTED_MODULE_2__drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */], { size: "lg" });
         modalRef.componentInstance.drugReference = reference;
     };
-    VariantVisualizationComponent.prototype.viewClassifications = function () {
+    VariantInformationComponent.prototype.viewClassifications = function () {
         var modalRef = this.modalService.open(__WEBPACK_IMPORTED_MODULE_3__classifications_modal_component__["a" /* ClassificationsModalComponent */], { size: "lg" });
         modalRef.componentInstance.variant = this.variant;
     };
-    return VariantVisualizationComponent;
+    return VariantInformationComponent;
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
     __metadata("design:type", Object)
-], VariantVisualizationComponent.prototype, "variant", void 0);
-VariantVisualizationComponent = __decorate([
+], VariantInformationComponent.prototype, "variant", void 0);
+VariantInformationComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: "variant-visualization",
+        selector: "variant-information",
         template: "\n    <ng-container *ngIf=\"variant\">\n      <br>\n      <h3 class=\"display-3\">{{variant.variantName}}</h3>\n  \n      <!-- A bit of info about the variant/gene -->\n      <table class=\"table table-bordered table-striped\">\n        <thead>\n        </thead>\n        <tbody>\n        <tr *ngIf=\"variant.description && variant.description !== ''\">\n          <td>Description</td>\n          <td>{{variant.description}}</td>\n        </tr>\n        <tr>\n          <td>Functional Prediction</td>\n          <td>\n            {{variant.score}} <span (click)=\"viewClassifications()\" class=\"badge badge-{{variant.getClassification().toLowerCase().indexOf('pathogenic') >= 0 ? 'danger' : 'info'}}\">{{variant.getClassification()}}</span>\n          </td>\n        </tr>\n        <tr>\n          <td>Variant Origin</td>\n          <td>{{variant.somatic ? 'Somatic' : 'Germline'}}</td>\n        </tr>\n        <tr *ngIf=\"variant.types && variant.types.length > 0\">\n          <td>Variant Type</td>\n          <td>{{variant.types.join(\", \")}}</td>\n        </tr>\n        <tr *ngIf=\"variant.drugs && variant.drugs.length > 0\">\n          <td>Effective Drugs</td>\n          <td>\n            <button *ngFor=\"let drugReference of variant.drugs\" class=\"btn btn-light\" (click)=\"viewDrugDetails(drugReference)\">{{drugReference.name}}</button>\n          </td>\n        </tr>\n        <tr *ngIf=\"variant.diseases && variant.diseases.length > 0\">\n          <td>Known Diseases</td>\n          <td>{{variant.diseases.join(\", \")}}</td>\n        </tr>\n        <tr>\n          <td>Variant Location</td>\n          <td>Chromosome {{variant.getLocation()}}</td>\n        </tr>\n        </tbody>\n      </table>\n    </ng-container>\n  ",
         styles: ["\n    .badge {\n      opacity: 1;\n    }\n    \n    .badge:hover {\n      opacity: 0.8;\n    }\n    \n    .badge:active {\n      opacity: 0.6;\n    }\n  "]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ng_bootstrap_ng_bootstrap__["b" /* NgbModal */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ng_bootstrap_ng_bootstrap__["b" /* NgbModal */]) === "function" && _a || Object])
-], VariantVisualizationComponent);
+], VariantInformationComponent);
 
 var _a;
-//# sourceMappingURL=variant-visualization.component.js.map
+//# sourceMappingURL=variant-information.component.js.map
 
 /***/ }),
 
-/***/ "../../../../../src/app/visualize-results/visualize-results.component.ts":
+/***/ "../../../../../src/app/header.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VisualizeResultsComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_entry_data_entry_component__ = __webpack_require__("../../../../../src/app/data-entry/data-entry.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__smart_initialization_smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__smart_initialization_smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 /**
- * Wrapper class of tabs for a bunch of post- data-entry components (Clinical Trials, etc.)
+ * This component contains the HTML involved in the construction of the header for the application,
+ * and is available in every route of the app (since it contains important data for the user to view).
+ * The three components of this header, from left to right, should be the SMART logo, the patient
+ * data, and the user name.
+ */
+
+
+
+var HeaderComponent = (function () {
+    function HeaderComponent(router) {
+        var _this = this;
+        this.router = router;
+        this.patientData = "";
+        this.practitionerData = "";
+        this.setHeaderData = function (smartClient) {
+            if (smartClient === null) {
+                return;
+            }
+            console.log("SMART Client", smartClient);
+            smartClient.patient.read().then(function (p) {
+                console.log("SMART Patient", p);
+                _this.patientData = p.name[0].given[0] + " " + p.name[0].family;
+            });
+            smartClient.user.read().then(function (u) {
+                console.log("SMART User", u);
+                _this.practitionerData = u.name[0].given[0] + " " + u.name[0].family;
+            });
+        };
+    }
+    HeaderComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        // Once set, the function will be called.
+        __WEBPACK_IMPORTED_MODULE_1__smart_initialization_smart_reference_service__["a" /* SMARTClient */].subscribe(function (smart) { return _this.setHeaderData(smart); });
+    };
+    HeaderComponent.prototype.viewEHRInstructions = function () {
+        this.router.navigate(["ehr-instructions"]);
+    };
+    return HeaderComponent;
+}());
+HeaderComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: "header",
+        template: "\n    <div id=\"ehrInfo\">\n      <p *ngIf=\"patientData !== ''\">Patient: {{patientData}} ----- User: {{practitionerData}}</p>\n      <a id=\"ehrLink\" *ngIf=\"patientData === ''\" href=\"javascript:void(0)\" (click)=\"viewEHRInstructions()\">EHR Link Instructions</a>\n      \n      <a href=\"https://www.github.com/smart-co/Application\">\n        <img src=\"/assets/github-icon.png\"  ngbPopover=\"Fork us on GitHub!\" triggers=\"mouseenter:mouseleave\" placement=\"left\">\n      </a>\n    </div>\n  ",
+        styles: ["\n    #ehrInfo {\n      background-color: black;\n      height: 40px;\n      overflow: hidden;\n    }\n    \n    #ehrInfo * {\n      float: left;\n    }\n\n    p, #ehrLink {\n      text-align: center;\n      color: white;\n      width: calc(100% - 55px);\n      margin: 5px 7.5px;\n      height: calc(100% - 15px);\n      font-size: 20px;\n    }\n    \n    img {\n      height: 30px; \n      width: 30px; \n      margin: 5px;\n      float: right;\n    }\n  "]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _a || Object])
+], HeaderComponent);
+
+var _a;
+//# sourceMappingURL=header.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/smart-initialization/smart-launch.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SMARTLaunchComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
+/**
+ * Since the SMART on FHIR framework is not built to work with Angular2, this component controls the
+ * redirects involved in authentication for fhir-client.js.
  */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2493,99 +2702,145 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+// Modules required to access URL parameters.
 
 
 
-var VisualizeResultsComponent = (function () {
-    function VisualizeResultsComponent() {
-        this.variants = [];
-        this.submitStatus = "Submit Data to EHR";
-    }
-    VisualizeResultsComponent.prototype.ngOnInit = function () {
+var SMARTLaunchComponent = (function () {
+    function SMARTLaunchComponent(router, activatedRoute) {
         var _this = this;
-        if (!__WEBPACK_IMPORTED_MODULE_1__data_entry_data_entry_component__["b" /* USER_SELECTED_VARIANTS */]) {
-            return;
-        }
-        __WEBPACK_IMPORTED_MODULE_1__data_entry_data_entry_component__["b" /* USER_SELECTED_VARIANTS */].subscribe(function (variants) { return _this.variants = variants; });
-    };
-    VisualizeResultsComponent.prototype.saveVariantsToFHIRPatient = function () {
-        var _this = this;
-        if (!(this.variants && this.variants.length > 0)) {
-            console.log("Can't save an empty array of variants :P");
-            return;
-        }
-        __WEBPACK_IMPORTED_MODULE_2__smart_initialization_smart_reference_service__["a" /* SMARTClient */].subscribe(function (smartClient) {
-            smartClient.patient.read().then(function (p) {
-                for (var _i = 0, _a = _this.variants; _i < _a.length; _i++) {
-                    var variant = _a[_i];
-                    var dataToTransmit = {
-                        "resource": {
-                            "resourceType": "Observation",
-                            "id": "SMART-Observation-" + p.identifier[0].value + "-variation-" + variant.hgvsID.replace(/[.,\/#!$%\^&\*;:{}<>=\-_`~()]/g, ""),
-                            "meta": {
-                                "versionId": "1" // ,
-                                // "lastUpdated": Date.now().toString()
-                            },
-                            "text": {
-                                "status": "generated",
-                                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Variation at " + variant.getLocation() + "</div>"
-                            },
-                            "status": "final",
-                            "category": [
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "http://hl7.org/fhir/observation-category",
-                                            "code": "genomic-variant",
-                                            "display": "Genomic Variant"
-                                        }
-                                    ],
-                                    "text": "Genomic Variant"
-                                }
-                            ],
-                            "code": {
-                                "coding": [
-                                    {
-                                        "system": "http://www.hgvs.org",
-                                        "code": variant.hgvsID,
-                                        "display": variant.hgvsID
-                                    }
-                                ],
-                                "text": variant.hgvsID
-                            },
-                            "subject": {
-                                "reference": "Patient/" + p.id
-                            },
-                        }
-                    };
-                    console.log("Updating data with ", dataToTransmit);
-                    _this.submitStatus = "Submitting...";
-                    smartClient.api.update(dataToTransmit)
-                        .then(function (result) {
-                        console.log("Success:", result);
-                        _this.submitStatus = "Complete!";
-                        setTimeout(function () { _this.submitStatus = "Submit Data to EHR"; }, 1000);
-                    })
-                        .fail(function (err) {
-                        console.log("Error:", err);
-                        _this.submitStatus = "Error";
-                        setTimeout(function () { _this.submitStatus = "Submit Data to EHR"; }, 1000);
-                    });
-                }
+        this.router = router;
+        this.activatedRoute = activatedRoute;
+        this.requiredParametersSupplied = false;
+        this.clientID = "";
+        this.scopes = "launch patient/*.* openid profile";
+        this.authorizeApp = function () {
+            __WEBPACK_IMPORTED_MODULE_2__smart_reference_service__["b" /* SMARTModule */].oauth2.authorize({
+                client_id: _this.clientID,
+                scope: _this.scopes,
+                redirect_uri: window.location.href.substring(0, window.location.href.lastIndexOf("/")) + "/token-reception"
             });
+        };
+    }
+    SMARTLaunchComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        // subscribe to router event
+        this.activatedRoute.queryParams.subscribe(function (params) {
+            if (params["iss"] && params["launch"]) {
+                _this.requiredParametersSupplied = true;
+            }
+            else {
+                _this.requiredParametersSupplied = false;
+                setTimeout(function () { _this.router.navigate(["/variant-entry-and-visualization"]); }, 3000); // Wait a second before redirecting.
+            }
         });
     };
-    return VisualizeResultsComponent;
+    return SMARTLaunchComponent;
 }());
-VisualizeResultsComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: "visualize-results",
-        template: "\n    <h2 class=\"display-2\">Results</h2>\n    <ngb-accordion #acc=\"ngbAccordion\">\n      <ngb-panel *ngFor=\"let variant of variants\" title=\"{{variant.optionName()}}\">\n        <ng-template ngbPanelContent>\n          <ngb-tabset [destroyOnHide]=\"false\">\n            <ngb-tab title=\"Gene\">\n              <ng-template ngbTabContent>\n                <gene-visualization [gene]=\"variant.origin\"></gene-visualization>\n              </ng-template>\n            </ngb-tab>\n\n            <ngb-tab title=\"Variant\">\n              <ng-template ngbTabContent>\n                <variant-visualization [variant]=\"variant\"></variant-visualization>\n              </ng-template>\n            </ngb-tab>\n\n            <ngb-tab title=\"Clinical Trials\">\n              <ng-template ngbTabContent>\n                <clinical-trials [forVariant]=\"variant\"></clinical-trials>\n              </ng-template>\n            </ngb-tab>\n          </ngb-tabset>\n        </ng-template>\n      </ngb-panel>\n    </ngb-accordion>\n\n    <button type=\"button\" class=\"btn btn-success\" style=\"float: right\" (click)=\"saveVariantsToFHIRPatient()\">{{submitStatus}}</button>\n  ",
-        styles: ["    \n  "]
-    })
-], VisualizeResultsComponent);
+SMARTLaunchComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Component */])({
+        selector: "smart-launch",
+        template: "\n    <div *ngIf=\"requiredParametersSupplied === true\">\n      <h3 class=\"display-3\" style=\"width: 100%\">Enter Authorization Info</h3>\n      <label class=\"thinFont1\">Client ID: </label><input class=\"form-control\" type=\"text\" [(ngModel)]=\"clientID\" placeholder=\"Ex: 1e7af332-b27a-4de2-8c51-728ae3ed25c2\">\n      <label class=\"thinFont1\">Scopes: </label><input class=\"form-control\" type=\"text\" [(ngModel)]=\"scopes\">\n      <br>\n      <button (click)=\"authorizeApp()\" class=\"btn btn-success\">Authorize</button>\n    </div>\n    \n    <p *ngIf=\"requiredParametersSupplied === false\">ISS and Launch parameters were not supplied!  Redirecting in 3 seconds...</p>\n  ",
+        styles: ["\n    div {\n      padding: 10px;\n      overflow: hidden;\n    }\n    \n    div * {\n      float: left;\n    }\n\n    label {\n      width: 20%;\n      font-size: 25px;\n      margin: 0;\n    }\n    \n    input {\n      width: calc(80% - 2px);\n    }\n  "]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object])
+], SMARTLaunchComponent);
 
-//# sourceMappingURL=visualize-results.component.js.map
+var _a, _b;
+//# sourceMappingURL=smart-launch.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/smart-initialization/smart-reference.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SMARTModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SMARTClient; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return SMARTReferenceService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/BehaviorSubject.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__);
+/**
+ * Since SMART is a JS library, this is a utility class used to make it easier to work with the JS library.
+ * By declaring FHIR below, the library is referenced from .angular-cli.json, and functions can be used
+ * directly from the library.  In order to get this to work like global variables, I found that the best way
+ * would be to use an Observable, a backend framework of Angular known as RxJS.
+ * https://stackoverflow.com/questions/36715918/how-to-define-global-variables-in-angular-2-in-a-way-that-i-
+ * can-use-them-for-pro
+ * https://stackoverflow.com/questions/34714462/updating-variable-changes-in-components-from-a-service-with-angular2
+ */
+
+var SMARTModule = FHIR;
+// Make sure to use BehaviorSubject over Subject, since it provides the current value of the object on subscribe()
+var SMARTClient = new __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__["BehaviorSubject"](null);
+var SMARTReferenceService = (function () {
+    function SMARTReferenceService() {
+    }
+    SMARTReferenceService.prototype.ready = function () {
+        SMARTModule.oauth2.ready(function (smart) {
+            SMARTClient.next(smart);
+        });
+    };
+    return SMARTReferenceService;
+}());
+
+//# sourceMappingURL=smart-reference.service.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/smart-initialization/smart-token-reception.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SMARTTokenReceptionComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
+/**
+ * After being directed here as per the redirect_uri in smart-launch, this route receives the token
+ * data and then applies the token as necessary.
+ */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+// Modules required to access URL parameters.
+
+
+
+var SMARTTokenReceptionComponent = (function () {
+    function SMARTTokenReceptionComponent(smartReferenceService, router) {
+        this.smartReferenceService = smartReferenceService;
+        this.router = router;
+        this.state = "Receiving token...";
+    }
+    SMARTTokenReceptionComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        // Set up the client reference.
+        this.smartReferenceService.ready();
+        // Redirect to the disease selection.
+        setTimeout(function () { return _this.router.navigate(["/variant-entry-and-visualization"]); }, 100);
+    };
+    return SMARTTokenReceptionComponent;
+}());
+SMARTTokenReceptionComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Component */])({
+        selector: "smart-launch",
+        template: "\n    <p>{{state}}</p>\n  "
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__smart_reference_service__["c" /* SMARTReferenceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__smart_reference_service__["c" /* SMARTReferenceService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */]) === "function" && _b || Object])
+], SMARTTokenReceptionComponent);
+
+var _a, _b;
+//# sourceMappingURL=smart-token-reception.component.js.map
 
 /***/ }),
 
