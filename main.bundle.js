@@ -84,10 +84,22 @@ var AppComponent = (function () {
     }
     // While deployed on GitHub pages.
     AppComponent.prototype.ngOnInit = function () {
-        if (sessionStorage.redirect) {
-            console.log("Session storage is", sessionStorage.redirect);
-            delete sessionStorage.redirect;
+        if (!sessionStorage.redirect) {
+            console.log("No redirect required.");
         }
+        console.log("Session storage is", sessionStorage.redirect);
+        var excludedPrefix = window.location.href.substring(window.location.href.indexOf("://") + 3);
+        var route = excludedPrefix.substring(0, excludedPrefix.indexOf("/"));
+        var paramStrings = excludedPrefix.substring(excludedPrefix.indexOf("?") + 1).split("&");
+        var params = {};
+        for (var _i = 0, paramStrings_1 = paramStrings; _i < paramStrings_1.length; _i++) {
+            var paramString = paramStrings_1[_i];
+            var pair = paramString.split("=");
+            params[pair[0]] = pair[1];
+        }
+        console.log("Navigating to " + route + " with params", params);
+        this.router.navigate([route], { queryParams: params });
+        delete sessionStorage.redirect;
     };
     return AppComponent;
 }());
