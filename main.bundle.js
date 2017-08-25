@@ -1653,7 +1653,7 @@ var VariantEntryAndVisualizationComponent = (function () {
 VariantEntryAndVisualizationComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: "variant-entry-and-visualization",
-        template: "\n    <div id=\"variantVisualizations\">\n      <div class=\"variantWrapper\" *ngFor=\"let variant of variants; let i = index\">\n        <div class=\"variantSelector\">\n          <div class=\"variantSelectorSpan\">\n            <variant-selector [ngModel]=\"variant.variant\" (ngModelChange)=\"variant.variant = $event; addRowMaybe(i); saveEHRVariant(variant.variant);\"></variant-selector>\n          </div>\n          <button class=\"removeRowButton btn btn-danger\" (click)=\"removeRow(i)\" [disabled]=\"variants.length === 1\">X</button>\n        </div>\n        <div>\n          <div class=\"visualizationContent\" [@drawerAnimation]=\"variant.drawerState\">\n            <variant-visualization [(ngModel)]=\"variant.variant\"></variant-visualization>\n          </div>\n          <div *ngIf=\"variant.variant !== undefined && variant.variant !== null\" class=\"informationToggle\" (click)=\"variant.toggleDrawer()\">\n            <img src=\"/assets/dropdown.svg\">\n          </div>\n        </div>\n      </div>\n    </div>\n  ",
+        template: "\n    <div id=\"variantVisualizations\">\n      <div class=\"variantWrapper\" *ngFor=\"let variant of variants; let i = index\">\n        <div class=\"variantSelector\">\n          <div class=\"variantSelectorSpan\">\n            <variant-selector [ngModel]=\"variant.variant\" (ngModelChange)=\"variant.variant = $event; addRowMaybe(i); saveEHRVariant(variant.variant);\"></variant-selector>\n          </div>\n          <button class=\"removeRowButton btn btn-danger\" (click)=\"removeRow(i)\" [disabled]=\"i === variants.length - 1\">X</button>\n        </div>\n        <div>\n          <div class=\"visualizationContent\" [@drawerAnimation]=\"variant.drawerState\">\n            <variant-visualization [(ngModel)]=\"variant.variant\"></variant-visualization>\n          </div>\n          <div *ngIf=\"variant.variant !== undefined && variant.variant !== null\" class=\"informationToggle\" (click)=\"variant.toggleDrawer()\">\n            <img src=\"/assets/dropdown.svg\">\n          </div>\n        </div>\n      </div>\n    </div>\n  ",
         styles: ["\n    #variantVisualizations {\n      padding: 15px;\n    }\n\n    .variantWrapper {\n      margin-bottom: 5px;\n    }\n\n    .variantSelector {\n      height: 38px;\n    }\n\n    .variantSelector > * {\n      float: left;\n      height: 100%;\n    }\n\n    .variantSelectorSpan {\n      width: calc(100% - 38px);\n    }\n\n    .removeRowButton {\n      width: 38px;\n      font-size: 20px;\n      color: white;\n      padding: 0;\n    }\n\n    .informationToggle {\n      width: 100%;\n      background-color: #e2e2e2;\n      border-bottom-left-radius: 10px;\n      border-bottom-right-radius: 10px;\n      text-align: center;\n      height: 30px;\n    }\n\n    .visualizationContent {\n      overflow: scroll;\n    }\n\n    .informationToggle:hover {\n      background-color: #b2b2b2;\n    }\n\n    .informationToggle img {\n      height: 10px;\n      width: 10px;\n      margin: 10px;\n    }\n  "],
         animations: [
             Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["j" /* trigger */])("drawerAnimation", [
@@ -2340,7 +2340,7 @@ var DrugsSearchService = (function () {
         this.http = http;
     }
     DrugsSearchService.prototype.searchByReference = function (reference) {
-        return this.http.get("http://dgidb.genome.wustl.edu/api/v1/interactions.json?drugs=" + (reference.name.indexOf(" ") >= 0 ? reference.name.substring(0, reference.name.indexOf(" ")) : reference.name))
+        return this.http.get("https://dgidb.genome.wustl.edu/api/v1/interactions.json?drugs=" + (reference.name.indexOf(" ") >= 0 ? reference.name.substring(0, reference.name.indexOf(" ")) : reference.name))
             .map(function (result) {
             var resultJSON = result.json();
             var newDrug = new __WEBPACK_IMPORTED_MODULE_0__drug__["a" /* Drug */](reference.name);
@@ -2645,6 +2645,7 @@ var HeaderComponent = (function () {
         this.router = router;
         this.patientData = "";
         this.practitionerData = "";
+        this.linkText = "EHR Link Instructions";
         this.setHeaderData = function (smartClient) {
             if (smartClient === null) {
                 return;
@@ -2665,15 +2666,22 @@ var HeaderComponent = (function () {
         // Once set, the function will be called.
         __WEBPACK_IMPORTED_MODULE_1__smart_initialization_smart_reference_service__["a" /* SMARTClient */].subscribe(function (smart) { return _this.setHeaderData(smart); });
     };
-    HeaderComponent.prototype.viewEHRInstructions = function () {
-        this.router.navigate(["ehr-instructions"]);
+    HeaderComponent.prototype.linkClicked = function () {
+        if (this.linkText === "EHR Link Instructions") {
+            this.router.navigate(["ehr-instructions"]);
+            this.linkText = "Return to Variant Selection";
+        }
+        else {
+            this.router.navigate(["variant-entry-and-visualization"]);
+            this.linkText = "EHR Link Instructions";
+        }
     };
     return HeaderComponent;
 }());
 HeaderComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: "header",
-        template: "\n    <div id=\"ehrInfo\">\n      <p *ngIf=\"patientData !== ''\">Patient: {{patientData}} ----- User: {{practitionerData}}</p>\n      <a id=\"ehrLink\" *ngIf=\"patientData === ''\" href=\"javascript:void(0)\" (click)=\"viewEHRInstructions()\">EHR Link Instructions</a>\n      \n      <a href=\"https://www.github.com/smart-co/Application\">\n        <img src=\"/assets/github-icon.png\"  ngbPopover=\"Fork us on GitHub!\" triggers=\"mouseenter:mouseleave\" placement=\"left\">\n      </a>\n    </div>\n  ",
+        template: "\n    <div id=\"ehrInfo\">\n      <p *ngIf=\"patientData !== ''\">Patient: {{patientData}} ----- User: {{practitionerData}}</p>\n      <a id=\"ehrLink\" *ngIf=\"patientData === ''\" href=\"javascript:void(0)\" (click)=\"linkClicked()\">{{linkText}}</a>\n\n      <a href=\"https://www.github.com/smart-co/Application\">\n        <img src=\"/assets/github-icon.png\" ngbPopover=\"Fork us on GitHub!\" triggers=\"mouseenter:mouseleave\"\n             placement=\"left\">\n      </a>\n    </div>\n  ",
         styles: ["\n    #ehrInfo {\n      background-color: black;\n      height: 40px;\n      overflow: hidden;\n    }\n    \n    #ehrInfo * {\n      float: left;\n    }\n\n    p, #ehrLink {\n      text-align: center;\n      color: white;\n      width: calc(100% - 55px);\n      margin: 5px 7.5px;\n      height: calc(100% - 15px);\n      font-size: 20px;\n    }\n    \n    img {\n      height: 30px; \n      width: 30px; \n      margin: 5px;\n      float: right;\n    }\n  "]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _a || Object])
