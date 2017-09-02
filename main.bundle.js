@@ -39,12 +39,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var routes = [
-    { path: "", redirectTo: "/landing-page", pathMatch: "full" },
+    { path: "", redirectTo: "/home", pathMatch: "full" },
     { path: "smart-launch", component: __WEBPACK_IMPORTED_MODULE_2__smart_initialization_smart_launch_component__["a" /* SMARTLaunchComponent */] },
     { path: "token-reception", component: __WEBPACK_IMPORTED_MODULE_3__smart_initialization_smart_token_reception_component__["a" /* SMARTTokenReceptionComponent */] },
-    { path: "variant-entry-and-visualization", component: __WEBPACK_IMPORTED_MODULE_4__entry_and_visualization_variant_entry_and_visualization_component__["a" /* VariantEntryAndVisualizationComponent */] },
-    { path: "ehr-instructions", component: __WEBPACK_IMPORTED_MODULE_5__ehr_instructions_ehr_instructions_component__["a" /* EHRInstructionsComponent */] },
-    { path: "landing-page", component: __WEBPACK_IMPORTED_MODULE_6__landing_page_landing_page_component__["a" /* LandingPageComponent */] }
+    { path: "app", component: __WEBPACK_IMPORTED_MODULE_4__entry_and_visualization_variant_entry_and_visualization_component__["a" /* VariantEntryAndVisualizationComponent */] },
+    { path: "ehr-link", component: __WEBPACK_IMPORTED_MODULE_5__ehr_instructions_ehr_instructions_component__["a" /* EHRInstructionsComponent */] },
+    { path: "home", component: __WEBPACK_IMPORTED_MODULE_6__landing_page_landing_page_component__["a" /* LandingPageComponent */] }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -77,7 +77,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = "SMART-CO Application";
     }
     return AppComponent;
 }());
@@ -499,8 +498,8 @@ __decorate([
 FilterableSearchComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: "filterable-search",
-        template: "\n    <div #PopupToggle class=\"filterToggle\" (click)=\"toggleMenu(true)\" [style.border-bottom]=\"menuCurrentlyOpen ? '0' : '1px solid #dadada'\">\n      <img src=\"/assets/dropdown.svg\"/>\n      \n      <!-- Display selected option before click -->\n      <p *ngIf=\"currentlySelected !== undefined && currentlySelected !== null\" [hidden]=\"menuCurrentlyOpen\" style=\"font-style: normal; font-weight: bold;\">{{currentlySelected.optionName()}}</p>\n      <p *ngIf=\"currentlySelected === undefined || currentlySelected === null\" [hidden]=\"menuCurrentlyOpen\" style=\"font-style: italic; font-weight: normal;\">{{placeholderString}}</p>\n      \n      <!-- Switch from p to input on click -->\n      <input autocomplete=\"off\" #SearchBox [hidden]=\"!menuCurrentlyOpen\" (keyup)=\"search(SearchBox.value)\" placeholder=\"Search\" class=\"filterInput form-control\"/>\n    </div>\n\n    <!-- Suggestions for potential selections -->\n    <div #PopupPanel class=\"filterPanel\" [hidden]=\"!menuCurrentlyOpen\" [style.width.px]=\"desiredPopupWidth\"> <!--  [style.height.px]=\"(options | async)?.length * 40 < 95 ? (options | async)?.length * 40 : 95\" -->\n      <table class=\"table table-hover\">\n        <tr *ngFor=\"let option of options | async\">\n          <td (click)=\"onSelection(option)\">{{option.optionName()}}</td>\n        </tr>\n      </table>\n    </div>\n  ",
-        styles: ["\n    .filterToggle {\n      width: 100%;\n      height: 38px;\n\n      margin: 0;\n\n      font-size: 18px;\n      cursor: pointer;\n\n      border: 1px solid #dadada;\n      overflow: hidden;\n    }\n\n    .filterToggle:hover {\n      background-color: #efefef;\n    }\n\n    .filterToggle p {\n      float: left;\n      width: calc(100% - 43px);\n      margin: 5px 5px 5px 10px;\n    }\n\n    .filterToggle img {\n      float: right;\n      width: 20px;\n      height: 20px;\n      margin-top: 9px;\n      margin-right: 5px;\n    }\n\n    .filterToggle input {\n      width: calc(100% - 28px);\n      height: 36px;\n      margin: 0;\n    }\n\n    .filterPanel {\n      display: block;\n      position: absolute;\n      z-index: 1000;\n\n      padding: 5px;\n      background-color: white;\n\n      border: 1px solid #dadada;\n      border-top: 0;\n      \n      height: 95px;\n\n      overflow: scroll;\n    }\n\n    .filterInput {\n      width: 100%;\n    }\n  "],
+        template: "\n    <div #PopupToggle class=\"filterToggle\" (click)=\"toggleMenu(true)\" [style.border-bottom]=\"menuCurrentlyOpen ? '0' : '1px solid #dadada'\">\n      <img src=\"/assets/dropdown.svg\"/>\n      \n      <!-- Display selected option before click -->\n      <p *ngIf=\"currentlySelected !== undefined && currentlySelected !== null\" [hidden]=\"menuCurrentlyOpen\" style=\"font-style: normal; font-weight: bold;\">{{currentlySelected.optionName()}}</p>\n      <p *ngIf=\"currentlySelected === undefined || currentlySelected === null\" [hidden]=\"menuCurrentlyOpen\" style=\"font-style: italic; font-weight: normal;\">{{placeholderString}}</p>\n      \n      <!-- Switch from p to input on click -->\n      <input autocomplete=\"off\" #SearchBox [hidden]=\"!menuCurrentlyOpen\" (keyup)=\"search(SearchBox.value)\" placeholder=\"Search\" class=\"filterInput form-control\"/>\n    </div>\n\n    <!-- Suggestions for potential selections -->\n    <div #PopupPanel class=\"filterPanel\" [hidden]=\"!menuCurrentlyOpen\" [style.width.px]=\"desiredPopupWidth\" [style.height.px]=\"(options | async)?.length < 6 ? (options | async)?.length * 48 : 288\">\n      <table class=\"table table-hover\">\n        <tr *ngFor=\"let option of options | async\">\n          <td (click)=\"onSelection(option)\">{{option.optionName()}}</td>\n        </tr>\n      </table>\n    </div>\n  ",
+        styles: ["\n    .filterToggle {\n      width: 100%;\n      height: 38px;\n\n      margin: 0;\n\n      font-size: 18px;\n      cursor: pointer;\n\n      border: 1px solid #dadada;\n      overflow: hidden;\n    }\n\n    .filterToggle:hover {\n      background-color: #efefef;\n    }\n\n    .filterToggle p {\n      float: left;\n      width: calc(100% - 43px);\n      margin: 5px 5px 5px 10px;\n    }\n\n    .filterToggle img {\n      float: right;\n      width: 20px;\n      height: 20px;\n      margin-top: 9px;\n      margin-right: 5px;\n    }\n\n    .filterToggle input {\n      width: calc(100% - 28px);\n      height: 36px;\n      margin: 0;\n    }\n\n    .filterPanel {\n      display: block;\n      position: absolute;\n      z-index: 1000;\n\n      background-color: white;\n\n      border: 1px solid #dadada;\n      border-top: 0;\n      \n      height: 95px;\n\n      overflow: scroll;\n    }\n\n    .filterInput {\n      width: 100%;\n    }\n  "],
         providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */]) === "function" && _a || Object])
@@ -1440,12 +1439,16 @@ var VariantWrapper = (function () {
     }
     return VariantWrapper;
 }());
+// Todo: Fix LAMA2 gene (error upon selection).
 var VariantEntryAndVisualizationComponent = (function () {
     function VariantEntryAndVisualizationComponent(selectorService, router) {
         this.selectorService = selectorService;
         this.router = router;
         this.variants = [];
         this.offerToLinkToEHRInstructions = true;
+        this.patientExists = false;
+        this.patientObject = null;
+        this.patientAge = -1;
     }
     VariantEntryAndVisualizationComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -1455,7 +1458,17 @@ var VariantEntryAndVisualizationComponent = (function () {
                 return;
             }
             _this.offerToLinkToEHRInstructions = false;
-            console.log("Should now update");
+            smartClient.patient.read().then(function (p) {
+                console.log("Patient read is ", p);
+                _this.patientObject = p;
+                if (p.birthDate && p.active) {
+                    var birthDateValues = p.birthDate.split("-");
+                    var timeDiff = Math.abs(Date.now() - new Date(parseInt(birthDateValues[0]), parseInt(birthDateValues[1]), parseInt(birthDateValues[2])).getTime());
+                    // Used Math.floor instead of Math.ceil so 26 years and 140 days would be considered as 26, not 27.
+                    _this.patientAge = Math.floor((timeDiff / (1000 * 3600 * 24)) / 365);
+                }
+                _this.patientExists = true;
+            });
             smartClient.patient.api.search({ type: "Observation", query: { "category": "genomic-variant" }, count: 10 })
                 .then(function (results) {
                 console.log("Successfully got variants!", results);
@@ -1520,7 +1533,7 @@ var VariantEntryAndVisualizationComponent = (function () {
         this.offerToLinkToEHRInstructions = false;
     };
     VariantEntryAndVisualizationComponent.prototype.routeToInstructions = function () {
-        this.router.navigate(["ehr-instructions"]);
+        this.router.navigate(["ehr-link"]);
     };
     // Remove and save EHR variants.
     VariantEntryAndVisualizationComponent.prototype.saveEHRVariant = function (variant) {
@@ -1670,8 +1683,8 @@ var VariantEntryAndVisualizationComponent = (function () {
 VariantEntryAndVisualizationComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: "variant-entry-and-visualization",
-        template: "\n    <div id=\"variantVisualizations\">\n      <h2 class=\"display-2\" style=\"padding: 30px;\">Variant Entry and Visualization</h2>\n      \n      <div class=\"variantWrapper\" *ngFor=\"let variant of variants; let i = index\">\n        <div class=\"variantSelector\">\n          <div class=\"variantSelectorSpan\">\n            <variant-selector [ngModel]=\"variant.variant\" (ngModelChange)=\"variant.variant = $event; addRowMaybe(i); saveEHRVariant(variant.variant);\"></variant-selector>\n          </div>\n          <button class=\"removeRowButton btn btn-danger\" (click)=\"removeRow(i)\" [disabled]=\"i === variants.length - 1\">X</button>\n        </div>\n        <div>\n          <div class=\"visualizationContent\" [@drawerAnimation]=\"variant.drawerState\">\n            <variant-visualization [(ngModel)]=\"variant.variant\"></variant-visualization>\n          </div>\n          <div *ngIf=\"variant.variant !== undefined && variant.variant !== null\" class=\"informationToggle\" (click)=\"variant.toggleDrawer()\">\n            <img src=\"/assets/dropdown.svg\">\n          </div>\n        </div>\n      </div>\n    </div>\n    \n    <!-- Where the user can determine how to link to their EHR. -->\n    <div id=\"howToLinkToEHR\" *ngIf=\"offerToLinkToEHRInstructions\">\n      <a href=\"javascript:void(0)\" (click)=\"routeToInstructions()\">\n        <ngb-alert [type]=\"'primary'\" (close)=\"removeAlert()\">Want to link to an EHR?</ngb-alert>\n      </a>\n    </div>\n  ",
-        styles: ["\n    #variantVisualizations {\n      padding: 15px;\n    }\n\n    .variantWrapper {\n      margin-bottom: 5px;\n    }\n\n    .variantSelector {\n      height: 38px;\n    }\n\n    .variantSelector > * {\n      float: left;\n      height: 100%;\n    }\n\n    .variantSelectorSpan {\n      width: calc(100% - 38px);\n    }\n\n    .removeRowButton {\n      width: 38px;\n      font-size: 20px;\n      color: white;\n      padding: 0;\n    }\n\n    .informationToggle {\n      width: 100%;\n      background-color: #e2e2e2;\n      border-bottom-left-radius: 10px;\n      border-bottom-right-radius: 10px;\n      text-align: center;\n      height: 30px;\n    }\n\n    .visualizationContent {\n      overflow: scroll;\n    }\n\n    .informationToggle:hover {\n      background-color: #b2b2b2;\n    }\n\n    .informationToggle img {\n      height: 10px;\n      width: 10px;\n      margin: 10px;\n    }\n    \n    #howToLinkToEHR {\n      display: block;\n      position: fixed;\n      bottom: 0;\n      left: 0;\n    }\n  "],
+        template: "\n    <div id=\"variantVisualizations\">\n      <div id=\"suggestEHRLink\" *ngIf=\"offerToLinkToEHRInstructions\">\n        <img src=\"/assets/info-icon.png\">\n        <p class=\"thinFont1\">You don't seem to be connected to an EHR!  <a href=\"javascript:void(0)\" (click)=\"routeToInstructions()\">Learn how here.</a></p>\n        <button class=\"btn btn-danger\" (click)=\"offerToLinkToEHRInstructions = false\">X</button>\n      </div>\n\n      <div id=\"patientInfo\" *ngIf=\"patientExists\" [style.background-color]=\"patientObject.gender === 'male' ? 'rgba(118, 218, 255, 0.76)' : 'rgba(255, 192, 203, 0.76)'\">\n        <img [src]=\"patientObject.gender === 'male' ? '/assets/male-icon.png' : '/assets/female-icon.png'\">\n        <table class=\"thinFont2\" style=\"border: 0;\">\n          <tr>\n            <td><b>Name:</b> {{patientObject.name[0].given[0]}} {{patientObject.name[0].family}}</td>\n          </tr>\n          <tr>\n            <td><b>{{patientObject.active ? 'Lives in' : 'Lived in'}}:</b> {{patientObject.address[0].country}}</td>\n          </tr>\n          <tr>\n            <td *ngIf=\"patientObject.active\"><b>Age:</b> {{patientAge}}</td>\n          </tr>\n        </table>\n      </div>\n      \n      <div class=\"variantWrapper\" *ngFor=\"let variant of variants; let i = index\">\n        <div class=\"variantSelector\">\n          <div [style.width]=\"i === variants.length - 1 ? '100%' : 'calc(100% - 38px)'\">\n            <variant-selector [ngModel]=\"variant.variant\" (ngModelChange)=\"variant.variant = $event; addRowMaybe(i); saveEHRVariant(variant.variant);\"></variant-selector>\n          </div>\n          <button class=\"removeRowButton btn btn-danger\" (click)=\"removeRow(i)\" *ngIf=\"i !== variants.length - 1\">X</button>\n        </div>\n        <div>\n          <div class=\"visualizationContent\" [@drawerAnimation]=\"variant.drawerState\">\n            <variant-visualization [(ngModel)]=\"variant.variant\"></variant-visualization>\n          </div>\n          <div *ngIf=\"variant.variant !== undefined && variant.variant !== null\" class=\"informationToggle\" (click)=\"variant.toggleDrawer()\">\n            <img src=\"/assets/dropdown.svg\">\n          </div>\n        </div>\n      </div>\n    </div>\n  ",
+        styles: ["\n    p {\n      margin: 0;\n    }\n\n    #variantVisualizations {\n      padding: 15px;\n    }\n\n    .variantWrapper {\n      margin-bottom: 5px;\n    }\n\n    .variantSelector {\n      height: 38px;\n    }\n\n    .variantSelector > * {\n      float: left;\n      height: 100%;\n    }\n\n    .removeRowButton {\n      width: 38px;\n      font-size: 20px;\n      color: white;\n      padding: 0;\n    }\n\n    .informationToggle {\n      width: 100%;\n      background-color: #e2e2e2;\n      border-bottom-left-radius: 10px;\n      border-bottom-right-radius: 10px;\n      text-align: center;\n      height: 30px;\n    }\n\n    .visualizationContent {\n      overflow: scroll;\n    }\n\n    .informationToggle:hover {\n      background-color: #b2b2b2;\n    }\n\n    .informationToggle img {\n      height: 10px;\n      width: 10px;\n      margin: 10px;\n    }\n\n    #suggestEHRLink {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n\n      height: 150px;\n      width: 100%;\n\n      background-color: rgba(255, 163, 8, 0.52);\n\n      border-radius: 20px;\n      overflow: hidden;\n\n      margin-bottom: 20px;\n    }\n\n    #suggestEHRLink img {\n      width: 13%;\n      height: auto;\n      margin: 1%;\n    }\n\n    #suggestEHRLink p {\n      width: calc(83% - 100px);\n      margin: 1%;\n      font-size: 30px;\n      color: black;\n    }\n\n    #suggestEHRLink button {\n      width: 100px;\n      height: 100px;\n      color: white;\n      border-radius: 20px;\n      font-size: 50px;\n    }\n\n    #patientInfo {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n\n      height: 150px;\n      width: 100%;\n\n      border-radius: 20px;\n      overflow: hidden;\n\n      margin-bottom: 20px;\n      \n      text-align: center;\n    }\n\n    #patientInfo img {\n      width: 100px;\n      height: 100px;\n      margin: 1%;\n    }\n\n    #patientInfo table {\n      width: calc(96% - 100px);\n      margin: 1%;\n      font-size: 30px;\n      color: black;\n    }\n  "],
         animations: [
             Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["j" /* trigger */])("drawerAnimation", [
                 Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["g" /* state */])("closed", Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["h" /* style */])({
@@ -2656,7 +2669,7 @@ var LandingPageComponent = (function () {
         this.router = router;
     }
     LandingPageComponent.prototype.navigateToVisualization = function () {
-        this.router.navigate(["/variant-entry-and-visualization"]);
+        this.router.navigate(["/app"]);
     };
     return LandingPageComponent;
 }());
@@ -2725,7 +2738,7 @@ var SMARTLaunchComponent = (function () {
             }
             else {
                 _this.requiredParametersSupplied = false;
-                setTimeout(function () { _this.router.navigate(["/variant-entry-and-visualization"]); }, 3000); // Wait a second before redirecting.
+                setTimeout(function () { _this.router.navigate(["/app"]); }, 3000); // Wait a second before redirecting.
             }
         });
     };
@@ -2818,7 +2831,7 @@ var SMARTTokenReceptionComponent = (function () {
         // Set up the client reference.
         this.smartReferenceService.ready();
         // Redirect to the disease selection.
-        setTimeout(function () { return _this.router.navigate(["/variant-entry-and-visualization"]); }, 100);
+        setTimeout(function () { return _this.router.navigate(["/app"]); }, 100);
     };
     return SMARTTokenReceptionComponent;
 }());
