@@ -103,28 +103,30 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__entry_and_visualization_variant_selector_variant_selector_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__smart_initialization_smart_launch_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-launch.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__smart_initialization_smart_token_reception_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-token-reception.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__entry_and_visualization_filterable_search_filterable_search_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/filterable-search/filterable-search.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug-details-modal.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__entry_and_visualization_variant_visualization_gene_gene_information_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/gene/gene-information.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__entry_and_visualization_variant_visualization_variant_variant_information_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant/variant-information.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__entry_and_visualization_variant_visualization_variant_visualization_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant-visualization.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ehr_instructions_ehr_instructions_component__ = __webpack_require__("../../../../../src/app/ehr-instructions/ehr-instructions.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__smart_initialization_smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__entry_and_visualization_genomic_data_providers_myvariantinfo_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/myvariantinfo-search.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__entry_and_visualization_variant_selector_variant_selector_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__entry_and_visualization_variant_visualization_drugs_drugs_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drugs-search.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__entry_and_visualization_genomic_data_providers_mygeneinfo_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/mygeneinfo-search.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__entry_and_visualization_genomic_data_providers_utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__entry_and_visualization_variant_visualization_variant_classifications_modal_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant/classifications-modal.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__entry_and_visualization_variant_entry_and_visualization_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-entry-and-visualization.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__landing_page_landing_page_component__ = __webpack_require__("../../../../../src/app/landing-page/landing-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__universal_components_github_fork_us_component__ = __webpack_require__("../../../../../src/app/universal-components/github-fork-us.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__node_modules_angular2_ui_switch_src__ = __webpack_require__("../../../../angular2-ui-switch/src/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__entry_and_visualization_variant_selector_variant_selector_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__smart_initialization_smart_launch_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-launch.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__smart_initialization_smart_token_reception_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-token-reception.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__entry_and_visualization_filterable_search_filterable_search_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/filterable-search/filterable-search.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug-details-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__entry_and_visualization_variant_visualization_gene_gene_information_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/gene/gene-information.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__entry_and_visualization_variant_visualization_variant_variant_information_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant/variant-information.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__entry_and_visualization_variant_visualization_variant_visualization_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant-visualization.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ehr_instructions_ehr_instructions_component__ = __webpack_require__("../../../../../src/app/ehr-instructions/ehr-instructions.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__smart_initialization_smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__entry_and_visualization_genomic_data_providers_myvariantinfo_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/myvariantinfo-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__entry_and_visualization_variant_selector_variant_selector_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__entry_and_visualization_variant_visualization_drugs_drugs_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drugs-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__entry_and_visualization_genomic_data_providers_mygeneinfo_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/mygeneinfo-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__entry_and_visualization_genomic_data_providers_utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__entry_and_visualization_variant_visualization_variant_classifications_modal_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant/classifications-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__entry_and_visualization_variant_entry_and_visualization_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-entry-and-visualization.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__landing_page_landing_page_component__ = __webpack_require__("../../../../../src/app/landing-page/landing-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__universal_components_github_fork_us_component__ = __webpack_require__("../../../../../src/app/universal-components/github-fork-us.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__feedback_form_feedback_form_modal_component__ = __webpack_require__("../../../../../src/app/feedback-form/feedback-form-modal.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -132,6 +134,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 // Modules
+
 
 
 
@@ -163,6 +166,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -177,40 +181,43 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_5__app_routing_module__["a" /* AppRoutingModule */],
             __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-            __WEBPACK_IMPORTED_MODULE_4__ng_bootstrap_ng_bootstrap__["c" /* NgbModule */].forRoot()
+            __WEBPACK_IMPORTED_MODULE_4__ng_bootstrap_ng_bootstrap__["c" /* NgbModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_7__node_modules_angular2_ui_switch_src__["a" /* UiSwitchModule */]
         ],
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_26__entry_and_visualization_variant_entry_and_visualization_component__["a" /* VariantEntryAndVisualizationComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__entry_and_visualization_variant_visualization_variant_visualization_component__["a" /* VariantVisualizationComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__entry_and_visualization_variant_selector_variant_selector_component__["a" /* VariantSelectorComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__smart_initialization_smart_launch_component__["a" /* SMARTLaunchComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__smart_initialization_smart_token_reception_component__["a" /* SMARTTokenReceptionComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__entry_and_visualization_filterable_search_filterable_search_component__["a" /* FilterableSearchComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__entry_and_visualization_variant_visualization_variant_variant_information_component__["a" /* VariantInformationComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_component__["a" /* ClinicalTrialsComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__entry_and_visualization_variant_visualization_gene_gene_information_component__["a" /* GeneInformationComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */],
-            __WEBPACK_IMPORTED_MODULE_25__entry_and_visualization_variant_visualization_variant_classifications_modal_component__["a" /* ClassificationsModalComponent */],
-            __WEBPACK_IMPORTED_MODULE_17__ehr_instructions_ehr_instructions_component__["a" /* EHRInstructionsComponent */],
-            __WEBPACK_IMPORTED_MODULE_27__landing_page_landing_page_component__["a" /* LandingPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_28__universal_components_github_fork_us_component__["a" /* GithubForkUsComponent */]
+            __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_27__entry_and_visualization_variant_entry_and_visualization_component__["a" /* VariantEntryAndVisualizationComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__entry_and_visualization_variant_visualization_variant_visualization_component__["a" /* VariantVisualizationComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__entry_and_visualization_variant_selector_variant_selector_component__["a" /* VariantSelectorComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__smart_initialization_smart_launch_component__["a" /* SMARTLaunchComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__smart_initialization_smart_token_reception_component__["a" /* SMARTTokenReceptionComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__entry_and_visualization_filterable_search_filterable_search_component__["a" /* FilterableSearchComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__entry_and_visualization_variant_visualization_variant_variant_information_component__["a" /* VariantInformationComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_component__["a" /* ClinicalTrialsComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__entry_and_visualization_variant_visualization_gene_gene_information_component__["a" /* GeneInformationComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__entry_and_visualization_variant_visualization_variant_classifications_modal_component__["a" /* ClassificationsModalComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__ehr_instructions_ehr_instructions_component__["a" /* EHRInstructionsComponent */],
+            __WEBPACK_IMPORTED_MODULE_28__landing_page_landing_page_component__["a" /* LandingPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_29__universal_components_github_fork_us_component__["a" /* GithubForkUsComponent */],
+            __WEBPACK_IMPORTED_MODULE_30__feedback_form_feedback_form_modal_component__["a" /* FeedbackFormModalComponent */]
         ],
         entryComponents: [
-            __WEBPACK_IMPORTED_MODULE_13__entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */],
-            __WEBPACK_IMPORTED_MODULE_25__entry_and_visualization_variant_visualization_variant_classifications_modal_component__["a" /* ClassificationsModalComponent */]
+            __WEBPACK_IMPORTED_MODULE_14__entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__entry_and_visualization_variant_visualization_variant_classifications_modal_component__["a" /* ClassificationsModalComponent */],
+            __WEBPACK_IMPORTED_MODULE_30__feedback_form_feedback_form_modal_component__["a" /* FeedbackFormModalComponent */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_18__smart_initialization_smart_reference_service__["c" /* SMARTReferenceService */],
-            __WEBPACK_IMPORTED_MODULE_21__entry_and_visualization_variant_selector_variant_selector_service__["a" /* VariantSelectorService */],
-            __WEBPACK_IMPORTED_MODULE_19__entry_and_visualization_genomic_data_providers_myvariantinfo_search_service__["a" /* MyVariantInfoSearchService */],
-            __WEBPACK_IMPORTED_MODULE_23__entry_and_visualization_genomic_data_providers_mygeneinfo_search_service__["a" /* MyGeneInfoSearchService */],
-            __WEBPACK_IMPORTED_MODULE_20__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_service__["a" /* ClinicalTrialsService */],
-            __WEBPACK_IMPORTED_MODULE_22__entry_and_visualization_variant_visualization_drugs_drugs_search_service__["a" /* DrugsSearchService */],
-            __WEBPACK_IMPORTED_MODULE_24__entry_and_visualization_genomic_data_providers_utilities_json_navigator_service__["a" /* JSONNavigatorService */]
+            __WEBPACK_IMPORTED_MODULE_19__smart_initialization_smart_reference_service__["c" /* SMARTReferenceService */],
+            __WEBPACK_IMPORTED_MODULE_22__entry_and_visualization_variant_selector_variant_selector_service__["a" /* VariantSelectorService */],
+            __WEBPACK_IMPORTED_MODULE_20__entry_and_visualization_genomic_data_providers_myvariantinfo_search_service__["a" /* MyVariantInfoSearchService */],
+            __WEBPACK_IMPORTED_MODULE_24__entry_and_visualization_genomic_data_providers_mygeneinfo_search_service__["a" /* MyGeneInfoSearchService */],
+            __WEBPACK_IMPORTED_MODULE_21__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_service__["a" /* ClinicalTrialsService */],
+            __WEBPACK_IMPORTED_MODULE_23__entry_and_visualization_variant_visualization_drugs_drugs_search_service__["a" /* DrugsSearchService */],
+            __WEBPACK_IMPORTED_MODULE_25__entry_and_visualization_genomic_data_providers_utilities_json_navigator_service__["a" /* JSONNavigatorService */]
         ],
         bootstrap: [
-            __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]
+            __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]
         ]
     })
 ], AppModule);
@@ -567,7 +574,12 @@ var MyGeneInfoSearchService = (function () {
                     variant.origin.name = responseJSON.name;
                 }
                 if (responseJSON.alias) {
-                    variant.origin.aliases = responseJSON.alias;
+                    if (responseJSON.alias instanceof Array) {
+                        variant.origin.aliases = responseJSON.alias;
+                    }
+                    else {
+                        variant.origin.aliases = [responseJSON.alias];
+                    }
                 }
                 if (responseJSON.summary) {
                     variant.origin.description = responseJSON.summary;
@@ -1413,6 +1425,8 @@ var Variant = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__variant_selector_variant_selector_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_animations__ = __webpack_require__("../../../animations/@angular/animations.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__feedback_form_feedback_form_modal_component__ = __webpack_require__("../../../../../src/app/feedback-form/feedback-form-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1427,6 +1441,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var VariantWrapper = (function () {
     function VariantWrapper(_index, _variant) {
         var _this = this;
@@ -1436,23 +1452,30 @@ var VariantWrapper = (function () {
         this.index = _index;
         this.variant = _variant;
         this.drawerState = "closed";
+        this.saved = false;
     }
     return VariantWrapper;
 }());
-// Todo: Fix LAMA2 gene (error upon selection).
 var VariantEntryAndVisualizationComponent = (function () {
-    function VariantEntryAndVisualizationComponent(selectorService, router) {
+    function VariantEntryAndVisualizationComponent(selectorService, router, modalService) {
         this.selectorService = selectorService;
         this.router = router;
+        this.modalService = modalService;
+        // This is what we're using to determine whether the user is worthy to rate our service (has interacted enough with the service).
+        this.userInteractionPoints = 0;
+        this.askForReview = true;
         this.variants = [];
         this.offerToLinkToEHRInstructions = true;
         this.patientExists = false;
         this.patientObject = null;
         this.patientAge = -1;
+        // Toggled by the user depending on whether they want to sync to the EHR their changes right away (as soon as they make them)
+        this.autosync = true;
     }
     VariantEntryAndVisualizationComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.addRow();
+        // As soon as the smart client is loaded from the SMART JS library, this creates the patient info header.
         __WEBPACK_IMPORTED_MODULE_1__smart_initialization_smart_reference_service__["a" /* SMARTClient */].subscribe(function (smartClient) {
             if (smartClient === null) {
                 return;
@@ -1520,6 +1543,7 @@ var VariantEntryAndVisualizationComponent = (function () {
         if (this.variants.length === indexInQuestion + 1) {
             this.addRow();
         }
+        this.userInteractionPoints++;
     };
     VariantEntryAndVisualizationComponent.prototype.removeRow = function (index) {
         var variantToRemove = this.variants[index].variant;
@@ -1528,15 +1552,31 @@ var VariantEntryAndVisualizationComponent = (function () {
             this.variants[i].index = i;
         }
         this.removeEHRVariant(variantToRemove);
-    };
-    VariantEntryAndVisualizationComponent.prototype.removeAlert = function () {
-        this.offerToLinkToEHRInstructions = false;
+        this.userInteractionPoints++;
     };
     VariantEntryAndVisualizationComponent.prototype.routeToInstructions = function () {
         this.router.navigate(["ehr-link"]);
     };
+    VariantEntryAndVisualizationComponent.prototype.onToggleAutosync = function (newVal) {
+        this.autosync = newVal;
+        if (this.autosync) {
+            for (var _i = 0, _a = this.variants; _i < _a.length; _i++) {
+                var variant = _a[_i];
+                if (!variant.saved) {
+                    this.saveEHRVariant(variant);
+                }
+            }
+        }
+    };
+    VariantEntryAndVisualizationComponent.prototype.openFeedbackForm = function () {
+        this.modalService.open(__WEBPACK_IMPORTED_MODULE_5__feedback_form_feedback_form_modal_component__["a" /* FeedbackFormModalComponent */], { size: "lg" });
+        this.askForReview = false;
+    };
     // Remove and save EHR variants.
     VariantEntryAndVisualizationComponent.prototype.saveEHRVariant = function (variant) {
+        if (!this.autosync) {
+            return;
+        }
         __WEBPACK_IMPORTED_MODULE_1__smart_initialization_smart_reference_service__["a" /* SMARTClient */].subscribe(function (smartClient) {
             if (smartClient === null) {
                 return;
@@ -1545,14 +1585,14 @@ var VariantEntryAndVisualizationComponent = (function () {
                 var dataToTransmit = {
                     "resource": {
                         "resourceType": "Observation",
-                        "id": "SMART-Observation-" + p.identifier[0].value + "-variation-" + variant.hgvsID.replace(/[.,\/#!$%\^&\*;:{}<>=\-_`~()]/g, ""),
+                        "id": "SMART-Observation-" + p.identifier[0].value + "-variation-" + variant.variant.hgvsID.replace(/[.,\/#!$%\^&\*;:{}<>=\-_`~()]/g, ""),
                         "meta": {
                             "versionId": "1" // ,
                             // "lastUpdated": Date.now().toString()
                         },
                         "text": {
                             "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Variation at " + variant.getLocation() + "</div>"
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Variation at " + variant.variant.getLocation() + "</div>"
                         },
                         "status": "final",
                         "extension": [
@@ -1585,11 +1625,11 @@ var VariantEntryAndVisualizationComponent = (function () {
                             "coding": [
                                 {
                                     "system": "http://www.hgvs.org",
-                                    "code": variant.hgvsID,
-                                    "display": variant.hgvsID
+                                    "code": variant.variant.hgvsID,
+                                    "display": variant.variant.hgvsID
                                 }
                             ],
-                            "text": variant.hgvsID
+                            "text": variant.variant.hgvsID
                         },
                         "subject": {
                             "reference": "Patient/" + p.id
@@ -1600,6 +1640,7 @@ var VariantEntryAndVisualizationComponent = (function () {
                 smartClient.api.update(dataToTransmit)
                     .then(function (result) {
                     console.log("Added EHR variant successfully!", result);
+                    variant.saved = true;
                 })
                     .fail(function (err) {
                     console.log("Failed to add EHR variant", err);
@@ -1608,6 +1649,9 @@ var VariantEntryAndVisualizationComponent = (function () {
         });
     };
     VariantEntryAndVisualizationComponent.prototype.removeEHRVariant = function (variant) {
+        if (!this.autosync) {
+            return;
+        }
         __WEBPACK_IMPORTED_MODULE_1__smart_initialization_smart_reference_service__["a" /* SMARTClient */].subscribe(function (smartClient) {
             if (smartClient === null) {
                 return;
@@ -1683,8 +1727,8 @@ var VariantEntryAndVisualizationComponent = (function () {
 VariantEntryAndVisualizationComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: "variant-entry-and-visualization",
-        template: "\n    <div id=\"variantVisualizations\">\n      <div id=\"suggestEHRLink\" *ngIf=\"offerToLinkToEHRInstructions\">\n        <img src=\"/assets/info-icon.png\">\n        <p class=\"thinFont1\">You don't seem to be connected to an EHR!  <a href=\"javascript:void(0)\" (click)=\"routeToInstructions()\">Learn how here.</a></p>\n        <button class=\"btn btn-danger\" (click)=\"offerToLinkToEHRInstructions = false\">X</button>\n      </div>\n\n      <div id=\"patientInfo\" *ngIf=\"patientExists\" [style.background-color]=\"patientObject.gender === 'male' ? 'rgba(118, 218, 255, 0.76)' : 'rgba(255, 192, 203, 0.76)'\">\n        <img [src]=\"patientObject.gender === 'male' ? '/assets/male-icon.png' : '/assets/female-icon.png'\">\n        <table class=\"thinFont2\" style=\"border: 0;\">\n          <tr>\n            <td><b>Name:</b> {{patientObject.name[0].given[0]}} {{patientObject.name[0].family}}</td>\n          </tr>\n          <tr>\n            <td><b>{{patientObject.active ? 'Lives in' : 'Lived in'}}:</b> {{patientObject.address[0].country}}</td>\n          </tr>\n          <tr>\n            <td *ngIf=\"patientObject.active\"><b>Age:</b> {{patientAge}}</td>\n          </tr>\n        </table>\n      </div>\n      \n      <div class=\"variantWrapper\" *ngFor=\"let variant of variants; let i = index\">\n        <div class=\"variantSelector\">\n          <div [style.width]=\"i === variants.length - 1 ? '100%' : 'calc(100% - 38px)'\">\n            <variant-selector [ngModel]=\"variant.variant\" (ngModelChange)=\"variant.variant = $event; addRowMaybe(i); saveEHRVariant(variant.variant);\"></variant-selector>\n          </div>\n          <button class=\"removeRowButton btn btn-danger\" (click)=\"removeRow(i)\" *ngIf=\"i !== variants.length - 1\">X</button>\n        </div>\n        <div>\n          <div class=\"visualizationContent\" [@drawerAnimation]=\"variant.drawerState\">\n            <variant-visualization [(ngModel)]=\"variant.variant\"></variant-visualization>\n          </div>\n          <div *ngIf=\"variant.variant !== undefined && variant.variant !== null\" class=\"informationToggle\" (click)=\"variant.toggleDrawer()\">\n            <img src=\"/assets/dropdown.svg\">\n          </div>\n        </div>\n      </div>\n    </div>\n  ",
-        styles: ["\n    p {\n      margin: 0;\n    }\n\n    #variantVisualizations {\n      padding: 15px;\n    }\n\n    .variantWrapper {\n      margin-bottom: 5px;\n    }\n\n    .variantSelector {\n      height: 38px;\n    }\n\n    .variantSelector > * {\n      float: left;\n      height: 100%;\n    }\n\n    .removeRowButton {\n      width: 38px;\n      font-size: 20px;\n      color: white;\n      padding: 0;\n    }\n\n    .informationToggle {\n      width: 100%;\n      background-color: #e2e2e2;\n      border-bottom-left-radius: 10px;\n      border-bottom-right-radius: 10px;\n      text-align: center;\n      height: 30px;\n    }\n\n    .visualizationContent {\n      overflow: scroll;\n    }\n\n    .informationToggle:hover {\n      background-color: #b2b2b2;\n    }\n\n    .informationToggle img {\n      height: 10px;\n      width: 10px;\n      margin: 10px;\n    }\n\n    #suggestEHRLink {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n\n      height: 150px;\n      width: 100%;\n\n      background-color: rgba(255, 163, 8, 0.52);\n\n      border-radius: 20px;\n      overflow: hidden;\n\n      margin-bottom: 20px;\n    }\n\n    #suggestEHRLink img {\n      width: 13%;\n      height: auto;\n      margin: 1%;\n    }\n\n    #suggestEHRLink p {\n      width: calc(83% - 100px);\n      margin: 1%;\n      font-size: 30px;\n      color: black;\n    }\n\n    #suggestEHRLink button {\n      width: 100px;\n      height: 100px;\n      color: white;\n      border-radius: 20px;\n      font-size: 50px;\n    }\n\n    #patientInfo {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n\n      height: 150px;\n      width: 100%;\n\n      border-radius: 20px;\n      overflow: hidden;\n\n      margin-bottom: 20px;\n      \n      text-align: center;\n    }\n\n    #patientInfo img {\n      width: 100px;\n      height: 100px;\n      margin: 1%;\n    }\n\n    #patientInfo table {\n      width: calc(96% - 100px);\n      margin: 1%;\n      font-size: 30px;\n      color: black;\n    }\n  "],
+        template: "\n    <div id=\"appHeader\">\n      <div id=\"smartCancerNavigator\">\n        <img style=\"width: 150px; height: 150px;\" src=\"/assets/gimp-icon.png\">\n        <p class=\"thinFont1\" style=\"color: white; font-size: 40px; margin-left: 25px;\">The SMART Cancer Navigator</p>\n      </div>\n      \n      <div id=\"patientLinkState\" style=\"margin-left: 15px; margin-right: 15px;\">\n        <div id=\"suggestEHRLink\" *ngIf=\"offerToLinkToEHRInstructions\">\n          <div id=\"suggestions\">\n            <img src=\"/assets/info-icon.png\">\n            <p class=\"thinFont1\">You don't seem to be connected to an EHR!  <a href=\"javascript:void(0)\" (click)=\"routeToInstructions()\">Learn how here.</a></p>\n          </div>\n          <button class=\"btn btn-danger\" (click)=\"offerToLinkToEHRInstructions = false\">X</button>\n        </div>\n\n        <div id=\"patientInfo\" *ngIf=\"patientExists\" [style.background-color]=\"patientObject.gender === 'male' ? 'rgba(118, 218, 255, 0.76)' : 'rgba(255, 192, 203, 0.76)'\">\n          <img [src]=\"patientObject.gender === 'male' ? '/assets/male-icon.png' : '/assets/female-icon.png'\">\n          <table class=\"thinFont2\" style=\"border: 0;\">\n            <tr>\n              <td><b>Name:</b> {{patientObject.name[0].given[0]}} {{patientObject.name[0].family}}</td>\n            </tr>\n            <tr>\n              <td><b>{{patientObject.active ? 'Lives in' : 'Lived in'}}:</b> {{patientObject.address[0].country}}</td>\n            </tr>\n            <tr>\n              <td *ngIf=\"patientObject.active\"><b>Age:</b> {{patientAge}}</td>\n            </tr>\n          </table>\n\n          <div id=\"autosyncToggle\">\n            <div>\n              <ui-switch [ngModel]=\"autosync\" (ngModelChange)=\"onToggleAutosync($event)\"></ui-switch>\n              <p class=\"thinFont1\">Auto-Sync</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    \n    <div id=\"variantVisualizations\">\n      <div class=\"variantWrapper\" *ngFor=\"let variant of variants; let i = index\">\n        <div class=\"variantSelector\">\n          <div [style.width]=\"i === variants.length - 1 ? '100%' : 'calc(100% - 38px)'\">\n            <variant-selector [ngModel]=\"variant.variant\" (ngModelChange)=\"variant.variant = $event; addRowMaybe(i); saveEHRVariant(variant);\"></variant-selector>\n          </div>\n          <button class=\"removeRowButton btn btn-danger\" (click)=\"removeRow(i)\" *ngIf=\"i !== variants.length - 1\">X</button>\n        </div>\n        <div>\n          <div class=\"visualizationContent\" [@drawerAnimation]=\"variant.drawerState\">\n            <variant-visualization [(ngModel)]=\"variant.variant\"></variant-visualization>\n          </div>\n          <div *ngIf=\"variant.variant !== undefined && variant.variant !== null\" class=\"informationToggle\" (click)=\"variant.toggleDrawer()\">\n            <img src=\"/assets/dropdown.svg\">\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Review form question -->\n    <div id=\"askForReviewDiv\" *ngIf=\"userInteractionPoints >= 3 && askForReview\">\n      <a href=\"javascript:void(0)\" (click)=\"openFeedbackForm()\">\n        <ngb-alert [type]=\"'primary'\" (close)=\"askForReview = false\">Please review our service!</ngb-alert>\n      </a>\n    </div>\n  ",
+        styles: ["\n    p {\n      margin: 0;\n    }\n\n    #smartCancerNavigator {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n\n      background-color: grey;\n      padding: 20px;\n      text-align: center;\n      border-bottom-left-radius: 20px;\n      border-bottom-right-radius: 20px;\n\n      user-select: none;\n      cursor: default;\n    }\n    \n    #suggestEHRLink {\n      height: 100px;\n      width: 100%;\n\n      background-color: rgba(255, 163, 8, 0.52);\n      overflow: hidden;\n    }\n    \n    #suggestEHRLink>* {\n      float: left;\n    }\n\n    #suggestEHRLink>#suggestions {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      width: calc(100% - 60px);\n      height: 100%;\n    }\n\n    #suggestEHRLink img {\n      width: 100px;\n      height: auto;\n      margin: 1%;\n    }\n\n    #suggestEHRLink p {\n      width: calc(96% - 100px);\n      margin: 1%;\n      font-size: 20px;\n      color: black;\n    }\n\n    #suggestEHRLink button {\n      width: 60px;\n      height: 30px;\n      color: white;\n      font-size: 15px;\n      border-radius: 0;\n      padding: 0;\n    }\n\n    #patientLinkState>div {\n      border-bottom-left-radius: 20px;\n      border-bottom-right-radius: 20px;\n    }\n\n    #patientInfo {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n\n      height: 100px;\n      width: 100%;\n\n      overflow: hidden;\n\n      text-align: center;\n    }\n\n    #patientInfo img {\n      width: 80px;\n      height: 80px;\n      margin: 1%;\n    }\n\n    #patientInfo table {\n      width: calc(96% - 200px);\n      margin: 1%;\n      font-size: 20px;\n      color: black;\n    }\n    \n    #patientInfo #autosyncToggle {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      \n      width: 100px;\n      height: 100%;\n    }\n\n    #variantVisualizations {\n      padding: 15px;\n    }\n\n    .variantWrapper {\n      margin-bottom: 5px;\n    }\n\n    .variantSelector {\n      height: 38px;\n    }\n\n    .variantSelector > * {\n      float: left;\n      height: 100%;\n    }\n\n    .removeRowButton {\n      width: 38px;\n      font-size: 20px;\n      color: white;\n      padding: 0;\n    }\n\n    .informationToggle {\n      width: 100%;\n      background-color: #e2e2e2;\n      border-bottom-left-radius: 10px;\n      border-bottom-right-radius: 10px;\n      text-align: center;\n      height: 30px;\n    }\n\n    .visualizationContent {\n      overflow: scroll;\n    }\n\n    .informationToggle:hover {\n      background-color: #b2b2b2;\n    }\n\n    .informationToggle img {\n      height: 10px;\n      width: 10px;\n      margin: 10px;\n    }\n\n    #askForReviewDiv {\n      display: block;\n      position: fixed;\n      bottom: 0;\n      left: 0;\n    }\n  "],
         animations: [
             Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["j" /* trigger */])("drawerAnimation", [
                 Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["g" /* state */])("closed", Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["h" /* style */])({
@@ -1698,10 +1742,10 @@ VariantEntryAndVisualizationComponent = __decorate([
             ])
         ]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__variant_selector_variant_selector_service__["a" /* VariantSelectorService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__variant_selector_variant_selector_service__["a" /* VariantSelectorService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__variant_selector_variant_selector_service__["a" /* VariantSelectorService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__variant_selector_variant_selector_service__["a" /* VariantSelectorService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_6__ng_bootstrap_ng_bootstrap__["b" /* NgbModal */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ng_bootstrap_ng_bootstrap__["b" /* NgbModal */]) === "function" && _c || Object])
 ], VariantEntryAndVisualizationComponent);
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=variant-entry-and-visualization.component.js.map
 
 /***/ }),
@@ -2640,6 +2684,35 @@ VariantInformationComponent = __decorate([
 
 var _a;
 //# sourceMappingURL=variant-information.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/feedback-form/feedback-form-modal.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedbackFormModalComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var FeedbackFormModalComponent = (function () {
+    function FeedbackFormModalComponent() {
+    }
+    return FeedbackFormModalComponent;
+}());
+FeedbackFormModalComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: "feedback-form-modal",
+        template: "    \n    <iframe src=\"https://docs.google.com/forms/d/e/1FAIpQLSfLUXs73346HwTOxRI0G3rcdMBGBMulS4NyH3tj3aSG3MXD_Q/viewform?embedded=true\" width=\"760\" height=\"500\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>\n  "
+    })
+], FeedbackFormModalComponent);
+
+//# sourceMappingURL=feedback-form-modal.component.js.map
 
 /***/ }),
 
