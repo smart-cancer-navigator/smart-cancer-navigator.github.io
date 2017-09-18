@@ -22,9 +22,9 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__smart_initialization_smart_launch_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-launch.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__smart_initialization_smart_token_reception_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-token-reception.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__entry_and_visualization_variant_entry_and_visualization_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-entry-and-visualization.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ehr_instructions_ehr_instructions_component__ = __webpack_require__("../../../../../src/app/ehr-instructions/ehr-instructions.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__landing_page_landing_page_component__ = __webpack_require__("../../../../../src/app/landing-page/landing-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__routes_entry_and_visualization_variant_entry_and_visualization_component__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-entry-and-visualization.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__routes_ehr_instructions_ehr_instructions_component__ = __webpack_require__("../../../../../src/app/routes/ehr-instructions/ehr-instructions.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__routes_home_home_component__ = __webpack_require__("../../../../../src/app/routes/home/home.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -42,9 +42,9 @@ var routes = [
     { path: "", redirectTo: "/app", pathMatch: "full" },
     { path: "smart-launch", component: __WEBPACK_IMPORTED_MODULE_2__smart_initialization_smart_launch_component__["a" /* SMARTLaunchComponent */] },
     { path: "token-reception", component: __WEBPACK_IMPORTED_MODULE_3__smart_initialization_smart_token_reception_component__["a" /* SMARTTokenReceptionComponent */] },
-    { path: "app", component: __WEBPACK_IMPORTED_MODULE_4__entry_and_visualization_variant_entry_and_visualization_component__["a" /* VariantEntryAndVisualizationComponent */] },
-    { path: "ehr-link", component: __WEBPACK_IMPORTED_MODULE_5__ehr_instructions_ehr_instructions_component__["a" /* EHRInstructionsComponent */] },
-    { path: "home", component: __WEBPACK_IMPORTED_MODULE_6__landing_page_landing_page_component__["a" /* LandingPageComponent */] }
+    { path: "app", component: __WEBPACK_IMPORTED_MODULE_4__routes_entry_and_visualization_variant_entry_and_visualization_component__["a" /* VariantEntryAndVisualizationComponent */] },
+    { path: "ehr-link", component: __WEBPACK_IMPORTED_MODULE_5__routes_ehr_instructions_ehr_instructions_component__["a" /* EHRInstructionsComponent */] },
+    { path: "home", component: __WEBPACK_IMPORTED_MODULE_6__routes_home_home_component__["a" /* LandingPageComponent */] }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -105,28 +105,28 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__node_modules_angular2_ui_switch_src__ = __webpack_require__("../../../../angular2-ui-switch/src/index.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__entry_and_visualization_variant_selector_variant_selector_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__routes_entry_and_visualization_variant_selector_variant_selector_component__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-selector/variant-selector.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__smart_initialization_smart_launch_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-launch.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__smart_initialization_smart_token_reception_component__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-token-reception.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__entry_and_visualization_filterable_search_filterable_search_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/filterable-search/filterable-search.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug-details-modal.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__entry_and_visualization_variant_visualization_gene_gene_information_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/gene/gene-information.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__entry_and_visualization_variant_visualization_variant_variant_information_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant/variant-information.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__entry_and_visualization_variant_visualization_variant_visualization_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant-visualization.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ehr_instructions_ehr_instructions_component__ = __webpack_require__("../../../../../src/app/ehr-instructions/ehr-instructions.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__feedback_form_feedback_form_modal_component__ = __webpack_require__("../../../../../src/app/feedback-form/feedback-form-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__routes_entry_and_visualization_filterable_search_filterable_search_component__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/filterable-search/filterable-search.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__routes_entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_component__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__routes_entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/drugs/drug-details-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__routes_entry_and_visualization_variant_visualization_gene_gene_information_component__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/gene/gene-information.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__routes_entry_and_visualization_variant_visualization_variant_variant_information_component__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/variant/variant-information.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__routes_entry_and_visualization_variant_visualization_variant_visualization_component__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/variant-visualization.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__routes_ehr_instructions_ehr_instructions_component__ = __webpack_require__("../../../../../src/app/routes/ehr-instructions/ehr-instructions.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__routes_feedback_form_feedback_form_modal_component__ = __webpack_require__("../../../../../src/app/routes/feedback-form/feedback-form-modal.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__universal_components_header_component__ = __webpack_require__("../../../../../src/app/universal-components/header.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__smart_initialization_smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__entry_and_visualization_genomic_data_providers_myvariantinfo_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/myvariantinfo-search.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__entry_and_visualization_variant_selector_variant_selector_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__entry_and_visualization_variant_visualization_drugs_drugs_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drugs-search.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__entry_and_visualization_genomic_data_providers_mygeneinfo_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/mygeneinfo-search.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__entry_and_visualization_genomic_data_providers_utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__entry_and_visualization_variant_visualization_variant_classifications_modal_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant/classifications-modal.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__entry_and_visualization_variant_entry_and_visualization_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-entry-and-visualization.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__landing_page_landing_page_component__ = __webpack_require__("../../../../../src/app/landing-page/landing-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__routes_entry_and_visualization_genomic_data_providers_myvariantinfo_search_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data-providers/myvariantinfo-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__routes_entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__routes_entry_and_visualization_variant_selector_variant_selector_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-selector/variant-selector.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__routes_entry_and_visualization_variant_visualization_drugs_drugs_search_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/drugs/drugs-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__routes_entry_and_visualization_genomic_data_providers_mygeneinfo_search_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data-providers/mygeneinfo-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__routes_entry_and_visualization_genomic_data_providers_utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__routes_entry_and_visualization_variant_visualization_variant_classifications_modal_component__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/variant/classifications-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__routes_entry_and_visualization_variant_entry_and_visualization_component__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-entry-and-visualization.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__routes_home_home_component__ = __webpack_require__("../../../../../src/app/routes/home/home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__universal_components_github_fork_us_component__ = __webpack_require__("../../../../../src/app/universal-components/github-fork-us.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -189,35 +189,35 @@ AppModule = __decorate([
         declarations: [
             __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_20__universal_components_header_component__["a" /* HeaderComponent */],
-            __WEBPACK_IMPORTED_MODULE_29__entry_and_visualization_variant_entry_and_visualization_component__["a" /* VariantEntryAndVisualizationComponent */],
-            __WEBPACK_IMPORTED_MODULE_17__entry_and_visualization_variant_visualization_variant_visualization_component__["a" /* VariantVisualizationComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__entry_and_visualization_variant_selector_variant_selector_component__["a" /* VariantSelectorComponent */],
+            __WEBPACK_IMPORTED_MODULE_29__routes_entry_and_visualization_variant_entry_and_visualization_component__["a" /* VariantEntryAndVisualizationComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__routes_entry_and_visualization_variant_visualization_variant_visualization_component__["a" /* VariantVisualizationComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__routes_entry_and_visualization_variant_selector_variant_selector_component__["a" /* VariantSelectorComponent */],
             __WEBPACK_IMPORTED_MODULE_10__smart_initialization_smart_launch_component__["a" /* SMARTLaunchComponent */],
             __WEBPACK_IMPORTED_MODULE_11__smart_initialization_smart_token_reception_component__["a" /* SMARTTokenReceptionComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__entry_and_visualization_filterable_search_filterable_search_component__["a" /* FilterableSearchComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__entry_and_visualization_variant_visualization_variant_variant_information_component__["a" /* VariantInformationComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_component__["a" /* ClinicalTrialsComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__entry_and_visualization_variant_visualization_gene_gene_information_component__["a" /* GeneInformationComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */],
-            __WEBPACK_IMPORTED_MODULE_28__entry_and_visualization_variant_visualization_variant_classifications_modal_component__["a" /* ClassificationsModalComponent */],
-            __WEBPACK_IMPORTED_MODULE_18__ehr_instructions_ehr_instructions_component__["a" /* EHRInstructionsComponent */],
-            __WEBPACK_IMPORTED_MODULE_30__landing_page_landing_page_component__["a" /* LandingPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__routes_entry_and_visualization_filterable_search_filterable_search_component__["a" /* FilterableSearchComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__routes_entry_and_visualization_variant_visualization_variant_variant_information_component__["a" /* VariantInformationComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__routes_entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_component__["a" /* ClinicalTrialsComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__routes_entry_and_visualization_variant_visualization_gene_gene_information_component__["a" /* GeneInformationComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__routes_entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */],
+            __WEBPACK_IMPORTED_MODULE_28__routes_entry_and_visualization_variant_visualization_variant_classifications_modal_component__["a" /* ClassificationsModalComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__routes_ehr_instructions_ehr_instructions_component__["a" /* EHRInstructionsComponent */],
+            __WEBPACK_IMPORTED_MODULE_30__routes_home_home_component__["a" /* LandingPageComponent */],
             __WEBPACK_IMPORTED_MODULE_31__universal_components_github_fork_us_component__["a" /* GithubForkUsComponent */],
-            __WEBPACK_IMPORTED_MODULE_19__feedback_form_feedback_form_modal_component__["a" /* FeedbackFormModalComponent */]
+            __WEBPACK_IMPORTED_MODULE_19__routes_feedback_form_feedback_form_modal_component__["a" /* FeedbackFormModalComponent */]
         ],
         entryComponents: [
-            __WEBPACK_IMPORTED_MODULE_14__entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */],
-            __WEBPACK_IMPORTED_MODULE_28__entry_and_visualization_variant_visualization_variant_classifications_modal_component__["a" /* ClassificationsModalComponent */],
-            __WEBPACK_IMPORTED_MODULE_19__feedback_form_feedback_form_modal_component__["a" /* FeedbackFormModalComponent */]
+            __WEBPACK_IMPORTED_MODULE_14__routes_entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */],
+            __WEBPACK_IMPORTED_MODULE_28__routes_entry_and_visualization_variant_visualization_variant_classifications_modal_component__["a" /* ClassificationsModalComponent */],
+            __WEBPACK_IMPORTED_MODULE_19__routes_feedback_form_feedback_form_modal_component__["a" /* FeedbackFormModalComponent */]
         ],
         providers: [
             __WEBPACK_IMPORTED_MODULE_21__smart_initialization_smart_reference_service__["c" /* SMARTReferenceService */],
-            __WEBPACK_IMPORTED_MODULE_24__entry_and_visualization_variant_selector_variant_selector_service__["a" /* VariantSelectorService */],
-            __WEBPACK_IMPORTED_MODULE_22__entry_and_visualization_genomic_data_providers_myvariantinfo_search_service__["a" /* MyVariantInfoSearchService */],
-            __WEBPACK_IMPORTED_MODULE_26__entry_and_visualization_genomic_data_providers_mygeneinfo_search_service__["a" /* MyGeneInfoSearchService */],
-            __WEBPACK_IMPORTED_MODULE_23__entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_service__["a" /* ClinicalTrialsService */],
-            __WEBPACK_IMPORTED_MODULE_25__entry_and_visualization_variant_visualization_drugs_drugs_search_service__["a" /* DrugsSearchService */],
-            __WEBPACK_IMPORTED_MODULE_27__entry_and_visualization_genomic_data_providers_utilities_json_navigator_service__["a" /* JSONNavigatorService */]
+            __WEBPACK_IMPORTED_MODULE_24__routes_entry_and_visualization_variant_selector_variant_selector_service__["a" /* VariantSelectorService */],
+            __WEBPACK_IMPORTED_MODULE_22__routes_entry_and_visualization_genomic_data_providers_myvariantinfo_search_service__["a" /* MyVariantInfoSearchService */],
+            __WEBPACK_IMPORTED_MODULE_26__routes_entry_and_visualization_genomic_data_providers_mygeneinfo_search_service__["a" /* MyGeneInfoSearchService */],
+            __WEBPACK_IMPORTED_MODULE_23__routes_entry_and_visualization_variant_visualization_clinical_trials_clinical_trials_service__["a" /* ClinicalTrialsService */],
+            __WEBPACK_IMPORTED_MODULE_25__routes_entry_and_visualization_variant_visualization_drugs_drugs_search_service__["a" /* DrugsSearchService */],
+            __WEBPACK_IMPORTED_MODULE_27__routes_entry_and_visualization_genomic_data_providers_utilities_json_navigator_service__["a" /* JSONNavigatorService */]
         ],
         bootstrap: [
             __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]
@@ -229,7 +229,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/ehr-instructions/ehr-instructions.component.ts":
+/***/ "../../../../../src/app/routes/ehr-instructions/ehr-instructions.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -250,8 +250,8 @@ var EHRInstructionsComponent = (function () {
 EHRInstructionsComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: "ehr-instructions",
-        template: "\n    <div id=\"wrapper\">\n      <h2 class=\"display-2\" style=\"text-align: center;\">EHR Link Example</h2>\n      <br>\n      <div class=\"instructionBlock\">\n        <h4 class=\"display-4 instructionHeading\">Linking the app to the sandbox</h4>\n        <p class=\"thinFont1\">Navigate to <a href=\"https://sandbox.hspconsortium.org\">the HSPC Sandbox</a>, and create a new account.</p>\n        <img style=\"width: 100%\" src=\"/assets/ehr-link/create-account.png\">\n        <br>\n        <p class=\"thinFont1\">Then, you will have to create a new sandbox.  Do so with the FHIR STU3 specification.</p>\n        <p class=\"thinFont1\">Following the sandbox creation, navigate to the \"Registered Apps\" section and click \"Register new app manually\".  Enter the following parameters: </p>\n        <img style=\"width: 70%\" src=\"/assets/ehr-link/registering-app.png\">\n      </div>\n      <br>\n      \n      <div class=\"instructionBlock\">\n        <h4 class=\"display-4 instructionHeading\">Building a launch scenario</h4>\n        <p class=\"thinFont1\">With your new registered app, create a new Practitioner Persona.  Then, create a new launch scenario for the app with any patient and practitioner persona you desire.</p>\n        <p style=\"color: red\">(NOTE: Ensure that you link the launch scenario to the SMART-CO app registration you created in the previous step).  </p>\n        <img style=\"width: 40%\" src=\"/assets/ehr-link/launching-scenario.png\">\n      </div>\n      <br>\n      \n      <div class=\"instructionBlock\">\n        <h4 class=\"display-4 instructionHeading\">Launching the application</h4>\n        <p class=\"thinFont1\">First, take note of the Client ID for the application.  This long string is required for the application to access the sandbox data.</p>\n        <img style=\"width: 40%\" src=\"/assets/ehr-link/getting-client-id.png\">\n        <br>\n        <p class=\"thinFont1\">Now, click \"Launch\" on your launch scenario.  Upon beginning the app, you should be prompted for your client ID.  Paste in the one you obtained prior.</p>\n        <img style=\"width: 80%\" src=\"/assets/ehr-link/entering-info.png\">\n        <br>\n        <p>Congrats, you're done!</p>\n      </div>\n    </div>\n  ",
-        styles: ["\n    #wrapper {\n      padding: 5px;\n    }\n    \n    .instructionBlock {\n      border: 1px solid grey;\n      border-radius: 15px;\n      padding: 10px;\n      text-align: center;\n    }\n    \n    .instructionHeading {\n      text-align: center;\n    }\n    \n    .instructionBlock p {\n      font-size: 20px;\n    }\n  "]
+        template: "\n    <div id=\"wrapper\">\n      <h2 class=\"display-2\" style=\"text-align: center;\">EHR Link Example</h2>\n      <br>\n      <div class=\"instructionBlock\">\n        <h4 class=\"display-4 instructionHeading\">Linking the app to the sandbox</h4>\n        <p class=\"thinFont1\">Navigate to <a href=\"https://sandbox.hspconsortium.org\">the HSPC Sandbox</a>, and create a new account.</p>\n        <img style=\"width: 100%\" src=\"/assets/ehr-link/create-account.png\">\n        <br>\n        <p class=\"thinFont1\">Then, you will have to create a new sandbox.  Do so with the FHIR STU3 specification.</p>\n        <p class=\"thinFont1\">Following the sandbox creation, navigate to the \"Registered Apps\" section and click \"Register new app manually\".  Enter the following parameters: </p>\n        <img style=\"width: 70%\" src=\"/assets/ehr-link/registering-app.png\">\n      </div>\n      <br>\n      \n      <div class=\"instructionBlock\">\n        <h4 class=\"display-4 instructionHeading\">Building a launch scenario</h4>\n        <p class=\"thinFont1\">With your new registered app, create a new Practitioner Persona.  Then, create a new launch scenario for the app with any patient and practitioner persona you desire.</p>\n        <p style=\"color: red\">(NOTE: Ensure that you link the launch scenario to the SMART Cancer Navigator app registration you created in the previous step).  </p>\n        <img style=\"width: 40%\" src=\"/assets/ehr-link/launching-scenario.png\">\n      </div>\n      <br>\n      \n      <div class=\"instructionBlock\">\n        <h4 class=\"display-4 instructionHeading\">Launching the application</h4>\n        <p class=\"thinFont1\">First, take note of the Client ID for the application.  This long string is required for the application to access the sandbox data.</p>\n        <img style=\"width: 40%\" src=\"/assets/ehr-link/getting-client-id.png\">\n        <br>\n        <p class=\"thinFont1\">Now, click \"Launch\" on your launch scenario.  Upon beginning the app, you should be prompted for your client ID.  Paste in the one you obtained prior.</p>\n        <img style=\"width: 80%\" src=\"/assets/ehr-link/entering-info.png\">\n        <br>\n        <p>Congrats, you're done!</p>\n      </div>\n    </div>\n  ",
+        styles: ["\n    #wrapper {\n      padding: 5px;\n      background-color: white;\n    }\n    \n    .instructionBlock {\n      border: 1px solid grey;\n      border-radius: 15px;\n      padding: 10px;\n      text-align: center;\n    }\n    \n    .instructionHeading {\n      text-align: center;\n    }\n    \n    .instructionBlock p {\n      font-size: 20px;\n    }\n  "]
     })
 ], EHRInstructionsComponent);
 
@@ -259,7 +259,7 @@ EHRInstructionsComponent = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/data-merging.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/data-merging.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -305,7 +305,7 @@ var MergeProperties = function (property1, property2) {
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/filterable-search/filterable-search.component.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/filterable-search/filterable-search.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -520,17 +520,17 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/genomic-data-providers/mygeneinfo-search.service.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/genomic-data-providers/mygeneinfo-search.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyGeneInfoSearchService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -618,22 +618,22 @@ var _a, _b;
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/genomic-data-providers/myvariantinfo-search.service.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/genomic-data-providers/myvariantinfo-search.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyVariantInfoSearchService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__variant_visualization_drugs_drug__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__variant_visualization_drugs_drug__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/drugs/drug.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_empty__ = __webpack_require__("../../../../rxjs/add/observable/empty.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_empty___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_empty__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1083,7 +1083,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1234,7 +1234,7 @@ JSONNavigatorService = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/genomic-data.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/genomic-data.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1244,7 +1244,7 @@ JSONNavigatorService = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return VariantReference; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Classification; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Variant; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_merging__ = __webpack_require__("../../../../../src/app/entry-and-visualization/data-merging.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_merging__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/data-merging.ts");
 
 /**
  * The gene reference class includes only the base properties for a given gene; those which are required for merging
@@ -1418,17 +1418,17 @@ var Variant = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/variant-entry-and-visualization.component.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/variant-entry-and-visualization.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VariantEntryAndVisualizationComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__smart_initialization_smart_reference_service__ = __webpack_require__("../../../../../src/app/smart-initialization/smart-reference.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__variant_selector_variant_selector_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__variant_selector_variant_selector_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-selector/variant-selector.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_animations__ = __webpack_require__("../../../animations/@angular/animations.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__feedback_form_feedback_form_modal_component__ = __webpack_require__("../../../../../src/app/feedback-form/feedback-form-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__feedback_form_feedback_form_modal_component__ = __webpack_require__("../../../../../src/app/routes/feedback-form/feedback-form-modal.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1753,15 +1753,15 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.component.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/variant-selector/variant-selector.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export SELECTOR_CONTROL_VALUE_ACCESSOR */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VariantSelectorComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__variant_selector_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__variant_selector_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-selector/variant-selector.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1849,14 +1849,14 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/variant-selector/variant-selector.service.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/variant-selector/variant-selector.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VariantSelectorService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data_providers_myvariantinfo_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/myvariantinfo-search.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__genomic_data_providers_mygeneinfo_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data-providers/mygeneinfo-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data_providers_myvariantinfo_search_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data-providers/myvariantinfo-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__genomic_data_providers_mygeneinfo_search_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data-providers/mygeneinfo-search.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
@@ -1967,14 +1967,14 @@ var _a, _b;
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.component.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClinicalTrialsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__clinical_trials_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__clinical_trials_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__genomic_data__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data.ts");
 /**
  * The best way to learn is through the experiences of others, and accessing the databse of past clinical trials
  * often is the best way to glean such information.
@@ -2027,7 +2027,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.service.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2036,8 +2036,8 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__clinical_trials__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__drugs_drug__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__clinical_trials__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__drugs_drug__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/drugs/drug.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_mergeMap__ = __webpack_require__("../../../../rxjs/add/operator/mergeMap.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_mergeMap__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -2193,7 +2193,7 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/variant-visualization/clinical-trials/clinical-trials.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2254,14 +2254,14 @@ var ClinicalTrial = (function (_super) {
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug-details-modal.component.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/variant-visualization/drugs/drug-details-modal.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DrugDetailsModalComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__drug__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__drugs_search_service__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drugs-search.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__drug__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/drugs/drug.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__drugs_search_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/drugs/drugs-search.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
 /**
  * A part of the result visualization component, which displays the drugs that will be effective against genes
@@ -2315,7 +2315,7 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/variant-visualization/drugs/drug.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2323,7 +2323,7 @@ var _a, _b, _c;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return InteractionType; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return GeneInteraction; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Drug; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_merging__ = __webpack_require__("../../../../../src/app/entry-and-visualization/data-merging.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_merging__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/data-merging.ts");
 /**
  * One of the primary things that clinicians will need to see are the drugs which are most likely to be effective
  * against different genes and variants.
@@ -2387,15 +2387,15 @@ var Drug = (function (_super) {
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drugs-search.service.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/variant-visualization/drugs/drugs-search.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DrugsSearchService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__drug__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__drug__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/drugs/drug.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__genomic_data__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data.ts");
 /**
  * This service, like the data entry service, queries for and merges duplicate drugs for given genes.
  */
@@ -2470,13 +2470,13 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/gene/gene-information.component.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/variant-visualization/gene/gene-information.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GeneInformationComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__genomic_data__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data.ts");
 /**
  * Visualizing the data for the gene: a tab on the result visualization.
  */
@@ -2513,7 +2513,7 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/variant-visualization.component.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/variant-visualization/variant-visualization.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2585,14 +2585,14 @@ VariantVisualizationComponent = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/variant/classifications-modal.component.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/variant-visualization/variant/classifications-modal.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClassificationsModalComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__genomic_data__ = __webpack_require__("../../../../../src/app/entry-and-visualization/genomic-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__genomic_data__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data.ts");
 /**
  * A part of the result visualization component, which displays the drugs that will be effective against genes
  * or variants.
@@ -2633,15 +2633,15 @@ var _a, _b;
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry-and-visualization/variant-visualization/variant/variant-information.component.ts":
+/***/ "../../../../../src/app/routes/entry-and-visualization/variant-visualization/variant/variant-information.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VariantInformationComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__drugs_drug_details_modal_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/drugs/drug-details-modal.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__classifications_modal_component__ = __webpack_require__("../../../../../src/app/entry-and-visualization/variant-visualization/variant/classifications-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__drugs_drug_details_modal_component__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/drugs/drug-details-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__classifications_modal_component__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/variant/classifications-modal.component.ts");
 /**
  * Visualizing the data for the variant: a tab on the results display.
  */
@@ -2690,7 +2690,7 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/feedback-form/feedback-form-modal.component.ts":
+/***/ "../../../../../src/app/routes/feedback-form/feedback-form-modal.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2719,7 +2719,7 @@ FeedbackFormModalComponent = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/landing-page/landing-page.component.ts":
+/***/ "../../../../../src/app/routes/home/home.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2752,7 +2752,7 @@ var LandingPageComponent = (function () {
 LandingPageComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: "landing-page",
-        template: "\n    <div class=\"parallax\">\n      <!--<div id=\"group1\" class=\"parallax__group\">-->\n      <!--<div class=\"parallax__layer parallax__layer&#45;&#45;base\">-->\n      <!--<div class=\"title\">Base Layer</div>-->\n      <!--</div>-->\n      <!--</div>-->\n      <div id=\"group2\" class=\"parallax__group\">\n        <div class=\"parallax__layer parallax__layer--base\">\n          <div class=\"centeredContent\">\n            <div class=\"darkPanel\">\n              <h1 class=\"thinFont1\" style=\"color: white; font-size: 100px;\">SMART-CO</h1>\n            </div>\n            <div class=\"lightPanel\">\n              <p class=\"thinFont2\" style=\"color: black; font-size: 30px;\">A SMART EHR Module for Clinical\n                Oncologists</p>\n            </div>\n          </div>\n        </div>\n        <div class=\"parallax__layer parallax__layer--back\">\n          <div class=\"imagePanel\">\n            <img src=\"/assets/landing-page/ehr-background.png\">\n          </div>\n        </div>\n      </div>\n      <div id=\"group3\" class=\"parallax__group\">\n        <div class=\"parallax__layer parallax__layer--fore\">\n          <div class=\"centeredContent\">\n            <div class=\"lightPanel\">\n              <h1 class=\"thinFont1\" style=\"color: black; font-size: 100px;\">Why SMART-CO?</h1>\n              <br>\n              <div\n                style=\"display: flex; justify-content: center; align-items: center; width: 80%; margin-left: 10%; margin-right: 10%;\">\n                <img src=\"/assets/landing-page/smart-icon.png\" style=\"float: left; width: 36%; height: auto; margin: 1%\">\n                <img src=\"/assets/landing-page/angular-icon.svg\" style=\"float: left; width: 18%; height: auto; margin: 1%;\">\n                <img src=\"/assets/landing-page/fhir-icon.png\" style=\"float: left; width: 40%; height: auto; margin: 1%;\">\n              </div>\n              <br>\n              <p class=\"thinFont1\" style=\"color: black; font-size: 30px;\">In the modern world of oncology,\n                interoperability and ease-of-use is key. Why settle for less?</p>\n            </div>\n          </div>\n        </div>\n        <div class=\"parallax__layer parallax__layer--base\">\n          <div class=\"imagePanel\">\n            <img src=\"/assets/landing-page/doctor-tablet.jpg\" style=\"width: 100%; height: auto;\">\n          </div>\n        </div>\n      </div>\n      <div id=\"group4\" class=\"parallax__group\">\n        <div class=\"parallax__layer parallax__layer--base\">\n          <div class=\"centeredContent\">\n            <div class=\"darkPanel\">\n              <h1 class=\"thinFont1\" style=\"color: white; font-size: 80px;\">Key Features</h1>\n              <ul class=\"thinFont2\" style=\"color: white; font-size: 30px; padding: 30px;\">\n                <li>Intelligently query for genes and variants from 8 different genomic databases.</li>\n                <li>Extensive analysis provided for genes, variants, drugs, and clinical trials.</li>\n                <li>Link to any SMART-enabled EHR which provides a patient context.</li>\n                <li>Easily add and remove variants linked to the patient resource.</li>\n              </ul>\n            </div>\n          </div>\n        </div>\n        <div class=\"parallax__layer parallax__layer--back\">\n          <div class=\"imagePanel\" style=\"width: 45%; float: right;\">\n            <img src=\"/assets/landing-page/ehr-user.png\">\n          </div>\n        </div>\n        <div class=\"parallax__layer parallax__layer--deep\">\n          <div class=\"imagePanel\" style=\"width: 55%; background-color: white;\">\n            <img src=\"/assets/landing-page/example-usage.png\">\n          </div>\n        </div>\n      </div>\n      <!--<div id=\"group5\" class=\"parallax__group\">-->\n      <!--<div class=\"parallax__layer parallax__layer&#45;&#45;fore\">-->\n      <!--<div class=\"centeredContent\">Foreground Layer</div>-->\n      <!--</div>-->\n      <!--<div class=\"parallax__layer parallax__layer&#45;&#45;base\">-->\n      <!--<div class=\"centeredContent\">Base Layer</div>-->\n      <!--</div>-->\n      <!--</div>-->\n      <!--<div id=\"group6\" class=\"parallax__group\">-->\n        <!--<div class=\"parallax__layer parallax__layer&#45;&#45;back\">-->\n          <!--<div class=\"imagePanel\">-->\n            <!--<img src=\"/assets/open-smartco.jpg\">-->\n          <!--</div>-->\n        <!--</div>-->\n        <!--<div class=\"parallax__layer parallax__layer&#45;&#45;base\">-->\n          <!--<div class=\"centeredContent\">-->\n            <!--<a href=\"https://smart-co.github.io/variant-entry-and-visualization\" class=\"thinFont1\" style=\"font-size: 80px;\">Try It Now!</a>-->\n          <!--</div>-->\n        <!--</div>-->\n      <!--</div>-->\n      <div id=\"group7\" class=\"parallax__group\">\n        <div class=\"parallax__layer parallax__layer--base\">\n          <div class=\"centeredContent\">\n            <div class=\"lightPanel\">\n              <a href=\"javascript:void(0)\" (click)=\"navigateToVisualization()\" class=\"thinFont1\" style=\"font-size: 80px; color: black;\">Try It Now!</a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  ",
+        template: "\n    <div class=\"parallax\">\n      <!--<div id=\"group1\" class=\"parallax__group\">-->\n      <!--<div class=\"parallax__layer parallax__layer&#45;&#45;base\">-->\n      <!--<div class=\"title\">Base Layer</div>-->\n      <!--</div>-->\n      <!--</div>-->\n      <div id=\"group2\" class=\"parallax__group\">\n        <div class=\"parallax__layer parallax__layer--base\">\n          <div class=\"centeredContent\">\n            <div class=\"darkPanel\">\n              <h1 class=\"thinFont1\" style=\"color: white; font-size: 100px;\">The SMART Cancer Navigator</h1>\n            </div>\n            <div class=\"lightPanel\">\n              <p class=\"thinFont2\" style=\"color: black; font-size: 30px;\">A SMART on FHIR EHR Module for Clinical\n                Oncologists</p>\n            </div>\n          </div>\n        </div>\n        <div class=\"parallax__layer parallax__layer--back\">\n          <div class=\"imagePanel\">\n            <img src=\"/assets/landing-page/ehr-background.png\">\n          </div>\n        </div>\n      </div>\n      <div id=\"group3\" class=\"parallax__group\">\n        <div class=\"parallax__layer parallax__layer--fore\">\n          <div class=\"centeredContent\">\n            <div class=\"lightPanel\">\n              <h1 class=\"thinFont1\" style=\"color: black; font-size: 100px;\">Why?</h1>\n              <br>\n              <div\n                style=\"display: flex; justify-content: center; align-items: center; width: 80%; margin-left: 10%; margin-right: 10%;\">\n                <img src=\"/assets/landing-page/smart-icon.png\" style=\"float: left; width: 36%; height: auto; margin: 1%\">\n                <img src=\"/assets/landing-page/angular-icon.svg\" style=\"float: left; width: 18%; height: auto; margin: 1%;\">\n                <img src=\"/assets/landing-page/fhir-icon.png\" style=\"float: left; width: 40%; height: auto; margin: 1%;\">\n              </div>\n              <br>\n              <p class=\"thinFont1\" style=\"color: black; font-size: 30px;\">In the modern world of oncology,\n                interoperability and ease-of-use is key. Why settle for less?</p>\n            </div>\n          </div>\n        </div>\n        <div class=\"parallax__layer parallax__layer--base\">\n          <div class=\"imagePanel\">\n            <img src=\"/assets/landing-page/doctor-tablet.jpg\" style=\"width: 100%; height: auto;\">\n          </div>\n        </div>\n      </div>\n      <div id=\"group4\" class=\"parallax__group\">\n        <div class=\"parallax__layer parallax__layer--base\">\n          <div class=\"centeredContent\">\n            <div class=\"darkPanel\">\n              <h1 class=\"thinFont1\" style=\"color: white; font-size: 80px;\">Key Features</h1>\n              <ul class=\"thinFont2\" style=\"color: white; font-size: 30px; padding: 30px;\">\n                <li>Intelligently query for genes and variants from 8 different genomic databases.</li>\n                <li>Extensive analysis provided for genes, variants, drugs, and clinical trials.</li>\n                <li>Link to any SMART-enabled EHR which provides a patient context.</li>\n                <li>Easily add and remove variants linked to the patient resource.</li>\n              </ul>\n            </div>\n          </div>\n        </div>\n        <div class=\"parallax__layer parallax__layer--back\">\n          <div class=\"imagePanel\" style=\"width: 45%; float: right;\">\n            <img src=\"/assets/landing-page/ehr-user.png\">\n          </div>\n        </div>\n        <div class=\"parallax__layer parallax__layer--deep\">\n          <div class=\"imagePanel\" style=\"width: 55%; background-color: white;\">\n            <img src=\"/assets/landing-page/example-usage.png\">\n          </div>\n        </div>\n      </div>\n      <!--<div id=\"group5\" class=\"parallax__group\">-->\n      <!--<div class=\"parallax__layer parallax__layer&#45;&#45;fore\">-->\n      <!--<div class=\"centeredContent\">Foreground Layer</div>-->\n      <!--</div>-->\n      <!--<div class=\"parallax__layer parallax__layer&#45;&#45;base\">-->\n      <!--<div class=\"centeredContent\">Base Layer</div>-->\n      <!--</div>-->\n      <!--</div>-->\n      <!--<div id=\"group6\" class=\"parallax__group\">-->\n        <!--<div class=\"parallax__layer parallax__layer&#45;&#45;back\">-->\n          <!--<div class=\"imagePanel\">-->\n            <!--<img src=\"/assets/open-smartco.jpg\">-->\n          <!--</div>-->\n        <!--</div>-->\n        <!--<div class=\"parallax__layer parallax__layer&#45;&#45;base\">-->\n          <!--<div class=\"centeredContent\">-->\n            <!--<a href=\"https://smart-co.github.io/variant-entry-and-visualization\" class=\"thinFont1\" style=\"font-size: 80px;\">Try It Now!</a>-->\n          <!--</div>-->\n        <!--</div>-->\n      <!--</div>-->\n      <div id=\"group7\" class=\"parallax__group\">\n        <div class=\"parallax__layer parallax__layer--base\">\n          <div class=\"centeredContent\">\n            <div class=\"lightPanel\">\n              <a href=\"javascript:void(0)\" (click)=\"navigateToVisualization()\" class=\"thinFont1\" style=\"font-size: 80px; color: black;\">Try It Now!</a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  ",
         styles: ["\n    ::-webkit-scrollbar {\n      display: none;\n    }\n\n    /* Parallax base styles\n    --------------------------------------------- */\n\n    .parallax {\n      height: 500px; /* fallback for older browsers */\n      height: 100vh;\n      overflow-x: hidden;\n      overflow-y: auto;\n      -webkit-perspective: 300px;\n      perspective: 300px;\n    }\n\n    .parallax__group {\n      position: relative;\n      height: 500px; /* fallback for older browsers */\n      height: 100vh;\n      -webkit-transform-style: preserve-3d;\n      transform-style: preserve-3d;\n    }\n\n    .parallax__layer {\n      position: absolute;\n      top: 0;\n      left: 0;\n      right: 0;\n      bottom: 0;\n    }\n\n    .parallax__layer--fore {\n      -webkit-transform: translateZ(90px) scale(.7);\n      transform: translateZ(90px) scale(.7);\n      z-index: 1;\n    }\n\n    .parallax__layer--base {\n      -webkit-transform: translateZ(0);\n      transform: translateZ(0);\n      z-index: 4;\n    }\n\n    .parallax__layer--back {\n      -webkit-transform: translateZ(-300px) scale(2);\n      transform: translateZ(-300px) scale(2);\n      z-index: 3;\n    }\n\n    .parallax__layer--deep {\n      -webkit-transform: translateZ(-600px) scale(3);\n      transform: translateZ(-600px) scale(3);\n      z-index: 2;\n    }\n\n    /* demo styles\n --------------------------------------------- */\n\n    body, html {\n      overflow: hidden;\n    }\n\n    body {\n      font: 100% / 1.5 Arial;\n    }\n\n    * {\n      margin: 0;\n      padding: 0;\n    }\n\n    .parallax {\n      font-size: 200%;\n    }\n\n    /* centre the content in the parallax layers */\n    .centeredContent {\n      text-align: center;\n      position: absolute;\n      left: 50%;\n      top: 50%;\n      -webkit-transform: translate(-50%, -50%);\n      transform: translate(-50%, -50%);\n      width: 100%;\n    }\n\n    /* style the groups\n    --------------------------------------------- */\n\n    /*#group1 {*/\n    /*z-index: 5; !* slide over group 2 *!*/\n    /*}*/\n\n    /*#group1 .parallax__layer--base {*/\n    /*background: rgb(102, 204, 102);*/\n    /*}*/\n\n    #group2 {\n      z-index: 3; /* slide under groups 1 and 3 */\n    }\n\n    #group2 .parallax__layer--back {\n      background: rgb(123, 210, 102);\n    }\n\n    #group3 {\n      z-index: 4; /* slide over group 2 and 4 */\n    }\n\n    #group3 .parallax__layer--base {\n      background: rgb(153, 216, 101);\n    }\n\n    #group4 {\n      z-index: 2; /* slide under group 3 and 5 */\n    }\n\n    #group4 .parallax__layer--deep {\n      background: rgb(184, 223, 101);\n    }\n\n    #group5 {\n      z-index: 3; /* slide over group 4 and 6 */\n    }\n\n    #group5 .parallax__layer--base {\n      background: rgb(214, 229, 100);\n    }\n\n    #group6 {\n      z-index: 2; /* slide under group 5 and 7 */\n    }\n\n    #group6 .parallax__layer--back {\n      background: rgb(245, 235, 100);\n    }\n\n    #group7 {\n      z-index: 3; /* slide over group 7 */\n    }\n\n    #group7 .parallax__layer--base {\n      background: #33ec4a url(\"/assets/landing-page/open-smartco.jpg\");\n      background-size: 100% auto;\n    }\n\n    /* Custom classes */\n    .darkPanel {\n      background-color: rgba(0, 0, 0, 0.8);\n      border-radius: 20px;\n      padding: 30px;\n      width: 80%;\n      margin-left: 10%;\n      margin-right: 10%;\n    }\n\n    .lightPanel {\n      background-color: rgba(255, 255, 255, 0.8);\n      border-radius: 20px;\n      padding: 30px;\n      width: 80%;\n      margin-left: 10%;\n      margin-right: 10%;\n    }\n\n    .imagePanel {\n      width: 100%;\n      height: 100%;\n      overflow: hidden;\n      background-color: white;\n    }\n\n    .imagePanel > img {\n      width: 100%;\n      height: auto;\n    }\n  "],
         animations: []
     }),
@@ -2760,7 +2760,7 @@ LandingPageComponent = __decorate([
 ], LandingPageComponent);
 
 var _a;
-//# sourceMappingURL=landing-page.component.js.map
+//# sourceMappingURL=home.component.js.map
 
 /***/ }),
 
@@ -2945,7 +2945,7 @@ var GithubForkUsComponent = (function () {
 GithubForkUsComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: "github-fork-us",
-        template: "\n    <div>\n      <a href=\"https://www.github.com/smart-co/Application\">\n        <img src=\"/assets/github-icon.png\">\n      </a>\n    </div>\n  ",
+        template: "\n    <div>\n      <a href=\"https://www.github.com/smart-cancer-navigator/Application\">\n        <img src=\"/assets/github-icon.png\">\n      </a>\n    </div>\n  ",
         styles: ["\n    div {\n      display: block;\n      position: fixed;\n      right: 0;\n      bottom: 0;\n      z-index: 50;\n      background-color: black;\n      border-radius: 25px;\n    }\n    \n    * {\n      height: 50px;\n      width: 50px;\n    }\n  "]
     })
 ], GithubForkUsComponent);
