@@ -1436,6 +1436,8 @@ var Variant = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__feedback_form_feedback_form_modal_component__ = __webpack_require__("../../../../../src/app/routes/feedback-form/feedback-form-modal.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_util__ = __webpack_require__("../../../../util/util.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_util___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_util__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1445,6 +1447,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -1478,18 +1481,20 @@ var VariantEntryAndVisualizationComponent = (function () {
         this.patientExists = false;
         this.patientObject = null;
         this.patientAge = -1;
+        this.patientConditions = [];
         // Toggled by the user depending on whether they want to sync to the EHR their changes right away (as soon as they make them)
         this.autosync = true;
     }
     VariantEntryAndVisualizationComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.addRow();
-        // As soon as the smart client is loaded from the SMART JS library, this creates the patient info header.
+        // As soon as the smart client is loaded from the SMART JS library, this creates the patient info header and populates the patient variants.
         __WEBPACK_IMPORTED_MODULE_1__smart_initialization_smart_reference_service__["a" /* SMARTClient */].subscribe(function (smartClient) {
             if (smartClient === null) {
                 return;
             }
             _this.offerToLinkToEHRInstructions = false;
+            // Get all patient information.
             smartClient.patient.read().then(function (p) {
                 console.log("Patient read is ", p);
                 _this.patientObject = p;
@@ -1501,6 +1506,7 @@ var VariantEntryAndVisualizationComponent = (function () {
                 }
                 _this.patientExists = true;
             });
+            // Get all genomic variants attached to this patient.
             smartClient.patient.api.search({ type: "Observation", query: { "category": "genomic-variant" }, count: 10 })
                 .then(function (results) {
                 console.log("Successfully got variants!", results);
@@ -1540,7 +1546,27 @@ var VariantEntryAndVisualizationComponent = (function () {
                 }
             })
                 .fail(function (err) {
-                console.log("Couldn't query genomic variants error!" + err);
+                console.log("Couldn't query genomic variants error!", err);
+            });
+            smartClient.patient.api.search({ type: "Condition" })
+                .then(function (results) {
+                console.log("Got patient conditions:", results);
+                if (!Object(__WEBPACK_IMPORTED_MODULE_7_util__["isNullOrUndefined"])(results.data.entry) && results.data.entry.length > 0) {
+                    for (var _i = 0, _a = results.data.entry; _i < _a.length; _i++) {
+                        var entry = _a[_i];
+                        if (!Object(__WEBPACK_IMPORTED_MODULE_7_util__["isNullOrUndefined"])(entry.resource)) {
+                            if (!Object(__WEBPACK_IMPORTED_MODULE_7_util__["isNullOrUndefined"])(entry.resource.code)) {
+                                if (!Object(__WEBPACK_IMPORTED_MODULE_7_util__["isNullOrUndefined"])(entry.resource.code.text)) {
+                                    _this.patientConditions.push(entry.resource.code.text);
+                                    console.log("Added " + entry.resource.code.text);
+                                }
+                            }
+                        }
+                    }
+                }
+            })
+                .fail(function (err) {
+                console.log("The query for patient conditions failed!", err);
             });
         });
     };
@@ -1736,8 +1762,8 @@ var VariantEntryAndVisualizationComponent = (function () {
 VariantEntryAndVisualizationComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: "variant-entry-and-visualization",
-        template: "\n    <div id=\"patientLinkState\">\n      <!-- If an EHR link is NOT detected -->\n      <div id=\"suggestEHRLink\" *ngIf=\"offerToLinkToEHRInstructions\">\n        <div id=\"suggestions\">\n          <img src=\"/assets/entry-and-visualization/info-icon.png\">\n          <p class=\"thinFont1\">You don't seem to be connected to an EHR! <a href=\"javascript:void(0)\"\n                                                                            (click)=\"routeToInstructions()\">Learn how\n            here.</a></p>\n        </div>\n        <button class=\"btn btn-danger\" (click)=\"offerToLinkToEHRInstructions = false\">X</button>\n      </div>\n\n      <!-- If an EHR link is detected -->\n      <div id=\"patientInfo\" *ngIf=\"patientExists\" [style.background-color]=\"patientObject.gender === 'male' ? '#27384f' : '#ff45f7'\">\n        <img [src]=\"patientObject.gender === 'male' ? '/assets/entry-and-visualization/male-icon.png' : '/assets/entry-and-visualization/female-icon.png'\">\n\n        <!-- Patient Details -->\n        <p style=\"color: white\"><b>Name: </b> {{patientObject.name[0].given[0]}} {{patientObject.name[0].family}} | <b>{{patientObject.active ? 'Lives in' : 'Lived in'}}:</b>\n          {{patientObject.address[0].country}} | <b>Age:</b> {{patientAge}}</p>\n\n        <div id=\"autosyncToggle\">\n          <div>\n            <ui-switch [ngModel]=\"autosync\" (ngModelChange)=\"onToggleAutosync($event)\"></ui-switch>\n            <p class=\"thinFont1\" style=\"color: white\">Auto-Sync</p>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <div id=\"variantVisualizations\">\n      <div class=\"variantWrapper\" *ngFor=\"let variant of variants; let i = index\">\n        <div class=\"variantSelector\">\n          <div [style.width]=\"i === variants.length - 1 ? '100%' : 'calc(100% - 38px)'\">\n            <variant-selector [ngModel]=\"variant.variant\"\n                              (ngModelChange)=\"variant.variant = $event; addRowMaybe(i); saveEHRVariant(variant);\"></variant-selector>\n          </div>\n          <button class=\"removeRowButton btn btn-danger\" (click)=\"removeRow(i)\" *ngIf=\"i !== variants.length - 1\">X\n          </button>\n        </div>\n        <div>\n          <div class=\"visualizationContent\" [@drawerAnimation]=\"variant.drawerState\">\n            <variant-visualization [(ngModel)]=\"variant.variant\"></variant-visualization>\n          </div>\n          <div *ngIf=\"variant.variant !== undefined && variant.variant !== null\" class=\"informationToggle\"\n               (click)=\"variant.toggleDrawer()\">\n            <img src=\"/assets/entry-and-visualization/dropdown.svg\">\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Review form question -->\n    <div id=\"askForReviewDiv\" *ngIf=\"userInteractionPoints >= 3 && askForReview\">\n      <a href=\"javascript:void(0)\" (click)=\"openFeedbackForm()\">\n        <ngb-alert [type]=\"'primary'\" (close)=\"askForReview = false\">Please review our service!</ngb-alert>\n      </a>\n    </div>\n  ",
-        styles: ["\n    p {\n      margin: 0;\n    }\n\n    #patientLinkState {\n      margin-left: 6%;\n      margin-right: 6%;\n    }\n\n    #suggestEHRLink {\n      height: 80px;\n      width: 100%;\n\n      background-color: rgb(255, 189, 44);\n      overflow: hidden;\n    }\n\n    #suggestEHRLink > * {\n      float: left;\n    }\n\n    #suggestEHRLink > #suggestions {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      width: calc(100% - 60px);\n      height: 100%;\n    }\n\n    #suggestEHRLink img {\n      width: 60px;\n      height: 60px;\n      margin: 1% 10px;\n    }\n\n    #suggestEHRLink p {\n      width: calc(96% - 80px);\n      margin: 1%;\n      font-size: 20px;\n      color: black;\n    }\n\n    #suggestEHRLink button {\n      width: 60px;\n      height: 30px;\n      color: white;\n      font-size: 15px;\n      border-radius: 0;\n      padding: 0;\n    }\n\n    #patientLinkState > div {\n      border-bottom-left-radius: 30px;\n      border-bottom-right-radius: 30px;\n    }\n\n    #patientInfo {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n\n      height: 80px;\n      width: 100%;\n\n      overflow: hidden;\n\n      text-align: center;\n    }\n\n    #patientInfo img {\n      width: 60px;\n      height: 60px;\n      margin: 1% 10px;\n    }\n\n    #patientInfo p {\n      width: calc(96% - 280px);\n      margin: 1%;\n      font-size: 20px;\n      color: black;\n    }\n\n    #autosyncToggle {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n\n      width: 200px;\n      height: 100%;\n    }\n\n    #autosyncToggle > div {\n      width: 100%;\n    }\n\n    #autosyncToggle > div > p {\n      width: 100%;\n    }\n\n    #variantVisualizations {\n      padding: 15px;\n      margin-top: 2%;\n      margin-left: 4%;\n      margin-right: 4%;\n      background-color: white;\n    }\n\n    .variantWrapper {\n      margin-bottom: 5px;\n    }\n\n    .variantSelector {\n      height: 38px;\n    }\n\n    .variantSelector > * {\n      float: left;\n      height: 100%;\n    }\n\n    .removeRowButton {\n      width: 38px;\n      font-size: 20px;\n      color: white;\n      padding: 0;\n    }\n\n    .informationToggle {\n      width: 100%;\n      background-color: #e2e2e2;\n      border-bottom-left-radius: 10px;\n      border-bottom-right-radius: 10px;\n      text-align: center;\n      height: 30px;\n    }\n\n    .visualizationContent {\n      overflow: scroll;\n    }\n\n    .informationToggle:hover {\n      background-color: #b2b2b2;\n    }\n\n    .informationToggle img {\n      height: 10px;\n      width: 10px;\n      margin: 10px;\n    }\n\n    #askForReviewDiv {\n      display: block;\n      position: fixed;\n      bottom: 0;\n      left: 0;\n    }\n  "],
+        template: "\n    <div id=\"patientLinkState\">\n      <!-- If an EHR link is NOT detected -->\n      <div id=\"suggestEHRLink\" *ngIf=\"offerToLinkToEHRInstructions\">\n        <div id=\"suggestions\">\n          <img src=\"/assets/entry-and-visualization/info-icon.png\">\n          <p class=\"thinFont1\">You don't seem to be connected to an EHR! <a href=\"javascript:void(0)\" (click)=\"routeToInstructions()\">Learn how here.</a></p>\n        </div>\n        <button class=\"btn btn-danger\" (click)=\"offerToLinkToEHRInstructions = false\">X</button>\n      </div>\n\n      <!-- If an EHR link is detected -->\n      <div id=\"patientInfo\" *ngIf=\"patientExists\" [style.background-color]=\"patientObject.gender === 'male' ? '#27384f' : '#ff45f7'\">\n        <img [src]=\"patientObject.gender === 'male' ? '/assets/entry-and-visualization/male-icon.png' : '/assets/entry-and-visualization/female-icon.png'\">\n\n        <!-- Patient Details -->\n        <p style=\"color: white\">\n          <b>Name: </b> {{patientObject.name[0].given[0]}} {{patientObject.name[0].family}} | \n          <b>{{patientObject.active ? 'Lives in' : 'Lived in'}}:</b> {{patientObject.address[0].country}} | <b>Age:</b> {{patientAge}} | \n          <b>Condition:</b> \n          <select style=\"font-size: 15px;\">\n            <option *ngFor=\"let condition of patientConditions\">{{condition}}</option>\n          </select>\n        </p>\n\n        <div id=\"autosyncToggle\">\n          <div>\n            <ui-switch [ngModel]=\"autosync\" (ngModelChange)=\"onToggleAutosync($event)\"></ui-switch>\n            <p class=\"thinFont1\" style=\"color: white\">Auto-Sync</p>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <div id=\"variantVisualizations\">\n      <div class=\"variantWrapper\" *ngFor=\"let variant of variants; let i = index\">\n        <div class=\"variantSelector\">\n          <div [style.width]=\"i === variants.length - 1 ? '100%' : 'calc(100% - 38px)'\">\n            <variant-selector [ngModel]=\"variant.variant\"\n                              (ngModelChange)=\"variant.variant = $event; addRowMaybe(i); saveEHRVariant(variant);\"></variant-selector>\n          </div>\n          <button class=\"removeRowButton btn btn-danger\" (click)=\"removeRow(i)\" *ngIf=\"i !== variants.length - 1\">X\n          </button>\n        </div>\n        <div>\n          <div class=\"visualizationContent\" [@drawerAnimation]=\"variant.drawerState\">\n            <variant-visualization [(ngModel)]=\"variant.variant\"></variant-visualization>\n          </div>\n          <div *ngIf=\"variant.variant !== undefined && variant.variant !== null\" class=\"informationToggle\"\n               (click)=\"variant.toggleDrawer()\">\n            <img src=\"/assets/entry-and-visualization/dropdown.svg\">\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Review form question -->\n    <div id=\"askForReviewDiv\" *ngIf=\"userInteractionPoints >= 3 && askForReview\">\n      <a href=\"javascript:void(0)\" (click)=\"openFeedbackForm()\">\n        <ngb-alert [type]=\"'primary'\" (close)=\"askForReview = false\">Please review our service!</ngb-alert>\n      </a>\n    </div>\n  ",
+        styles: ["\n    p {\n      margin: 0;\n    }\n\n    #patientLinkState {\n      margin-left: 6%;\n      margin-right: 6%;\n    }\n\n    #suggestEHRLink {\n      height: 80px;\n      width: 100%;\n\n      background-color: rgb(255, 189, 44);\n      overflow: hidden;\n    }\n\n    #suggestEHRLink > * {\n      float: left;\n    }\n\n    #suggestEHRLink > #suggestions {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      width: calc(100% - 60px);\n      height: 100%;\n    }\n\n    #suggestEHRLink img {\n      width: 60px;\n      height: 60px;\n      margin: 1% 10px;\n    }\n\n    #suggestEHRLink p {\n      width: calc(96% - 80px);\n      margin: 1%;\n      font-size: 20px;\n      color: black;\n    }\n\n    #suggestEHRLink button {\n      width: 60px;\n      height: 30px;\n      color: white;\n      font-size: 15px;\n      border-radius: 0;\n      padding: 0;\n    }\n\n    #patientLinkState > div {\n      border-bottom-left-radius: 30px;\n      border-bottom-right-radius: 30px;\n    }\n\n    #patientInfo {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n\n      height: 80px;\n      width: 100%;\n\n      overflow: hidden;\n\n      text-align: center;\n    }\n\n    #patientInfo img {\n      width: 60px;\n      height: 60px;\n      margin: 10px;\n    }\n\n    #patientInfo p {\n      width: calc(96% - 280px);\n      margin: 1%;\n      font-size: 20px;\n      color: black;\n    }\n    \n    #autosyncToggle {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n\n      width: 200px;\n      height: 100%;\n    }\n\n    #autosyncToggle > div {\n      width: 100%;\n    }\n\n    #autosyncToggle > div > p {\n      width: 100%;\n    }\n\n    #variantVisualizations {\n      padding: 15px;\n      margin-top: 2%;\n      margin-left: 4%;\n      margin-right: 4%;\n      background-color: white;\n    }\n\n    .variantWrapper {\n      margin-bottom: 5px;\n    }\n\n    .variantSelector {\n      height: 38px;\n    }\n\n    .variantSelector > * {\n      float: left;\n      height: 100%;\n    }\n\n    .removeRowButton {\n      width: 38px;\n      font-size: 20px;\n      color: white;\n      padding: 0;\n    }\n\n    .informationToggle {\n      width: 100%;\n      background-color: #e2e2e2;\n      border-bottom-left-radius: 10px;\n      border-bottom-right-radius: 10px;\n      text-align: center;\n      height: 30px;\n    }\n\n    .visualizationContent {\n      overflow: scroll;\n    }\n\n    .informationToggle:hover {\n      background-color: #b2b2b2;\n    }\n\n    .informationToggle img {\n      height: 10px;\n      width: 10px;\n      margin: 10px;\n    }\n\n    #askForReviewDiv {\n      display: block;\n      position: fixed;\n      bottom: 0;\n      left: 0;\n    }\n  "],
         animations: [
             Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["j" /* trigger */])("drawerAnimation", [
                 Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["g" /* state */])("closed", Object(__WEBPACK_IMPORTED_MODULE_3__angular_animations__["h" /* style */])({
