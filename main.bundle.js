@@ -26,12 +26,14 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__routes_ehr_instructions_ehr_instructions_component__ = __webpack_require__("../../../../../src/app/routes/ehr-instructions/ehr-instructions.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__routes_home_home_component__ = __webpack_require__("../../../../../src/app/routes/home/home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routes_team_team_component__ = __webpack_require__("../../../../../src/app/routes/team/team.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__routes_db_analysis_db_analysis_component__ = __webpack_require__("../../../../../src/app/routes/db-analysis/db-analysis.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -47,7 +49,8 @@ var routes = [
     { path: "app", component: __WEBPACK_IMPORTED_MODULE_4__routes_entry_and_visualization_variant_entry_and_visualization_component__["a" /* VariantEntryAndVisualizationComponent */] },
     { path: "ehr-link", component: __WEBPACK_IMPORTED_MODULE_5__routes_ehr_instructions_ehr_instructions_component__["a" /* EHRInstructionsComponent */] },
     { path: "home", component: __WEBPACK_IMPORTED_MODULE_6__routes_home_home_component__["a" /* LandingPageComponent */] },
-    { path: "team", component: __WEBPACK_IMPORTED_MODULE_7__routes_team_team_component__["a" /* TeamComponent */] }
+    { path: "team", component: __WEBPACK_IMPORTED_MODULE_7__routes_team_team_component__["a" /* TeamComponent */] },
+    { path: "db-analysis", component: __WEBPACK_IMPORTED_MODULE_8__routes_db_analysis_db_analysis_component__["a" /* DBAnalysisComponent */] }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -132,6 +135,7 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__routes_entry_and_visualization_variant_visualization_drugs_drugs_search_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/variant-visualization/drugs/drugs-search.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__routes_entry_and_visualization_genomic_data_providers_mygeneinfo_search_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data-providers/mygeneinfo-search.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__routes_entry_and_visualization_genomic_data_providers_utilities_json_navigator_service__ = __webpack_require__("../../../../../src/app/routes/entry-and-visualization/genomic-data-providers/utilities/json-navigator.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__routes_db_analysis_db_analysis_component__ = __webpack_require__("../../../../../src/app/routes/db-analysis/db-analysis.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -174,6 +178,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -209,7 +214,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_23__routes_home_home_component__["a" /* LandingPageComponent */],
             __WEBPACK_IMPORTED_MODULE_24__universal_components_github_fork_us_component__["a" /* GithubForkUsComponent */],
             __WEBPACK_IMPORTED_MODULE_19__routes_feedback_form_feedback_form_modal_component__["a" /* FeedbackFormModalComponent */],
-            __WEBPACK_IMPORTED_MODULE_25__routes_team_team_component__["a" /* TeamComponent */]
+            __WEBPACK_IMPORTED_MODULE_25__routes_team_team_component__["a" /* TeamComponent */],
+            __WEBPACK_IMPORTED_MODULE_33__routes_db_analysis_db_analysis_component__["a" /* DBAnalysisComponent */]
         ],
         entryComponents: [
             __WEBPACK_IMPORTED_MODULE_14__routes_entry_and_visualization_variant_visualization_drugs_drug_details_modal_component__["a" /* DrugDetailsModalComponent */],
@@ -232,6 +238,36 @@ AppModule = __decorate([
 ], AppModule);
 
 //# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/routes/db-analysis/db-analysis.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DBAnalysisComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var DBAnalysisComponent = (function () {
+    function DBAnalysisComponent() {
+    }
+    return DBAnalysisComponent;
+}());
+DBAnalysisComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: "db-analysis",
+        template: "\n    <div class=\"infoCard\">\n      <div class=\"cardContent\">\n        <div>\n          <h1 class=\"thinFont1\">Why Database Analysis?</h1>\n          <hr>\n          <p class=\"thinFont1\">A pressing issue currently in the research community is that of \"research parasites\": those who profit off of the research done by other labs without contributing anything meaningful and new.  By carrying out analysis on the each prominent oncology database, we hope to foster a symbiotic relationship between this app and its information sources.  </p>\n        </div>\n      </div>\n      <div class=\"cardImage\">\n        <div>\n          <img src=\"/assets/db-analysis/civic-oncokb-comparison.png\" class=\"dbAnalysisImage\">\n          <img src=\"/assets/db-analysis/civic-oncokb-comparison-2.png\" class=\"dbAnalysisImage\">\n          <img src=\"/assets/db-analysis/clinvar-civic-oncokb-comparison.png\" class=\"dbAnalysisImage\">\n        </div>\n      </div>\n    </div>\n  ",
+        styles: ["\n    .infoCard {\n      margin: 10px 5px;\n      overflow: hidden;\n    }\n\n    .cardContent {\n      float: left;\n      width: 100%;\n    }\n\n    .cardImage {\n      float: left;\n      width: 100%;\n      min-width: 150px;\n      max-width: 100%;\n    }\n\n    .cardImage>div, .cardContent>div {\n      float: left;\n      background-color: white;\n      box-shadow: 1px 3px #d5d5d5;\n      border: 1px solid #d1d1d1;\n      padding: 15px;\n      margin: 7px 3px;\n    }\n    \n    .dbAnalysisImage {\n      width: 33.333%;\n      height: auto;\n      float: left;\n    }\n  "]
+    })
+], DBAnalysisComponent);
+
+//# sourceMappingURL=db-analysis.component.js.map
 
 /***/ }),
 
@@ -2817,8 +2853,8 @@ var TeamComponent = (function () {
 TeamComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: "team",
-        template: "\n    <div id=\"makiah\">\n      <div class=\"profileImage\" style=\"background-image: url('/assets/team/makiah.jpg'); background-size: auto 100%; background-position: center;\"></div>\n\n      <div class=\"profileContent\">\n        <h1 class=\"thinFont2\">Makiah Bennett</h1>\n        <hr>\n        <p class=\"thinFont2\">Available at <a href=\"mailto:makiahtbennett@gmail.com\">makiahtbennett@gmail.com</a>.</p>\n      </div>\n    </div>\n    \n    <div id=\"ishaan\">\n      <div class=\"profileContent\">\n        <h1 class=\"thinFont2\">Ishaan Prasad</h1>\n        <hr>\n        <p class=\"thinFont2\">Available at <a href=\"mailto:prasadis@belmonthill.org\">prasadis@belmonthill.org</a>.</p>\n      </div>\n      \n      <div class=\"profileImage\" style=\"background-image: url('/assets/team/ishaan.jpg'); background-size: auto 100%; background-position: center;\">\n      </div>\n    </div>\n    \n    <div id=\"otherContributors\">\n      <div style=\"padding: 10px 15px;\">\n        <h1 class=\"thinFont2\">Additional Credits</h1>\n        <hr>\n        <ul class=\"thinFont2\" style=\"font-size: 30px;\">\n          <li>Dr. Gil Alterovitz</li>\n          <li>Jeremy Warner</li>\n        </ul>\n      </div>\n    </div>\n  ",
-        styles: ["\n    #makiah, #ishaan, #otherContributors {\n      background-color: white;\n      margin: 5px;\n      height: 200px;\n      width: calc(100% - 10px);\n      overflow: hidden;\n      border: 1px solid #e1e1e1;\n    }\n\n    #makiah {\n      border-top-left-radius: 100px;\n      border-bottom-left-radius: 100px;\n    }\n\n    #ishaan {\n      border-top-right-radius: 100px;\n      border-bottom-right-radius: 100px;\n    }\n\n    .profileImage, .profileContent {\n      margin: 5px;\n      height: calc(100% - 10px);\n      overflow: hidden;\n      float: left;\n    }\n\n    .profileImage {\n      border-radius: 100px;\n      width: 190px;\n      background-color: grey;\n    }\n\n    .profileContent {\n      width: calc(100% - 210px);\n      padding: 10px;\n    }\n  "]
+        template: "\n    <div id=\"makiah\">\n      <div class=\"profileImage\" style=\"background-image: url('/assets/team/makiah.jpg'); background-size: auto 100%; background-position: center;\"></div>\n\n      <div class=\"profileContent\">\n        <h1 class=\"thinFont2\">Makiah Bennett</h1>\n        <hr>\n        <p class=\"thinFont2\">Available at <a href=\"mailto:makiahtbennett@gmail.com\">makiahtbennett@gmail.com</a>.</p>\n      </div>\n    </div>\n    \n    <div id=\"ishaan\">\n      <div class=\"profileContent\">\n        <h1 class=\"thinFont2\">Ishaan Prasad</h1>\n        <hr>\n        <p class=\"thinFont2\">Available at <a href=\"mailto:prasadis@belmonthill.org\">prasadis@belmonthill.org</a>.</p>\n      </div>\n      \n      <div class=\"profileImage\" style=\"background-image: url('/assets/team/ishaan.jpg'); background-size: auto 100%; background-position: center;\">\n      </div>\n    </div>\n    \n    <div id=\"otherContributors\">\n      <div style=\"padding: 10px 15px;\">\n        <h1 class=\"thinFont2\">Additional Credits</h1>\n        <hr>\n        <ul class=\"thinFont2\" style=\"font-size: 20px;\">\n          <li>Dr. Gil Alterovitz</li>\n          <li>Dr. Jeremy Warner</li>\n        </ul>\n      </div>\n    </div>\n  ",
+        styles: ["\n    #makiah, #ishaan, #otherContributors {\n      background-color: white;\n      margin: 5px;\n      height: 200px;\n      width: calc(100% - 10px);\n      overflow: hidden;\n      border: 1px solid #e1e1e1;\n    }\n\n    #makiah {\n      border-top-left-radius: 100px;\n      border-bottom-left-radius: 100px;\n    }\n\n    #ishaan {\n      border-top-right-radius: 100px;\n      border-bottom-right-radius: 100px;\n    }\n\n    .profileImage, .profileContent {\n      margin: 5px;\n      height: calc(100% - 10px);\n      overflow: hidden;\n      float: left;\n    }\n\n    .profileImage {\n      border-radius: 100px;\n      width: 190px;\n      background-color: grey;\n    }\n\n    .profileContent {\n      width: calc(100% - 210px);\n      padding: 10px;\n      font-size: 20px;\n    }\n  "]
     })
 ], TeamComponent);
 
@@ -3053,7 +3089,7 @@ var HeaderComponent = (function () {
 HeaderComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: "header",
-        template: "\n    <div id=\"greyBackground\"></div>\n\n    <div id=\"container\">\n      <img src=\"/assets/entry-and-visualization/app-logo.png\">\n\n      <div id=\"routingOptions\">\n        <div class=\"routeOption {{currentRoute === '/home' ? 'selectedRoute' : 'unselectedRoute'}}\" (click)=\"routeTo('home')\">\n          <p>Home</p>\n        </div>\n        <div class=\"routeOption {{currentRoute === '/team' ? 'selectedRoute' : 'unselectedRoute'}}\" style=\"cursor: not-allowed; opacity: 0.5;\">\n          <p>Team</p>\n        </div>\n        <div class=\"routeOption {{currentRoute === '/ehr-link' ? 'selectedRoute' : 'unselectedRoute'}}\" (click)=\"routeTo('ehr-link')\">\n          <p>EHR Link</p>\n        </div>\n        <div class=\"routeOption {{currentRoute === '/contact' ? 'selectedRoute' : 'unselectedRoute'}}\">\n          <p>DB Analysis</p>\n        </div>\n        <div style=\"width: 1px; height: 76px; float: left; background-color: #a4a4a4; margin: 2px 3px;\">\n        </div>\n        <div class=\"routeOption {{currentRoute === '/app' ? 'selectedRoute' : 'unselectedRoute'}}\"\n             (click)=\"routeTo('app');\">\n          <p>Try It Out!</p>\n        </div>\n      </div>\n    </div>\n  ",
+        template: "\n    <div id=\"greyBackground\"></div>\n\n    <div id=\"container\">\n      <img src=\"/assets/entry-and-visualization/app-logo.png\">\n\n      <div id=\"routingOptions\">\n        <div class=\"routeOption {{currentRoute === '/home' ? 'selectedRoute' : 'unselectedRoute'}}\" (click)=\"routeTo('home')\">\n          <p>Home</p>\n        </div>\n        <div class=\"routeOption {{currentRoute === '/team' ? 'selectedRoute' : 'unselectedRoute'}}\" (click)=\"routeTo('team')\">\n          <p>Team</p>\n        </div>\n        <div class=\"routeOption {{currentRoute === '/ehr-link' ? 'selectedRoute' : 'unselectedRoute'}}\" (click)=\"routeTo('ehr-link')\">\n          <p>EHR Link</p>\n        </div>\n        <div class=\"routeOption {{currentRoute === '/db-analysis' ? 'selectedRoute' : 'unselectedRoute'}}\" (click)=\"routeTo('db-analysis')\">\n          <p>DB Analysis</p>\n        </div>\n        <div style=\"width: 1px; height: 76px; float: left; background-color: #a4a4a4; margin: 2px 3px;\">\n        </div>\n        <div class=\"routeOption {{currentRoute === '/app' ? 'selectedRoute' : 'unselectedRoute'}}\"\n             (click)=\"routeTo('app');\">\n          <p>Try It Out!</p>\n        </div>\n      </div>\n    </div>\n  ",
         styles: ["\n    p {\n      margin: 0;\n    }\n\n    #greyBackground {\n      width: 100vw;\n      height: 100vh;\n      background-color: #eeeeee;\n      position: fixed;\n      z-index: -50;\n    }\n\n    #container {\n      background-color: white;\n      width: 100%;\n\n      padding-left: 30px;\n\n      box-shadow: 0 2px 4px #b4b4b4;\n\n      overflow: hidden;\n    }\n\n    #container img {\n      height: 40px;\n      width: auto;\n      margin-top: 20px;\n      margin-bottom: 20px;\n      float: left;\n    }\n\n    #routingOptions {\n      min-width: 500px;\n      height: 100%;\n      overflow: hidden;\n      float: right;\n    }\n\n    .routeOption {\n      float: left;\n      color: #2f2f2f;\n\n      text-align: center;\n      height: 60px;\n      width: calc(100% / 5 - 8px); /* +1 px for each for border div */\n      margin: 10px 3px;\n\n      display: flex;\n      justify-content: center;\n      align-items: center;\n\n      cursor: default;\n      border-radius: 5px;\n    }\n\n    .unselectedRoute {\n      background-color: white;\n    }\n\n    .unselectedRoute:hover {\n      background-color: #dbdbdb;\n    }\n\n    .unselectedRoute:active {\n      background-color: #cbcbcb;\n    }\n\n    .selectedRoute {\n      background-color: #27384f;\n      color: white;\n    }\n  "]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === "function" && _a || Object])
