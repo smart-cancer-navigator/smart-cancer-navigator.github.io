@@ -48,7 +48,7 @@ module.exports = "/*!\n * Bootstrap v4.1.3 (https://getbootstrap.com/)\n * Copyr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "body {\n  margin: 0;\n}\n\n.thinFont1 {\n  font-family: \"Avenir Next\";\n  font-weight: 100;\n}\n\n.thinFont2 {\n  font-family: \"Helvetica Neue\";\n  font-weight: 100;\n}\n"
+module.exports = "body {\n  margin: 0;\n}\n\n.thick {\t\t\t\t\t\t\n  font-weight: 550;\n}\n\n.regular {\n  font-weight: 300;\n}\n"
 
 /***/ }),
 
